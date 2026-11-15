@@ -1,0 +1,74 @@
+{
+  "completed": [
+    "dock",
+    "garden",
+    "reactor",
+    "switchyard",
+    "service_channels",
+    "observatory",
+    "interference",
+    "aux_core",
+    "station_heart"
+  ],
+  "last_selected": {
+    "difficulty": 1,
+    "level_id": "station_heart"
+  },
+  "records": {
+    "aux_core": {
+      "relaxed": {
+        "best_score": 9840,
+        "best_time_ticks": 5714
+      }
+    },
+    "dock": {
+      "relaxed": {
+        "best_score": 10170,
+        "best_time_ticks": 3723
+      }
+    },
+    "garden": {
+      "relaxed": {
+        "best_score": 9990,
+        "best_time_ticks": 4827
+      }
+    },
+    "interference": {
+      "relaxed": {
+        "best_score": 9980,
+        "best_time_ticks": 4911
+      }
+    },
+    "observatory": {
+      "relaxed": {
+        "best_score": 9900,
+        "best_time_ticks": 5374
+      }
+    },
+    "reactor": {
+      "relaxed": {
+        "best_score": 8840,
+        "best_time_ticks": 4555
+      }
+    },
+    "service_channels": {
+      "relaxed": {
+        "best_score": 10080,
+        "best_time_ticks": 4266
+      }
+    },
+    "station_heart": {
+      "relaxed": {
+        "best_score": 9750,
+        "best_time_ticks": 6260
+      }
+    },
+    "switchyard": {
+      "relaxed": {
+        "best_score": 10240,
+        "best_time_ticks": 3322
+      }
+    }
+  },
+  "schema_version": 1
+}

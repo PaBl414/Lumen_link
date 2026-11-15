@@ -1,0 +1,23 @@
+import subprocess,time,os,json
+from pathlib import Path
+out=Path('docs/reports/m11');pairs=[]
+for role in ['host','client']:
+ log=open(out/('gui-'+role+'.log'),'w');cmd=['/home/pablo/.local/bin/godot','--path','.','--display-driver','x11','--max-fps','60','/tmp/m11_gui_harness.tscn','--']+(['--host'] if role=='host' else [])
+ p=subprocess.Popen(cmd,stdout=log,stderr=subprocess.STDOUT);pairs.append((p,log,cmd));time.sleep(.8)
+time.sleep(7)
+def key(role,*args):
+ env=dict(os.environ,LUMEN_TITLE='LUMEN LINK '+role.upper()+' M11',ROLE=role)
+ subprocess.run(['python3','/tmp/m11_capture.py',*args],env=env,check=True,stdout=subprocess.DEVNULL)
+for role in ['host','client']:
+ key(role,'focus');time.sleep(.3);key(role,'key','d','down');time.sleep(.5);key(role,'key','space','down');time.sleep(.1);key(role,'key','space','up');key(role,'key','d','up');time.sleep(.5);key(role,'capture')
+key('client','key','Escape','down');key('client','key','Escape','up');time.sleep(.5)
+key('client','capture');os.rename(out/'gui-client.png',out/'gui-client-pause.png')
+key('client','key','Escape','down');key('client','key','Escape','up');time.sleep(.5);key('client','capture')
+time.sleep(2)
+key('host','close');time.sleep(.5);key('client','close')
+records=[]
+for p,log,cmd in pairs:
+ try: code=p.wait(timeout=35)
+ except subprocess.TimeoutExpired:p.terminate();code=p.wait()
+ log.close();records.append({'command':cmd,'exit_code':code})
+(out/'gui.commands.json').write_text(json.dumps(records,indent=2));print(records)

@@ -1,0 +1,3 @@
+Godot Engine v4.5.2.stable.official.6ce3de25a - https://godotengine.org
+
+{"cases":[{"detail":"","name":"TI six valid in-flight input packets cannot disconnect terminal session","status":"PASS"},{"detail":"","name":"TI late input cannot move terminal world","status":"PASS"},{"detail":"","name":"TI terminal packets never enter next level input queue","status":"PASS"},{"detail":"","name":"TI late input cannot confirm completion","status":"PASS"}],"duration_ms":2040,"failed":0,"passed":4,"skipped":0}

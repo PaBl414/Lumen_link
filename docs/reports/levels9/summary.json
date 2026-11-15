@@ -1,0 +1,428 @@
+{
+  "build": {
+    "build_label": "Levels9-dev",
+    "code_revision": "unversioned",
+    "content_sha256": "dc1b8d09a535a75591f150d111d253decf6779d537d2dc604842af2830d7896a",
+    "engine_build_id": "6ce3de25aa58466e14ef354703ba8d9791a417da",
+    "engine_version": "4.5.2",
+    "protocol": 3,
+    "schema_version": 1
+  },
+  "catalog": [
+    {
+      "id": "dock",
+      "name": "Dok",
+      "theme": "dock",
+      "tint": "ffffff",
+      "motif": "dock"
+    },
+    {
+      "id": "garden",
+      "name": "Ogród",
+      "theme": "garden",
+      "tint": "ffffff",
+      "motif": "garden"
+    },
+    {
+      "id": "reactor",
+      "name": "Reaktor",
+      "theme": "reactor",
+      "tint": "ffffff",
+      "motif": "reactor"
+    },
+    {
+      "id": "switchyard",
+      "name": "Rozdzielnia",
+      "theme": "dock",
+      "tint": "bfe8d8",
+      "motif": "circuits"
+    },
+    {
+      "id": "service_channels",
+      "name": "Kanały serwisowe",
+      "theme": "dock",
+      "tint": "c4ced9",
+      "motif": "channels"
+    },
+    {
+      "id": "observatory",
+      "name": "Obserwatorium",
+      "theme": "garden",
+      "tint": "a9c5f5",
+      "motif": "orbits"
+    },
+    {
+      "id": "interference",
+      "name": "Komora zakłóceń",
+      "theme": "reactor",
+      "tint": "c3a9ec",
+      "motif": "interference"
+    },
+    {
+      "id": "aux_core",
+      "name": "Rdzeń pomocniczy",
+      "theme": "reactor",
+      "tint": "f3cf98",
+      "motif": "circuits"
+    },
+    {
+      "id": "station_heart",
+      "name": "Serce stacji",
+      "theme": "reactor",
+      "tint": "f2a6aa",
+      "motif": "heart"
+    }
+  ],
+  "full_regression": {
+    "duration_ms": 778542,
+    "exit_code": 0,
+    "failed": 0,
+    "passed": 1813,
+    "skipped": 0,
+    "suite": "all",
+    "suite_count": 23
+  },
+  "terminal_input_regression": {
+    "duration_ms": 2040,
+    "failed": 0,
+    "passed": 4,
+    "skipped": 0
+  },
+  "fresh_network_protocol_tests": {
+    "duration_ms": 11815,
+    "failed": 0,
+    "passed": 145,
+    "skipped": 0
+  },
+  "focused_runtime_ui_and_heart_tests": {
+    "duration_ms": 123778,
+    "failed": 0,
+    "passed": 207,
+    "skipped": 0
+  },
+  "completion_fixtures": {
+    "count": 54,
+    "levels": 9,
+    "difficulties": 2,
+    "variants": 3,
+    "ok": true,
+    "max_ticks": 6908
+  },
+  "lan": {
+    "normal": {
+      "ok": true,
+      "exit_codes": [
+        0,
+        0
+      ],
+      "levels": {
+        "aux_core": {
+          "integrity": 5,
+          "saved": true,
+          "score": 6380,
+          "ticks": 8484
+        },
+        "dock": {
+          "integrity": 6,
+          "saved": true,
+          "score": 7680,
+          "ticks": 4293
+        },
+        "garden": {
+          "integrity": 6,
+          "saved": true,
+          "score": 7520,
+          "ticks": 5247
+        },
+        "interference": {
+          "integrity": 6,
+          "saved": true,
+          "score": 7440,
+          "ticks": 5717
+        },
+        "observatory": {
+          "integrity": 6,
+          "saved": true,
+          "score": 7460,
+          "ticks": 5626
+        },
+        "reactor": {
+          "integrity": 4,
+          "saved": true,
+          "score": 5960,
+          "ticks": 7428
+        },
+        "service_channels": {
+          "integrity": 6,
+          "saved": true,
+          "score": 7740,
+          "ticks": 3932
+        },
+        "station_heart": {
+          "integrity": 6,
+          "saved": true,
+          "score": 7190,
+          "ticks": 7210
+        },
+        "switchyard": {
+          "integrity": 6,
+          "saved": true,
+          "score": 7750,
+          "ticks": 3886
+        }
+      },
+      "final_score": 7190,
+      "final_integrity": 6,
+      "content_hash": "e82e22c7603b651244f3dc31b8e31bc5fd8872d406f7d997a4c0cfc09a6bb086",
+      "latches": {
+        "0": 0,
+        "1": 5,
+        "2": 6,
+        "3": 4,
+        "4": 4,
+        "5": 4,
+        "6": 4,
+        "7": 7,
+        "8": 7
+      },
+      "report_directory": "docs/reports/levels9/lan-normal"
+    },
+    "relaxed": {
+      "ok": true,
+      "exit_codes": [
+        0,
+        0
+      ],
+      "levels": {
+        "aux_core": {
+          "integrity": 9,
+          "saved": true,
+          "score": 9840,
+          "ticks": 5714
+        },
+        "dock": {
+          "integrity": 9,
+          "saved": true,
+          "score": 10170,
+          "ticks": 3723
+        },
+        "garden": {
+          "integrity": 9,
+          "saved": true,
+          "score": 9990,
+          "ticks": 4827
+        },
+        "interference": {
+          "integrity": 9,
+          "saved": true,
+          "score": 9980,
+          "ticks": 4911
+        },
+        "observatory": {
+          "integrity": 9,
+          "saved": true,
+          "score": 9900,
+          "ticks": 5374
+        },
+        "reactor": {
+          "integrity": 7,
+          "saved": true,
+          "score": 8840,
+          "ticks": 4555
+        },
+        "service_channels": {
+          "integrity": 9,
+          "saved": true,
+          "score": 10080,
+          "ticks": 4266
+        },
+        "station_heart": {
+          "integrity": 9,
+          "saved": true,
+          "score": 9750,
+          "ticks": 6260
+        },
+        "switchyard": {
+          "integrity": 9,
+          "saved": true,
+          "score": 10240,
+          "ticks": 3322
+        }
+      },
+      "final_score": 9750,
+      "final_integrity": 9,
+      "content_hash": "dc1b8d09a535a75591f150d111d253decf6779d537d2dc604842af2830d7896a",
+      "latches": {
+        "0": 0,
+        "1": 5,
+        "2": 6,
+        "3": 4,
+        "4": 4,
+        "5": 4,
+        "6": 4,
+        "7": 7,
+        "8": 7
+      },
+      "report_directory": "docs/reports/levels9/lan-relaxed"
+    }
+  },
+  "disk_after_process_exit": {
+    "normal-host": true,
+    "normal-client": true,
+    "relaxed-host": true,
+    "relaxed-client": true
+  },
+  "progress_restart": {
+    "ok": true,
+    "cases": [
+      "restart actual AppRoot: two stable IDs and difficulty records; legacy unchanged",
+      "corrupt primary: actual AppRoot restores previous valid backup and warning",
+      "cancelled reset preserves history",
+      "confirmed reset survives restart and backup recovery; legacy unchanged"
+    ]
+  },
+  "export_commands": [
+    {
+      "command": [
+        "/home/pablo/.local/bin/godot",
+        "--headless",
+        "--editor",
+        "--path",
+        "/tmp/lumen-export-_uwla_tt",
+        "--import",
+        "--quit"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "/home/pablo/.local/bin/godot",
+        "--headless",
+        "--path",
+        "/tmp/lumen-export-_uwla_tt",
+        "--export-debug",
+        "Linux Smoke",
+        "/home/pablo/.local/share/lumen-tools/levels9-smoke/linux/lumen_smoke.x86_64"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "/home/pablo/.local/bin/godot",
+        "--headless",
+        "--path",
+        "/tmp/lumen-export-_uwla_tt",
+        "--export-debug",
+        "Windows Smoke",
+        "/home/pablo/.local/share/lumen-tools/levels9-smoke/windows/lumen_smoke.exe"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "/home/pablo/.local/share/lumen-tools/levels9-smoke/linux/lumen_smoke.x86_64",
+        "--headless",
+        "res://tests/integration/network_harness.tscn",
+        "--",
+        "--scenario=boot",
+        "--report=/home/pablo/lan_game/docs/reports/levels9/export-boot.json"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "/home/pablo/.local/share/lumen-tools/levels9-smoke/linux/lumen_smoke.x86_64",
+        "--headless",
+        "res://tests/integration/network_harness.tscn",
+        "--",
+        "--role=host",
+        "--port=25981",
+        "--report=/home/pablo/lan_game/docs/reports/levels9/export-host.json"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "/home/pablo/.local/share/lumen-tools/levels9-smoke/linux/lumen_smoke.x86_64",
+        "--headless",
+        "res://tests/integration/network_harness.tscn",
+        "--",
+        "--role=client",
+        "--port=25981",
+        "--report=/home/pablo/lan_game/docs/reports/levels9/export-client.json"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "native_images": {
+    "select-fresh.png": [
+      1280,
+      720
+    ],
+    "select-complete.png": [
+      1280,
+      720
+    ],
+    "map-dock.png": [
+      1280,
+      720
+    ],
+    "map-garden.png": [
+      1280,
+      720
+    ],
+    "map-reactor.png": [
+      1280,
+      720
+    ],
+    "map-switchyard.png": [
+      1280,
+      720
+    ],
+    "map-service_channels.png": [
+      1280,
+      720
+    ],
+    "map-observatory.png": [
+      1280,
+      720
+    ],
+    "map-interference.png": [
+      1280,
+      720
+    ],
+    "map-aux_core.png": [
+      1280,
+      720
+    ],
+    "map-station_heart.png": [
+      1280,
+      720
+    ],
+    "heart-safe-field.png": [
+      1280,
+      720
+    ]
+  },
+  "original_maps": {
+    "dock": {
+      "identical_to_m11c_authoring": true,
+      "sha256": "fa166aab905415b76d7ebc3f1e329fc071931cc66744e89e53bbebc71dc3cf12"
+    },
+    "garden": {
+      "identical_to_m11c_authoring": true,
+      "sha256": "b448e06a3e610f4e5920276d171b02dcdc780f2689db65bbbc59ed78ebc31f79"
+    },
+    "reactor": {
+      "identical_to_m11c_authoring": true,
+      "sha256": "9b29e076b7d1289adc4e9bd984617765a425936e7d04ebad51896503d786a6a9"
+    }
+  },
+  "not_run": [
+    "human playtest / fun and subjective difficulty",
+    "LAN on two physical computers",
+    "Windows runtime",
+    "full performance/release benchmark"
+  ],
+  "ordering_note": "The23-suite full regression used final map geometry; the subsequently added terminal-input fix was verified separately by4 focused regressions,145 fresh protocol/LAN assertions and the complete Relaxed campaign. Normal campaign used the same final maps before this guard-only fix."
+}

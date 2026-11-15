@@ -1,0 +1,32 @@
+[
+  {
+    "command": [
+      "/home/pablo/.local/bin/godot",
+      "--headless",
+      "--path",
+      "/home/pablo/lan_game",
+      "tests/integration/network_harness.tscn",
+      "--",
+      "--role=host",
+      "--port=27991",
+      "--scenario=expedition",
+      "--report=/home/pablo/lan_game/docs/reports/m08/expedition-host.json"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "/home/pablo/.local/bin/godot",
+      "--headless",
+      "--path",
+      "/home/pablo/lan_game",
+      "tests/integration/network_harness.tscn",
+      "--",
+      "--role=client",
+      "--port=27991",
+      "--scenario=expedition",
+      "--report=/home/pablo/lan_game/docs/reports/m08/expedition-client.json"
+    ],
+    "exit_code": 0
+  }
+]

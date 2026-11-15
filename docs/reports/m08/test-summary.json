@@ -1,0 +1,22 @@
+[
+  {
+    "name": "all",
+    "duration_ms": 31712,
+    "exit_code": 0,
+    "failed": 0,
+    "passed": 512,
+    "skipped": 0,
+    "suite": "all",
+    "suite_count": 14
+  },
+  {
+    "name": "self-test",
+    "duration_ms": 32191,
+    "exit_code": 1,
+    "failed": 1,
+    "passed": 512,
+    "skipped": 0,
+    "suite": "all",
+    "suite_count": 14
+  }
+]

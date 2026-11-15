@@ -1,0 +1,58 @@
+[
+  {
+    "label": "final-import",
+    "command": [
+      "/home/pablo/.local/bin/godot",
+      "--headless",
+      "--editor",
+      "--path",
+      ".",
+      "--import"
+    ],
+    "exit_code": 0
+  },
+  {
+    "label": "final-all",
+    "command": [
+      "/home/pablo/.local/bin/godot",
+      "--headless",
+      "--path",
+      ".",
+      "--script",
+      "tests/test_runner.gd",
+      "--",
+      "--suite=all"
+    ],
+    "exit_code": 0
+  },
+  {
+    "label": "final-self-test",
+    "command": [
+      "/home/pablo/.local/bin/godot",
+      "--headless",
+      "--path",
+      ".",
+      "--script",
+      "tests/test_runner.gd",
+      "--",
+      "--suite=all",
+      "--self-test-failure"
+    ],
+    "exit_code": 1
+  },
+  {
+    "label": "broken-suite",
+    "command": [
+      "/home/pablo/.local/bin/godot",
+      "--headless",
+      "--path",
+      "/tmp/lumen-m00-9nzocvku",
+      "--script",
+      "tests/test_runner.gd",
+      "--",
+      "--suite=integration"
+    ],
+    "fixture": "temporary project copy, deliberately unparseable required suite",
+    "exit_code": 1
+  }
+]

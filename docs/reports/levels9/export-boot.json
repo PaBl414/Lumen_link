@@ -1,0 +1,18 @@
+{
+	"application_sizes": [],
+	"begins": 0,
+	"boot_ready": true,
+	"ok": true,
+	"progress": {
+		"completed": [],
+		"last_selected": {
+			"difficulty": 0,
+			"level_id": "dock"
+		},
+		"records": {
+
+		},
+		"schema_version": 1
+	},
+	"progress_warning": ""
+}

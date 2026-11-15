@@ -1,0 +1,14 @@
+{
+  "dock": {
+    "identical_to_m11c_authoring": true,
+    "sha256": "fa166aab905415b76d7ebc3f1e329fc071931cc66744e89e53bbebc71dc3cf12"
+  },
+  "garden": {
+    "identical_to_m11c_authoring": true,
+    "sha256": "b448e06a3e610f4e5920276d171b02dcdc780f2689db65bbbc59ed78ebc31f79"
+  },
+  "reactor": {
+    "identical_to_m11c_authoring": true,
+    "sha256": "9b29e076b7d1289adc4e9bd984617765a425936e7d04ebad51896503d786a6a9"
+  }
+}

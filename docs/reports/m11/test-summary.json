@@ -1,0 +1,189 @@
+{
+  "all": {
+    "duration_ms": 85611,
+    "exit_code": 0,
+    "failed": 0,
+    "passed": 1019,
+    "skipped": 0,
+    "suite": "all",
+    "suite_count": 16
+  },
+  "self-test": {
+    "duration_ms": 30455,
+    "exit_code": 1,
+    "failed": 1,
+    "passed": 325,
+    "skipped": 0,
+    "suite": "integration",
+    "suite_count": 5
+  },
+  "render": {
+    "active-link": {
+      "effects": 0,
+      "max_draw_calls": 64,
+      "max_ms": 21.79,
+      "max_particles": 0,
+      "p95_ms": 19.12,
+      "particles": 0
+    },
+    "dock": {
+      "effects": 0,
+      "max_draw_calls": 53,
+      "max_ms": 22.157,
+      "max_particles": 0,
+      "p95_ms": 18.672,
+      "particles": 0
+    },
+    "first-dash": {
+      "effects": 1,
+      "max_draw_calls": 68,
+      "max_ms": 18.336,
+      "max_particles": 6,
+      "p95_ms": 18.107,
+      "particles": 6
+    },
+    "garden": {
+      "effects": 0,
+      "max_draw_calls": 64,
+      "max_ms": 25.022,
+      "max_particles": 0,
+      "p95_ms": 19.11,
+      "particles": 0
+    },
+    "high-stress": {
+      "effects": 120,
+      "max_draw_calls": 67,
+      "max_ms": 24.329,
+      "max_particles": 320,
+      "p95_ms": 20.777,
+      "particles": 200
+    },
+    "low-stress": {
+      "effects": 128,
+      "max_draw_calls": 67,
+      "max_ms": 23.832,
+      "max_particles": 160,
+      "p95_ms": 21.803,
+      "particles": 160
+    },
+    "reactor": {
+      "effects": 0,
+      "max_draw_calls": 61,
+      "max_ms": 21.766,
+      "max_particles": 0,
+      "p95_ms": 17.981,
+      "particles": 0
+    },
+    "reduced-motion": {
+      "effects": 128,
+      "max_draw_calls": 66,
+      "max_ms": 20.608,
+      "max_particles": 0,
+      "p95_ms": 18.114,
+      "particles": 0
+    }
+  },
+  "export": [
+    {
+      "command": [
+        "/home/pablo/.local/bin/godot",
+        "--headless",
+        "--editor",
+        "--path",
+        "/tmp/lumen-export-ky8h9n5z",
+        "--import",
+        "--quit"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "/home/pablo/.local/bin/godot",
+        "--headless",
+        "--path",
+        "/tmp/lumen-export-ky8h9n5z",
+        "--export-debug",
+        "Linux Smoke",
+        "/home/pablo/.local/share/lumen-tools/m11-smoke/lumen_smoke.x86_64"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "/home/pablo/.local/share/lumen-tools/m11-smoke/lumen_smoke.x86_64",
+        "--headless",
+        "res://tests/integration/network_harness.tscn",
+        "--",
+        "--scenario=boot",
+        "--report=/home/pablo/lan_game/docs/reports/m11/export-boot.json"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "/home/pablo/.local/share/lumen-tools/m11-smoke/lumen_smoke.x86_64",
+        "--headless",
+        "res://tests/integration/network_harness.tscn",
+        "--",
+        "--role=host",
+        "--port=24991",
+        "--report=/home/pablo/lan_game/docs/reports/m11/export-host.json"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "/home/pablo/.local/share/lumen-tools/m11-smoke/lumen_smoke.x86_64",
+        "--headless",
+        "res://tests/integration/network_harness.tscn",
+        "--",
+        "--role=client",
+        "--port=24991",
+        "--report=/home/pablo/lan_game/docs/reports/m11/export-client.json"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "export_native": {
+    "command": [
+      "/home/pablo/.local/share/lumen-tools/m11-smoke/lumen_smoke.x86_64",
+      "--display-driver",
+      "x11",
+      "--max-fps",
+      "60"
+    ],
+    "exit_code": 0
+  },
+  "gui": [
+    {
+      "command": [
+        "/home/pablo/.local/bin/godot",
+        "--path",
+        ".",
+        "--display-driver",
+        "x11",
+        "--max-fps",
+        "60",
+        "/tmp/m11_gui_harness.tscn",
+        "--",
+        "--host"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "/home/pablo/.local/bin/godot",
+        "--path",
+        ".",
+        "--display-driver",
+        "x11",
+        "--max-fps",
+        "60",
+        "/tmp/m11_gui_harness.tscn",
+        "--"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "content_sha256": "6baac44c14148f50696a9e77ad56434468162f2b526ba957a3aafbd237018700"
+}

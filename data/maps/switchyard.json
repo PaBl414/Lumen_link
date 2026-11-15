@@ -1,0 +1,220 @@
+{
+  "schema_version": 3,
+  "id": "switchyard",
+  "bounds": [
+    32,
+    88,
+    1216,
+    600
+  ],
+  "spawns": [
+    [
+      112,
+      592
+    ],
+    [
+      176,
+      592
+    ]
+  ],
+  "walls": [
+    {
+      "id": 0,
+      "rect": [
+        272,
+        224,
+        128,
+        96
+      ]
+    },
+    {
+      "id": 1,
+      "rect": [
+        816,
+        144,
+        96,
+        80
+      ]
+    },
+    {
+      "id": 2,
+      "rect": [
+        512,
+        336,
+        112,
+        48
+      ]
+    },
+    {
+      "id": 3,
+      "rect": [
+        944,
+        352,
+        128,
+        24
+      ]
+    },
+    {
+      "id": 4,
+      "rect": [
+        496,
+        136,
+        64,
+        112
+      ]
+    },
+    {
+      "id": 5,
+      "rect": [
+        1104,
+        144,
+        24,
+        80
+      ]
+    }
+  ],
+  "beacons": [
+    {
+      "id": 0,
+      "position": [
+        496,
+        448
+      ]
+    },
+    {
+      "id": 1,
+      "position": [
+        880,
+        288
+      ]
+    },
+    {
+      "id": 2,
+      "position": [
+        1040,
+        528
+      ]
+    }
+  ],
+  "sockets": [
+    {
+      "id": 0,
+      "position": [
+        176,
+        448
+      ]
+    },
+    {
+      "id": 1,
+      "position": [
+        352,
+        448
+      ]
+    },
+    {
+      "id": 2,
+      "position": [
+        752,
+        288
+      ]
+    }
+  ],
+  "exit": {
+    "position": [
+      1168,
+      592
+    ],
+    "radius": 64
+  },
+  "hazards": [
+    {
+      "id": 0,
+      "type": "PULSE",
+      "a": [
+        352,
+        448
+      ],
+      "radius": 48,
+      "phase_offset": 0
+    },
+    {
+      "id": 1,
+      "type": "SWEEP",
+      "a": [
+        688,
+        432
+      ],
+      "b": [
+        688,
+        600
+      ],
+      "travel": [
+        96,
+        0
+      ],
+      "phase_offset": 90
+    }
+  ],
+  "background_asset": "dock_background",
+  "objectives": [
+    {
+      "id": 0,
+      "hint": "Dwie trasy: lewy zaczep omija puls, \u015brodkowy skraca doj\u015bcie. Wybierzcie wsp\u00f3lnie.",
+      "stabilization": [
+        [
+          [
+            176,
+            208
+          ],
+          [
+            624,
+            448
+          ]
+        ]
+      ]
+    },
+    {
+      "id": 1,
+      "hint": "Nowa przegroda: p\u00f3\u0142nocny dron prowadzi pionowe rami\u0119, wschodni poziome.",
+      "stabilization": [
+        [
+          [
+            752,
+            144
+          ],
+          [
+            1040,
+            288
+          ]
+        ]
+      ]
+    },
+    {
+      "id": 2,
+      "hint": "Od\u0142\u0105czcie zaczep. Po 150 oboje obr\u00f3\u0107cie ustawienie i przywr\u00f3\u0107cie przew\u00f3d.",
+      "stabilization": [
+        [
+          [
+            848,
+            528
+          ],
+          [
+            1168,
+            528
+          ]
+        ],
+        [
+          [
+            944,
+            432
+          ],
+          [
+            1136,
+            624
+          ]
+        ]
+      ]
+    }
+  ],
+  "obstacles": []
+}

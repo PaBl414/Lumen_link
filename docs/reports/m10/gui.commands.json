@@ -1,0 +1,31 @@
+[
+  {
+    "command": [
+      "/home/pablo/.local/bin/godot",
+      "--path",
+      ".",
+      "--display-driver",
+      "x11",
+      "--max-fps",
+      "60",
+      "/tmp/m10_gui_harness.tscn",
+      "--",
+      "--host"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "/home/pablo/.local/bin/godot",
+      "--path",
+      ".",
+      "--display-driver",
+      "x11",
+      "--max-fps",
+      "60",
+      "/tmp/m10_gui_harness.tscn",
+      "--"
+    ],
+    "exit_code": 0
+  }
+]

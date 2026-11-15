@@ -1,0 +1,44 @@
+[
+  {
+    "command": [
+      "/home/pablo/.local/bin/godot",
+      "--path",
+      ".",
+      "--display-driver",
+      "x11",
+      "--disable-vsync",
+      "--max-fps",
+      "30"
+    ],
+    "exit_code": 0,
+    "events": "Focus, F2, W/I movement, Space/Shift dash, Escape menu, Enter Exit"
+  },
+  {
+    "command": [
+      "/home/pablo/.local/bin/godot",
+      "--path",
+      ".",
+      "--display-driver",
+      "x11",
+      "--disable-vsync",
+      "--max-fps",
+      "60"
+    ],
+    "exit_code": 0,
+    "events": "Focus, F2, W/I movement, Space/Shift dash, Escape menu, Enter Exit"
+  },
+  {
+    "command": [
+      "/home/pablo/.local/bin/godot",
+      "--path",
+      ".",
+      "--display-driver",
+      "x11",
+      "--disable-vsync",
+      "--max-fps",
+      "120"
+    ],
+    "exit_code": 0,
+    "events": "Focus, F2, W/I movement, Space/Shift dash, Escape menu, Enter Exit"
+  }
+]

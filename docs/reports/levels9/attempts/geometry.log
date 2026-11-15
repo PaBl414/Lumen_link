@@ -1,0 +1,46 @@
+Godot Engine v4.5.2.stable.official.6ce3de25a - https://godotengine.org
+
+res://ui/level_select_presenter.gd true
+res://app/app_root.gd true
+res://presentation/world_view.gd true
+dock goal 0 [[112.0, 440.0], [304.0, 440.0]] status=0 length=192.0 beacon=true
+dock goal 1 [[384.0, 192.0], [904.0, 320.0]] status=0 length=648.0 beacon=true
+dock goal 2 [[896.0, 552.0], [1120.0, 552.0]] status=0 length=224.0 beacon=true
+garden goal 0 [[112.0, 256.0], [400.0, 256.0]] status=0 length=288.0 beacon=true
+garden goal 0 [[160.0, 176.0], [352.0, 336.0]] status=0 length=249.927993774414 beacon=true
+garden goal 1 [[544.0, 224.0], [800.0, 448.0]] status=0 length=480.0 beacon=true
+garden goal 2 [[880.0, 224.0], [1104.0, 384.0]] status=0 length=384.0 beacon=true
+garden goal 2 [[776.0, 192.0], [944.0, 624.0]] status=0 length=583.597763061523 beacon=true
+reactor goal 0 [[208.0, 208.0], [448.0, 448.0]] status=0 length=480.0 beacon=true
+reactor goal 1 [[672.0, 160.0], [1008.0, 320.0]] status=0 length=496.0 beacon=true
+reactor goal 1 [[672.0, 480.0], [1168.0, 320.0]] status=0 length=656.0 beacon=true
+reactor goal 2 [[672.0, 480.0], [1056.0, 584.0]] status=0 length=625.995697021484 beacon=true
+reactor goal 2 [[768.0, 304.0], [1168.0, 512.0]] status=0 length=553.777435302734 beacon=true
+switchyard goal 0 [[176.0, 208.0], [624.0, 448.0]] status=0 length=569.617218017578 beacon=true
+switchyard goal 1 [[752.0, 144.0], [1040.0, 288.0]] status=0 length=432.0 beacon=true
+switchyard goal 2 [[848.0, 528.0], [1168.0, 528.0]] status=0 length=320.0 beacon=true
+switchyard goal 2 [[944.0, 432.0], [1136.0, 624.0]] status=0 length=271.528991699219 beacon=true
+service_channels goal 0 [[112.0, 240.0], [112.0, 560.0]] status=0 length=320.0 beacon=true
+service_channels goal 1 [[176.0, 208.0], [624.0, 528.0]] status=0 length=682.170288085938 beacon=true
+service_channels goal 2 [[1120.0, 144.0], [832.0, 528.0]] status=0 length=591.578643798828 beacon=true
+service_channels goal 2 [[1120.0, 304.0], [688.0, 576.0]] status=0 length=583.367980957031 beacon=true
+observatory goal 0 [[208.0, 240.0], [464.0, 240.0]] status=0 length=256.0 beacon=true
+observatory goal 1 [[656.0, 144.0], [1008.0, 240.0]] status=0 length=448.0 beacon=true
+observatory goal 2 [[720.0, 336.0], [1168.0, 600.0]] status=0 length=539.307861328125 beacon=true
+observatory goal 2 [[608.0, 248.0], [944.0, 600.0]] status=0 length=681.743774414062 beacon=true
+interference goal 0 [[208.0, 240.0], [464.0, 240.0]] status=0 length=256.0 beacon=true
+interference goal 1 [[592.0, 208.0], [976.0, 448.0]] status=0 length=624.0 beacon=true
+interference goal 2 [[928.0, 320.0], [1168.0, 528.0]] status=0 length=448.0 beacon=true
+interference goal 2 [[928.0, 144.0], [1040.0, 528.0]] status=0 length=496.0 beacon=true
+aux_core goal 0 [[144.0, 320.0], [464.0, 320.0]] status=0 length=320.0 beacon=true
+aux_core goal 0 [[304.0, 144.0], [304.0, 496.0]] status=0 length=352.0 beacon=true
+aux_core goal 1 [[624.0, 176.0], [1040.0, 384.0]] status=0 length=624.0 beacon=true
+aux_core goal 1 [[560.0, 256.0], [848.0, 624.0]] status=0 length=564.243194580078 beacon=true
+aux_core goal 2 [[912.0, 304.0], [1200.0, 448.0]] status=0 length=503.025421142578 beacon=true
+aux_core goal 2 [[848.0, 400.0], [1056.0, 624.0]] status=0 length=466.447143554688 beacon=true
+station_heart goal 0 [[208.0, 320.0], [384.0, 496.0]] status=0 length=352.0 beacon=true
+station_heart goal 0 [[144.0, 176.0], [384.0, 624.0]] status=0 length=583.885681152344 beacon=true
+station_heart goal 1 [[560.0, 320.0], [768.0, 592.0]] status=0 length=480.0 beacon=true
+station_heart goal 1 [[640.0, 384.0], [840.0, 608.0]] status=0 length=670.557022094727 beacon=true
+station_heart goal 2 [[944.0, 192.0], [1168.0, 416.0]] status=0 length=512.567031860352 beacon=true
+station_heart goal 2 [[784.0, 144.0], [1176.0, 560.0]] status=0 length=650.079772949219 beacon=true

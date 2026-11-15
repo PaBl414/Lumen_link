@@ -1,0 +1,54 @@
+[
+  {
+    "command": [
+      "/home/pablo/.local/bin/godot",
+      "--headless",
+      "--editor",
+      "--path",
+      ".",
+      "--import"
+    ],
+    "exit_code": 0,
+    "log": "import.log"
+  },
+  {
+    "command": [
+      "/home/pablo/.local/bin/godot",
+      "--headless",
+      "--path",
+      ".",
+      "--script",
+      "tests/test_runner.gd",
+      "--",
+      "--suite=all"
+    ],
+    "exit_code": 0,
+    "log": "all.log"
+  },
+  {
+    "command": [
+      "/home/pablo/.local/bin/godot",
+      "--headless",
+      "--path",
+      ".",
+      "--script",
+      "tests/test_runner.gd",
+      "--",
+      "--self-test-failure"
+    ],
+    "exit_code": 1,
+    "log": "self-failure.log"
+  },
+  {
+    "command": [
+      "/home/pablo/.local/bin/godot",
+      "--headless",
+      "--path",
+      ".",
+      "--script",
+      "tools/validate_content.gd"
+    ],
+    "exit_code": 0,
+    "log": "validator.log"
+  }
+]

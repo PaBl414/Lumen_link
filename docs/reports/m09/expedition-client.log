@@ -1,0 +1,13 @@
+Godot Engine v4.5.2.stable.official.6ce3de25a - https://godotengine.org
+
+EXPEDITION client PLAYING sector=0 tick=478 objective=0 charge=[201, 0, 0] players=(279.9452, 520.0869)/(415.9661, 519.9902) target=481 lead=3
+EXPEDITION client PLAYING sector=0 tick=1078 objective=1 charge=[300, 285, 0] players=(567.939, 232.0677)/(712.0491, 232.0867) target=1082 lead=3
+EXPEDITION client PLAYING sector=0 tick=1680 objective=3 charge=[300, 300, 300] players=(1052.15, 537.6577)/(1158.729, 559.3821) target=1683 lead=3
+EXPEDITION client PLAYING sector=1 tick=2264 objective=0 charge=[0, 0, 0] players=(935.9167, 517.9056)/(1083.178, 530.2096) target=2268 lead=3
+EXPEDITION client PLAYING sector=1 tick=2864 objective=1 charge=[45, 0, 300] players=(280.0903, 520.0882)/(415.9924, 519.9436) target=2868 lead=3
+EXPEDITION client PLAYING sector=1 tick=3466 objective=2 charge=[300, 127, 300] players=(567.9108, 232.0975)/(711.9429, 231.9738) target=3469 lead=3
+EXPEDITION client COUNTDOWN sector=2 tick=4050 objective=0 charge=[0, 0, 0] players=(112.0, 592.0)/(176.0, 592.0) target=3934 lead=4
+EXPEDITION client PLAYING sector=2 tick=4652 objective=0 charge=[0, 289, 0] players=(568.0303, 232.0713)/(711.9749, 232.0285) target=4655 lead=3
+EXPEDITION client PLAYING sector=2 tick=5254 objective=2 charge=[0, 300, 300] players=(935.9056, 518.0884)/(1079.902, 502.0768) target=5257 lead=3
+EXPEDITION client PLAYING sector=2 tick=5854 objective=3 charge=[300, 300, 300] players=(419.99, 545.2837)/(419.99, 543.4205) target=5857 lead=3
+{"application_sizes":[96,96,96,96,30,96,96,96,96,96,34,96,96,96,96,96,96,96,96,96,96,30,96,96,96,96,96,34,96,96,96,96,96,96,96,96,96,96,96,30,96,96,96,96,96,34,96,96,96,96,96,96,96,96,96,96,30,96,96,96,96,96,34,96,96,96,96,96,96,96,96,96,96,96,30,96,96,96,96,96,34,96,96,96,96,96,96,96,96,96,96,30,96,96,96,96,96,34,96,96,96,96,96,96,96,96,96,96,30,96,96,96,96,96,96,34,96,96,96,96,96,96,96,96,96,96,30,96],"begin_tick":3934,"begins":3,"client_has_simulation":false,"content_hash":"2e740732b7ec30b8b61df9823d9765b4fdadac35141660f178f9c33965abb158","integrity":4,"match_id":90799689,"ok":true,"score":17620,"sector":2,"session_id":1796361295,"tick":6277}

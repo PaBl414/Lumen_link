@@ -1,0 +1,36 @@
+extends Node
+var app: Node
+var role: String
+var report: String
+var deadline: int
+var completed: int = 0
+func _ready() -> void: start.call_deferred()
+func start() -> void:
+	role = "host" if "--host" in OS.get_cmdline_user_args() else "client"
+	DisplayServer.window_set_title("LUMEN LINK "+role.to_upper()+" M08")
+	app = load("res://scenes/app.tscn").instantiate(); add_child(app)
+	await get_tree().process_frame
+	app._open_lan()
+	if "--menu" in OS.get_cmdline_user_args():
+		completed = Time.get_ticks_msec(); deadline = completed+35000
+		return
+	app.lan_session.failed.connect(func(code: int,message: String) -> void: print("GUI session error %d %s" % [code,message]))
+	if role=="host": app._lan_intent(&"host",{"port":23991,"name":"HostGUI","room":"Pokój GUI","seed":0,"difficulty":0})
+	else: app._lan_intent(&"join",{"ip":"127.0.0.1","port":23991,"name":"ClientGUI"})
+	deadline = Time.get_ticks_msec()+35000
+func _process(_delta: float) -> void:
+	if app == null or deadline == 0: return
+	if app.lan_session.state=="LOBBY" and app.lan_session.approved:
+		var slot: int = 0 if role=="host" else 1
+		if (app.lan_session.lobby.ready_mask & (1<<slot))==0: app._lan_intent(&"ready",{})
+		if role=="host" and app.lan_session.lobby.can_start(): app._lan_intent(&"start",{})
+	if app.lan_session.state=="PLAYING":
+		if completed==0:
+			completed = Time.get_ticks_msec(); print("GUI PLAYING "+role)
+		if Time.get_ticks_msec()-completed>60000:
+			app.shutdown()
+	if completed>0 and Time.get_ticks_msec()-completed>22000 and Time.get_ticks_msec()-completed<22100:
+		print("GUI STATE "+role+" "+str(app.lan_session.snapshot.players[0].position)+" "+str(app.lan_session.snapshot.players[1].position)+" paused="+str(app.lan_paused))
+	if completed>0 and Time.get_ticks_msec()-completed>60000: app.shutdown()
+	if Time.get_ticks_msec()>deadline and completed==0: print("GUI FAILED "+role+": "+app.lan_session.state); app.shutdown()
+	return

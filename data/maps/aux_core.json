@@ -1,0 +1,345 @@
+{
+  "schema_version": 3,
+  "id": "aux_core",
+  "bounds": [
+    32,
+    88,
+    1216,
+    600
+  ],
+  "spawns": [
+    [
+      112,
+      592
+    ],
+    [
+      176,
+      592
+    ]
+  ],
+  "walls": [
+    {
+      "id": 0,
+      "rect": [
+        448,
+        136,
+        48,
+        112
+      ]
+    },
+    {
+      "id": 1,
+      "rect": [
+        696,
+        144,
+        144,
+        192
+      ]
+    },
+    {
+      "id": 2,
+      "rect": [
+        976,
+        224,
+        80,
+        64
+      ]
+    },
+    {
+      "id": 3,
+      "rect": [
+        512,
+        432,
+        112,
+        48
+      ]
+    },
+    {
+      "id": 4,
+      "rect": [
+        752,
+        536,
+        64,
+        32
+      ]
+    },
+    {
+      "id": 5,
+      "rect": [
+        1136,
+        160,
+        48,
+        112
+      ]
+    }
+  ],
+  "beacons": [
+    {
+      "id": 0,
+      "position": [
+        304,
+        320
+      ]
+    },
+    {
+      "id": 1,
+      "position": [
+        784,
+        400
+      ]
+    },
+    {
+      "id": 2,
+      "position": [
+        1056,
+        480
+      ]
+    }
+  ],
+  "sockets": [
+    {
+      "id": 0,
+      "position": [
+        624,
+        384
+      ]
+    },
+    {
+      "id": 1,
+      "position": [
+        912,
+        512
+      ]
+    },
+    {
+      "id": 2,
+      "position": [
+        1056,
+        368
+      ]
+    }
+  ],
+  "exit": {
+    "position": [
+      1168,
+      592
+    ],
+    "radius": 64
+  },
+  "hazards": [
+    {
+      "id": 0,
+      "type": "PULSE",
+      "a": [
+        624,
+        176
+      ],
+      "radius": 48,
+      "phase_offset": 0
+    },
+    {
+      "id": 1,
+      "type": "PULSE",
+      "a": [
+        1040,
+        384
+      ],
+      "radius": 48,
+      "phase_offset": 30
+    },
+    {
+      "id": 2,
+      "type": "PULSE",
+      "a": [
+        848,
+        624
+      ],
+      "radius": 48,
+      "phase_offset": 90
+    },
+    {
+      "id": 3,
+      "type": "SWEEP",
+      "a": [
+        880,
+        432
+      ],
+      "b": [
+        880,
+        600
+      ],
+      "travel": [
+        144,
+        0
+      ],
+      "phase_offset": 60
+    }
+  ],
+  "background_asset": "reactor_background",
+  "objectives": [
+    {
+      "id": 0,
+      "hint": "Po 150 obr\u00f3\u0107cie przew\u00f3d z poziomego w pionowy. Sprawd\u017acie zapowied\u017a strefy przy dolnym polu.",
+      "stabilization": [
+        [
+          [
+            144,
+            320
+          ],
+          [
+            464,
+            320
+          ]
+        ],
+        [
+          [
+            304,
+            144
+          ],
+          [
+            304,
+            496
+          ]
+        ]
+      ]
+    },
+    {
+      "id": 1,
+      "hint": "Najpierw \u015brodkowy zaczep. Po 150 zmie\u0144cie go na dolny; wycofajcie si\u0119 z pulsu i odtw\u00f3rzcie ramiona.",
+      "stabilization": [
+        [
+          [
+            624,
+            176
+          ],
+          [
+            1040,
+            384
+          ]
+        ],
+        [
+          [
+            560,
+            256
+          ],
+          [
+            848,
+            624
+          ]
+        ]
+      ]
+    },
+    {
+      "id": 2,
+      "hint": "Kr\u00f3tka droga przecina ruchom\u0105 barier\u0119. Zachowajcie 150, potem prze\u0142\u0105czcie dolny zaczep na g\u00f3rny.",
+      "stabilization": [
+        [
+          [
+            912,
+            304
+          ],
+          [
+            1200,
+            448
+          ]
+        ],
+        [
+          [
+            848,
+            400
+          ],
+          [
+            1056,
+            624
+          ]
+        ]
+      ]
+    }
+  ],
+  "obstacles": [
+    {
+      "id": 0,
+      "type": "SHUTTER",
+      "rect": [
+        272,
+        272,
+        64,
+        24
+      ],
+      "normal": [
+        360,
+        90,
+        60
+      ],
+      "relaxed": [
+        420,
+        120,
+        45
+      ],
+      "phase_offset": 0
+    },
+    {
+      "id": 1,
+      "type": "JAM",
+      "rect": [
+        256,
+        448,
+        96,
+        96
+      ],
+      "normal": [
+        360,
+        90,
+        60
+      ],
+      "relaxed": [
+        420,
+        120,
+        45
+      ],
+      "phase_offset": 0
+    },
+    {
+      "id": 2,
+      "type": "JAM",
+      "rect": [
+        888,
+        256,
+        64,
+        96
+      ],
+      "normal": [
+        360,
+        90,
+        60
+      ],
+      "relaxed": [
+        420,
+        120,
+        45
+      ],
+      "phase_offset": 120
+    },
+    {
+      "id": 3,
+      "type": "SHUTTER",
+      "rect": [
+        1040,
+        432,
+        32,
+        96
+      ],
+      "normal": [
+        390,
+        90,
+        60
+      ],
+      "relaxed": [
+        480,
+        120,
+        45
+      ],
+      "phase_offset": 0
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "suite_summary": {
+    "passed": 427,
+    "failed": 0,
+    "skipped": 0,
+    "suite_count": 14,
+    "exit_code": 0
+  },
+  "expected_negative_bind_error": [
+    "ERROR: Couldn't create an ENet host."
+  ],
+  "process-host": {
+    "ok": true,
+    "session_id": 1179871261,
+    "match_id": 4071039650,
+    "content_hash": "7b95f1fb75c497b4528fb455f66596c43473670f3831d01acd08ff3533bc2096"
+  },
+  "process-client": {
+    "ok": true,
+    "session_id": 1179871261,
+    "match_id": 4071039650,
+    "content_hash": "7b95f1fb75c497b4528fb455f66596c43473670f3831d01acd08ff3533bc2096"
+  },
+  "export-host": {
+    "ok": true,
+    "session_id": 595001711,
+    "match_id": 501798369,
+    "content_hash": "7b95f1fb75c497b4528fb455f66596c43473670f3831d01acd08ff3533bc2096"
+  },
+  "export-client": {
+    "ok": true,
+    "session_id": 595001711,
+    "match_id": 501798369,
+    "content_hash": "7b95f1fb75c497b4528fb455f66596c43473670f3831d01acd08ff3533bc2096"
+  },
+  "datagram_measurement": {
+    "commands": [
+      [
+        "/home/pablo/.local/bin/godot",
+        "--headless",
+        "--path",
+        "/home/pablo/lan_game",
+        "tests/integration/network_harness.tscn",
+        "--",
+        "--role=host",
+        "--port=22991",
+        "--report=/home/pablo/lan_game/docs/reports/m07/process-host.json"
+      ],
+      [
+        "/home/pablo/.local/bin/godot",
+        "--headless",
+        "--path",
+        "/home/pablo/lan_game",
+        "tests/integration/network_harness.tscn",
+        "--",
+        "--role=client",
+        "--port=22992",
+        "--report=/home/pablo/lan_game/docs/reports/m07/process-client.json"
+      ]
+    ],
+    "exit_codes": [
+      0,
+      0
+    ],
+    "udp_datagrams": 152,
+    "max_udp_payload": 145,
+    "udp_payload_sizes": [
+      8,
+      10,
+      16,
+      18,
+      26,
+      38,
+      41,
+      45,
+      47,
+      48,
+      52,
+      63,
+      66,
+      73,
+      127,
+      140,
+      145
+    ],
+    "enet_command_types": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      10
+    ],
+    "enet_fragment_commands": 0,
+    "enet_parse_errors": 0,
+    "loopback_mtu": 65536,
+    "measurement": "Transparent loopback UDP relay; actual ENet datagrams, including Godot/ENet overhead; IPv4 overhead adds 28 bytes."
+  },
+  "manifest": {
+    "build_label": "M06-M07-dev",
+    "code_revision": "unversioned",
+    "content_sha256": "7b95f1fb75c497b4528fb455f66596c43473670f3831d01acd08ff3533bc2096",
+    "engine_build_id": "6ce3de25aa58466e14ef354703ba8d9791a417da",
+    "engine_version": "4.5.2",
+    "protocol": 1,
+    "schema_version": 1
+  },
+  "export_artifacts": {
+    "/home/pablo/.local/share/lumen-tools/m06-smoke/lumen_smoke.x86_64": {
+      "bytes": 71375096,
+      "sha256": "394d88ea9f1703af93f48799d2fbc6c667ec3cfadc36c5b54b2288067367ff83"
+    },
+    "/home/pablo/.local/share/lumen-tools/m06-smoke/lumen_smoke.pck": {
+      "bytes": 210284,
+      "sha256": "ef23b3375321416055422a09664abe7a8b4b97be8307d0cee3b08bd0b4a0286f"
+    },
+    "/home/pablo/.local/share/lumen-tools/m06-smoke/lumen_smoke.sh": {
+      "bytes": 126,
+      "sha256": "c7d873ff0c93c88ae774abab8d157a075cff576cae1102279ab10c25266e5d5e"
+    }
+  }
+}

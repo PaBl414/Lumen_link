@@ -1,0 +1,14 @@
+Godot Engine v4.5.2.stable.official.6ce3de25a - https://godotengine.org
+
+EXPEDITION host PLAYING sector=0 tick=420 objective=0 charge=[162, 0, 0] players=(295.9214, 464.0711)/(403.928, 576.0484) target=0 lead=2
+EXPEDITION host PLAYING sector=0 tick=1020 objective=1 charge=[300, 264, 0] players=(639.928, 152.0777)/(635.9372, 392.0633) target=0 lead=2
+EXPEDITION host PLAYING sector=0 tick=1621 objective=3 charge=[300, 300, 300] players=(1143.941, 573.8722)/(1187.955, 591.9437) target=0 lead=2
+EXPEDITION host PLAYING sector=1 tick=2213 objective=0 charge=[0, 0, 26] players=(959.9374, 432.0723)/(1111.937, 432.2928) target=0 lead=2
+EXPEDITION host PLAYING sector=1 tick=2814 objective=1 charge=[19, 0, 300] players=(272.0747, 376.0656)/(424.0372, 378.5197) target=0 lead=2
+EXPEDITION host PLAYING sector=1 tick=3415 objective=2 charge=[300, 57, 300] players=(615.9463, 191.9249)/(751.9595, 256.1609) target=0 lead=2
+EXPEDITION host PLAYING sector=1 tick=4016 objective=3 charge=[300, 300, 300] players=(1143.967, 591.9462)/(1183.967, 592.1472) target=0 lead=2
+EXPEDITION host PLAYING sector=2 tick=4609 objective=0 charge=[0, 18, 0] players=(727.9734, 183.9292)/(835.9401, 294.3802) target=0 lead=2
+EXPEDITION host PLAYING sector=2 tick=5210 objective=1 charge=[0, 300, 20] players=(928.4688, 483.0087)/(1084.058, 519.9525) target=0 lead=2
+EXPEDITION host PLAYING sector=2 tick=5811 objective=2 charge=[49, 300, 300] players=(232.0741, 336.0699)/(340.0637, 448.0725) target=0 lead=2
+EXPEDITION host PLAYING sector=2 tick=6412 objective=3 charge=[300, 300, 300] players=(1129.581, 583.9302)/(1187.949, 591.9523) target=0 lead=2
+{"application_sizes":[129,30,129,129,129,129,129,129,129,129,129,129,129,129,129,129,129,34,30,129,129,129,129,129,129,129,129,129,129,129,129,129,129,129,34,129,30,129,129,129,129,129,129,129,129,129,129,129,129,129,129,129,34,30,129,129,129,129,129,129,129,129,129,129,129,129,129,129,129,34,30,129,129,129,129,129,129,129,129,129,129,129,129,129,129,129,129,34,30,129,129,129,129,129,129,129,129,129,129,129,129,129,129,129,34,30,129,129,129,129,129,129,129,129,129,129,129,129,129,129,129,34,129,30,129,129,44,134],"begin_tick":4046,"begins":3,"client_has_simulation":false,"content_hash":"e62f8ce5deeab6dc077ea0c37b23a34bd20f10a6445bf913ec0820717fccdf57","integrity":9,"match_id":832513910,"ok":true,"score":20590,"sector":2,"session_id":3471253858,"tick":6525}

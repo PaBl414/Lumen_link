@@ -1,0 +1,11 @@
+Godot Engine v4.5.2.stable.official.6ce3de25a - https://godotengine.org
+
+SCRIPT ERROR: Parse Error: Expected parameter name.
+          at: GDScript::reload (res://tests/integration/test_boot.gd:2)
+          GDScript backtrace (most recent call first):
+              [0] _run (res://tests/test_runner.gd:37)
+ERROR: Failed to load script "res://tests/integration/test_boot.gd" with error "Parse error".
+   at: load (modules/gdscript/gdscript.cpp:3041)
+   GDScript backtrace (most recent call first):
+       [0] _run (res://tests/test_runner.gd:37)
+{"cases":[{"detail":"expected true","name":"Suite failed to load: res://tests/integration/test_boot.gd","status":"FAIL"}],"duration_ms":2,"exit_code":1,"failed":1,"passed":0,"skipped":0,"suite":"integration","suite_count":1}

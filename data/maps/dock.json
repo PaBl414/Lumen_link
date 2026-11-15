@@ -1,0 +1,147 @@
+{
+  "schema_version": 2,
+  "id": "dock",
+  "bounds": [
+    32,
+    88,
+    1216,
+    600
+  ],
+  "spawns": [
+    [
+      112,
+      592
+    ],
+    [
+      176,
+      592
+    ]
+  ],
+  "walls": [
+    {
+      "id": 0,
+      "rect": [
+        344,
+        296,
+        24,
+        184
+      ]
+    },
+    {
+      "id": 1,
+      "rect": [
+        400,
+        272,
+        32,
+        24
+      ]
+    },
+    {
+      "id": 2,
+      "rect": [
+        432,
+        180,
+        392,
+        132
+      ]
+    },
+    {
+      "id": 3,
+      "rect": [
+        368,
+        344,
+        64,
+        136
+      ]
+    },
+    {
+      "id": 4,
+      "rect": [
+        432,
+        328,
+        392,
+        152
+      ]
+    }
+  ],
+  "beacons": [
+    {
+      "id": 0,
+      "position": [
+        208,
+        440
+      ]
+    },
+    {
+      "id": 1,
+      "position": [
+        416,
+        320
+      ]
+    },
+    {
+      "id": 2,
+      "position": [
+        992,
+        552
+      ]
+    }
+  ],
+  "sockets": [
+    {
+      "id": 0,
+      "position": [
+        384,
+        320
+      ]
+    }
+  ],
+  "exit": {
+    "position": [
+      1168,
+      592
+    ],
+    "radius": 64
+  },
+  "hazards": [
+    {
+      "id": 0,
+      "type": "PULSE",
+      "a": [
+        896,
+        552
+      ],
+      "radius": 48,
+      "phase_offset": 0
+    }
+  ],
+  "background_asset": "dock_background",
+  "objectives": [
+    {
+      "id": 0,
+      "hint": "Ustawcie si\u0119 po obu stronach celu. Jasny przew\u00f3d \u0142aduje cel przez 5 s.",
+      "stabilization": []
+    },
+    {
+      "id": 1,
+      "hint": "Zaczep przy naro\u017cniku: jeden dron nad kana\u0142em, drugi po jego prawej stronie. Limit przewodu 720.",
+      "stabilization": []
+    },
+    {
+      "id": 2,
+      "hint": "Od\u0142\u0105czcie poprzedni zaczep. Zajmijcie r\u00f3\u017cne pola; wycofajcie si\u0119 przed czerwonym pulsem i wr\u00f3\u0107cie.",
+      "stabilization": [
+        [
+          [
+            896,
+            552
+          ],
+          [
+            1120,
+            552
+          ]
+        ]
+      ]
+    }
+  ]
+}

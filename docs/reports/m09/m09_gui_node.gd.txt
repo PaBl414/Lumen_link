@@ -1,0 +1,49 @@
+extends Node
+var app: Node
+var role: String
+var report: String
+var deadline: int
+var completed: int = 0
+var ready_sent: bool = false
+func _ready() -> void: start.call_deferred()
+func start() -> void:
+	role = "host" if "--host" in OS.get_cmdline_user_args() else "client"
+	DisplayServer.window_set_title("LUMEN LINK "+role.to_upper()+" M09")
+	app = load("res://scenes/app.tscn").instantiate(); add_child(app)
+	await get_tree().process_frame
+	app._open_lan()
+	if "--menu" in OS.get_cmdline_user_args():
+		completed = Time.get_ticks_msec(); deadline = completed+35000
+		return
+	app.lan_session.failed.connect(func(code: int,message: String) -> void: print("GUI session error %d %s" % [code,message]))
+	if role=="host": app._lan_intent(&"host",{"port":23991,"name":"HostGUI","room":"Pokój GUI","seed":0,"difficulty":0})
+	else: app._lan_intent(&"join",{"ip":"127.0.0.1","port":23991,"name":"ClientGUI"})
+	app.lan_session.transport.packet.disconnect(app.lan_session._packet)
+	app.lan_session.transport.packet.connect(_trace)
+	app.lan_session.transport.packet.connect(app.lan_session._packet)
+	deadline = Time.get_ticks_msec()+35000
+func _trace(_id: int,bytes: PackedByteArray) -> void:
+	var decoded: GameTypes.Result = preload("res://net/packet_codec.gd").new().decode(bytes)
+	if not decoded.ok: print("TRACE decode ",decoded.message); return
+	var msg: RefCounted = decoded.value
+	if role=="host" and msg.type==9 and app.lan_session.simulation != null:
+		for command: InputCommand in msg.payload.commands:
+			if command.tick>app.lan_session.simulation.world.tick+12: print("TRACE future ",command.tick," host ",app.lan_session.simulation.world.tick)
+	if msg.type in [5,7,9] and app.lan_session.state not in ["LOBBY","LOADING","COUNTDOWN","PLAYING"]: print("TRACE state ",msg.type," ",app.lan_session.state)
+func _process(_delta: float) -> void:
+	if app == null or deadline == 0: return
+	if app.lan_session.state=="LOBBY" and app.lan_session.approved:
+		var slot: int = 0 if role=="host" else 1
+		if not ready_sent and app.lan_session.lobby.names[1] != "":
+			ready_sent = true; app._lan_intent(&"ready",{})
+		if role=="host" and app.lan_session.lobby.can_start(): app._lan_intent(&"start",{})
+	if app.lan_session.state=="PLAYING":
+		if completed==0:
+			completed = Time.get_ticks_msec(); print("GUI PLAYING "+role)
+		if Time.get_ticks_msec()-completed>60000:
+			app.shutdown()
+	if completed>0 and Time.get_ticks_msec()-completed>22000 and Time.get_ticks_msec()-completed<22100:
+		print("GUI STATE "+role+" "+str(app.lan_session.snapshot.players[0].position)+" "+str(app.lan_session.snapshot.players[1].position)+" paused="+str(app.lan_paused))
+	if completed>0 and Time.get_ticks_msec()-completed>60000: app.shutdown()
+	if Time.get_ticks_msec()>deadline and completed==0: print("GUI FAILED "+role+": "+app.lan_session.state); app.shutdown()
+	return

@@ -1,0 +1,15 @@
+import subprocess,time,os,json
+from pathlib import Path
+root=Path('/home/pablo/lan_game');out=root/'docs/reports/m11';artifact=Path('/home/pablo/.local/share/lumen-tools/m11-smoke')
+log=open(out/'export-native.log','w');cmd=[str(artifact/'lumen_smoke.x86_64'),'--display-driver','x11','--max-fps','60'];p=subprocess.Popen(cmd,cwd=artifact,stdout=log,stderr=subprocess.STDOUT)
+env=dict(os.environ,LUMEN_TITLE='LUMEN LINK',ROLE='host')
+def action(*args):subprocess.run(['python3','/tmp/m11_capture.py',*args],env=env,check=True,stdout=subprocess.DEVNULL)
+try:
+ original=(out/'gui-host.png').read_bytes() if (out/'gui-host.png').exists() else None
+ time.sleep(7);action('focus');action('key','F2','down');action('key','F2','up');time.sleep(6);action('capture');(out/'gui-host.png').replace(out/'export-native.png');
+ if original:(out/'gui-host.png').write_bytes(original)
+ action('close');code=p.wait(timeout=10)
+finally:
+ if p.poll() is None:p.terminate();p.wait()
+ log.close()
+(out/'export-native.commands.json').write_text(json.dumps({'command':cmd,'exit_code':code},indent=2));print(code)

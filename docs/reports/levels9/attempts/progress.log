@@ -1,0 +1,24 @@
+Godot Engine v4.5.2.stable.official.6ce3de25a - https://godotengine.org
+
+ERROR: Parse JSON failed. Error at line 0: Expected 'true', 'false', or 'null', got 'broken'
+   at: parse_string (core/io/json.cpp:604)
+   GDScript backtrace (most recent call first):
+       [0] _read (res://services/progress_store.gd:35)
+       [1] load_progress (res://services/progress_store.gd:38)
+       [2] run (res://tests/unit/test_progress.gd:19)
+       [3] _initialize (/tmp/levels9_progress.gd:3)
+ERROR: Parse JSON failed. Error at line 0: Expected 'true', 'false', or 'null', got 'broken'
+   at: parse_string (core/io/json.cpp:604)
+   GDScript backtrace (most recent call first):
+       [0] _read (res://services/progress_store.gd:35)
+       [1] save (res://services/progress_store.gd:79)
+       [2] run (res://tests/unit/test_progress.gd:22)
+       [3] _initialize (/tmp/levels9_progress.gd:3)
+ERROR: Parse JSON failed. Error at line 0: Expected 'true', 'false', or 'null', got 'broken'
+   at: parse_string (core/io/json.cpp:604)
+   GDScript backtrace (most recent call first):
+       [0] _read (res://services/progress_store.gd:35)
+       [1] load_progress (res://services/progress_store.gd:38)
+       [2] run (res://tests/unit/test_progress.gd:36)
+       [3] _initialize (/tmp/levels9_progress.gd:3)
+{"cases":[{"detail":"","name":"P9 ordered catalog has nine unique stable IDs","status":"PASS"},{"detail":"","name":"P9 first unlocked","status":"PASS"},{"detail":"","name":"P9 later locked","status":"PASS"},{"detail":"","name":"P9 reset requires confirmation","status":"PASS"},{"detail":"","name":"P9 atomic first completion","status":"PASS"},{"detail":"","name":"P9 unlock next and continue","status":"PASS"},{"detail":"","name":"P9 score and time independent best","status":"PASS"},{"detail":"","name":"P9 difficulty records separate","status":"PASS"},{"detail":"","name":"P9 restart restores stable completion","status":"PASS"},{"detail":"","name":"P9 corrupt primary recovers backup","status":"PASS"},{"detail":"","name":"P9 recovery never corrupts valid backup","status":"PASS"},{"detail":"","name":"P9 recovered data saves again","status":"PASS"},{"detail":"","name":"P9 reordered catalog retains ID records","status":"PASS"},{"detail":"","name":"P9 continue follows new order","status":"PASS"},{"detail":"","name":"P9 guest completion unlocks successor","status":"PASS"},{"detail":"","name":"P9 guest never fabricates earlier history","status":"PASS"},{"detail":"","name":"P9 disk failure reported","status":"PASS"},{"detail":"","name":"P9 disk failure preserves memory","status":"PASS"},{"detail":"","name":"P9 confirmed reset","status":"PASS"},{"detail":"","name":"P9 reset survives restart","status":"PASS"},{"detail":"","name":"P9 reset clears recoverable backup too","status":"PASS"},{"detail":"","name":"P9 future version is not overwritten","status":"PASS"},{"detail":"","name":"P9 unknown version preserved byte for byte","status":"PASS"},{"detail":"","name":"P9 duplicate IDs rejected","status":"PASS"},{"detail":"","name":"P9 nonfinite record rejected","status":"PASS"},{"detail":"","name":"progress suite completes","status":"PASS"}],"duration_ms":298,"failed":0,"passed":26,"skipped":0}

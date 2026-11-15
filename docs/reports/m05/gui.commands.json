@@ -1,0 +1,28 @@
+[
+  {
+    "command": [
+      "/home/pablo/.local/bin/godot",
+      "--path",
+      ".",
+      "--display-driver",
+      "x11"
+    ],
+    "exit_code": 0,
+    "events": "focus, F2 press/release, wait countdown, Escape, Enter press/release",
+    "log": "gui.log"
+  },
+  {
+    "command": [
+      "/home/pablo/.local/bin/godot",
+      "--path",
+      ".",
+      "--display-driver",
+      "x11",
+      "--script",
+      "/tmp/m05_render_harness.gd"
+    ],
+    "exit_code": 0,
+    "harness_source": "gui_results_harness.gd.txt",
+    "log": "gui-results-final.log"
+  }
+]

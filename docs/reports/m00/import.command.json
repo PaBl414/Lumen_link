@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/home/pablo/.local/bin/godot",
+    "--headless",
+    "--editor",
+    "--path",
+    ".",
+    "--import"
+  ],
+  "exit_code": 0
+}

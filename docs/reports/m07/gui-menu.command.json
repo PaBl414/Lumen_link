@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/home/pablo/.local/bin/godot",
+    "--path",
+    ".",
+    "--display-driver",
+    "x11",
+    "/tmp/m07_gui_harness.tscn",
+    "--",
+    "--menu"
+  ],
+  "exit_code": 0,
+  "capture_exit_code": 0
+}

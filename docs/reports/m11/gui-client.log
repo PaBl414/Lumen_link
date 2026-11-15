@@ -1,0 +1,48 @@
+Godot Engine v4.5.2.stable.official.6ce3de25a - https://godotengine.org
+OpenGL API 4.6 (Core Profile) Mesa 26.2.6-arch3.1 - Compatibility - Using Device: Intel - Mesa Intel(R) HD Graphics 520 (SKL GT2)
+
+PHASE client IDLE 5389
+PHASE client CONNECTING 5390
+MONITOR client CONNECTING tick=-1 age=5411 warming=false
+PHASE client LOBBY 5527
+PHASE client LOADING 5606
+PHASE client COUNTDOWN 6024
+MONITOR client COUNTDOWN tick=32 age=2 warming=false
+MONITOR client COUNTDOWN tick=90 age=43 warming=false
+MONITOR client COUNTDOWN tick=154 age=10 warming=false
+PHASE client PLAYING 8920
+PHASE client PLAYING 8972
+GUI PLAYING client
+MONITOR client PLAYING tick=210 age=73 warming=false
+MONITOR client PLAYING tick=274 age=10 warming=false
+MONITOR client PLAYING tick=332 age=28 warming=false
+MONITOR client PLAYING tick=394 age=8 warming=false
+MONITOR client PLAYING tick=454 age=32 warming=false
+MONITOR client PLAYING tick=516 age=15 warming=false
+MONITOR client PLAYING tick=578 age=8 warming=false
+MONITOR client PLAYING tick=636 age=64 warming=false
+MONITOR client PLAYING tick=702 age=8 warming=false
+MONITOR client PLAYING tick=762 age=12 warming=false
+MONITOR client PLAYING tick=824 age=13 warming=false
+MONITOR client PLAYING tick=882 age=12 warming=false
+MONITOR client PLAYING tick=946 age=14 warming=false
+MONITOR client PLAYING tick=1002 age=32 warming=false
+MONITOR client PLAYING tick=1066 age=20 warming=false
+MONITOR client PLAYING tick=1124 age=32 warming=false
+MONITOR client PLAYING tick=1188 age=7 warming=false
+MONITOR client PLAYING tick=1250 age=9 warming=false
+MONITOR client PLAYING tick=1306 age=18 warming=false
+MONITOR client PLAYING tick=1372 age=7 warming=false
+MONITOR client PLAYING tick=1432 age=19 warming=false
+MONITOR client PLAYING tick=1492 age=7 warming=false
+GUI STATE client (768.0, 592.0) (758.0, 592.0) paused=false
+GUI STATE client (768.0, 592.0) (758.0, 592.0) paused=false
+GUI STATE client (768.0, 592.0) (758.0, 592.0) paused=false
+MONITOR client PLAYING tick=1554 age=5 warming=false
+MONITOR client PLAYING tick=1616 age=5 warming=false
+MONITOR client PLAYING tick=1676 age=4 warming=false
+PHASE client IDLE 34317
+GUI session error 8 Partner opuścił grę.
+MONITOR client IDLE tick=-1 age=625 warming=false
+PHASE client IDLE 35224
+PHASE client IDLE 35245

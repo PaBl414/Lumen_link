@@ -1,0 +1,30 @@
+import subprocess,time,json
+from pathlib import Path
+import argparse
+args=argparse.ArgumentParser();args.add_argument('--difficulty',type=int,default=0);difficulty=args.parse_args().difficulty
+root=Path('/home/pablo/lan_game');out=root/'docs/reports/m11c'/('lan-normal' if difficulty==0 else 'lan-relaxed');out.mkdir(exist_ok=True);godot='/home/pablo/.local/bin/godot';processes=[];commands=[]
+try:
+ for role in ['host','client']:
+  report=out/f'expedition-{role}.json';report.unlink(missing_ok=True)
+  cmd=[godot,'--headless','--path',str(root),'tests/integration/network_harness.tscn','--',f'--role={role}',f'--port={28301+100*difficulty}','--scenario=expedition',f'--difficulty={difficulty}','--seed=0',f'--report={report}']
+  log=open(out/f'expedition-{role}.log','w');p=subprocess.Popen(cmd,stdout=log,stderr=subprocess.STDOUT,cwd=root);processes.append((p,log,report));commands.append(cmd)
+  if role=='host':
+   deadline=time.monotonic()+20; bound=False
+   while time.monotonic()<deadline and p.poll() is None:
+    bound=any(any(int(line.split()[1].rsplit(':',1)[1],16)==28301+100*difficulty for line in Path(f'/proc/net/{table}').read_text().splitlines()[1:]) for table in ['udp','udp6'])
+    if bound:break
+    time.sleep(.05)
+   if not bound:raise RuntimeError('Host did not bind before client startup')
+   time.sleep(.3)
+ deadline=time.monotonic()+500
+ while any(p.poll() is None for p,_,_ in processes) and time.monotonic()<deadline:time.sleep(.5)
+ for p,_,_ in processes:
+  if p.poll() is None:p.kill();p.wait()
+ results=[json.loads(path.read_text()) if path.exists() else {} for _,_,path in processes];codes=[p.returncode for p,_,_ in processes]
+ summary=dict(commands=commands,exit_codes=codes,results=results)
+ summary['passed']=codes==[0,0] and all(r.get('ok') and r.get('latches_by_sector')=={'0':0,'1':5,'2':6} for r in results) and results[0].get('score')==results[1].get('score') and results[0].get('integrity')==results[1].get('integrity')
+ (out/'lan-expedition.json').write_text(json.dumps(summary,indent=2)+'\n');print(json.dumps(dict(difficulty=difficulty,passed=summary['passed'],exit_codes=codes,report=str(out/'lan-expedition.json'))));raise SystemExit(0 if summary['passed'] else 1)
+finally:
+ for p,log,_ in processes:
+  if p.poll() is None:p.terminate();p.wait()
+  log.close()

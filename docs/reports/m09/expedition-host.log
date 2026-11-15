@@ -1,0 +1,13 @@
+Godot Engine v4.5.2.stable.official.6ce3de25a - https://godotengine.org
+
+EXPEDITION host PLAYING sector=0 tick=437 objective=0 charge=[160, 0, 0] players=(279.9452, 520.0869)/(415.9661, 519.9902) target=0 lead=2
+EXPEDITION host PLAYING sector=0 tick=1038 objective=1 charge=[300, 245, 0] players=(567.939, 232.0677)/(712.0491, 232.0867) target=0 lead=2
+EXPEDITION host PLAYING sector=0 tick=1639 objective=2 charge=[300, 300, 298] players=(935.9243, 456.076)/(1079.911, 455.9992) target=0 lead=2
+EXPEDITION host PLAYING sector=1 tick=2224 objective=0 charge=[0, 0, 0] players=(934.6569, 599.9056)/(1021.991, 600.256) target=0 lead=2
+EXPEDITION host PLAYING sector=1 tick=2824 objective=1 charge=[5, 0, 300] players=(280.0903, 529.0959)/(415.1675, 534.1811) target=0 lead=2
+EXPEDITION host PLAYING sector=1 tick=3425 objective=2 charge=[300, 86, 300] players=(567.9108, 232.0975)/(711.9429, 231.9738) target=0 lead=2
+EXPEDITION host COUNTDOWN sector=2 tick=4010 objective=0 charge=[0, 0, 0] players=(112.0, 592.0)/(176.0, 592.0) target=0 lead=2
+EXPEDITION host PLAYING sector=2 tick=4611 objective=0 charge=[0, 248, 0] players=(568.0303, 232.0713)/(711.9749, 232.0285) target=0 lead=2
+EXPEDITION host PLAYING sector=2 tick=5212 objective=1 charge=[0, 300, 277] players=(935.9056, 456.0883)/(1079.902, 456.0768) target=0 lead=2
+EXPEDITION host PLAYING sector=2 tick=5812 objective=3 charge=[300, 300, 300] players=(389.2636, 530.4758)/(419.99, 528.9153) target=0 lead=2
+{"application_sizes":[129,129,129,34,129,129,129,129,30,129,129,129,129,129,129,129,129,129,129,129,34,129,129,129,129,129,30,129,129,129,129,129,129,129,129,129,129,129,34,129,129,129,129,30,129,129,129,129,129,129,129,129,129,129,129,34,129,129,129,129,129,30,129,129,129,129,129,129,129,129,129,129,34,129,129,129,129,129,30,129,129,129,129,129,129,129,129,129,129,129,34,129,129,129,129,129,30,129,129,129,129,129,129,129,129,129,129,34,129,129,129,129,129,30,129,129,129,129,129,129,129,129,129,129,129,34,44,134],"begin_tick":3934,"begins":3,"client_has_simulation":false,"content_hash":"2e740732b7ec30b8b61df9823d9765b4fdadac35141660f178f9c33965abb158","integrity":4,"match_id":90799689,"ok":true,"score":17620,"sector":2,"session_id":1796361295,"tick":6277}

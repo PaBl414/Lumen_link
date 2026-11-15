@@ -1,0 +1,259 @@
+{
+  "schema_version": 2,
+  "id": "reactor",
+  "bounds": [
+    32,
+    88,
+    1216,
+    600
+  ],
+  "spawns": [
+    [
+      112,
+      592
+    ],
+    [
+      176,
+      592
+    ]
+  ],
+  "walls": [
+    {
+      "id": 0,
+      "rect": [
+        272,
+        192,
+        112,
+        192
+      ]
+    },
+    {
+      "id": 1,
+      "rect": [
+        744,
+        136,
+        144,
+        120
+      ]
+    },
+    {
+      "id": 2,
+      "rect": [
+        784,
+        448,
+        48,
+        96
+      ]
+    }
+  ],
+  "beacons": [
+    {
+      "id": 0,
+      "position": [
+        336,
+        448
+      ]
+    },
+    {
+      "id": 1,
+      "position": [
+        800,
+        320
+      ]
+    },
+    {
+      "id": 2,
+      "position": [
+        928,
+        496
+      ]
+    }
+  ],
+  "sockets": [
+    {
+      "id": 0,
+      "position": [
+        208,
+        448
+      ]
+    },
+    {
+      "id": 1,
+      "position": [
+        672,
+        320
+      ]
+    },
+    {
+      "id": 2,
+      "position": [
+        1008,
+        592
+      ]
+    }
+  ],
+  "exit": {
+    "position": [
+      1168,
+      592
+    ],
+    "radius": 64
+  },
+  "hazards": [
+    {
+      "id": 0,
+      "type": "SWEEP",
+      "a": [
+        144,
+        144
+      ],
+      "b": [
+        144,
+        272
+      ],
+      "travel": [
+        128,
+        0
+      ],
+      "phase_offset": 0
+    },
+    {
+      "id": 1,
+      "type": "PULSE",
+      "a": [
+        672,
+        160
+      ],
+      "radius": 48,
+      "phase_offset": 0
+    },
+    {
+      "id": 2,
+      "type": "PULSE",
+      "a": [
+        1008,
+        320
+      ],
+      "radius": 48,
+      "phase_offset": 30
+    },
+    {
+      "id": 3,
+      "type": "PULSE",
+      "a": [
+        672,
+        480
+      ],
+      "radius": 48,
+      "phase_offset": 0
+    },
+    {
+      "id": 4,
+      "type": "PULSE",
+      "a": [
+        1168,
+        320
+      ],
+      "radius": 48,
+      "phase_offset": 30
+    },
+    {
+      "id": 5,
+      "type": "PULSE",
+      "a": [
+        768,
+        304
+      ],
+      "radius": 48,
+      "phase_offset": 0
+    },
+    {
+      "id": 6,
+      "type": "SWEEP",
+      "a": [
+        944,
+        464
+      ],
+      "b": [
+        944,
+        624
+      ],
+      "travel": [
+        96,
+        0
+      ],
+      "phase_offset": 90
+    }
+  ],
+  "background_asset": "reactor_background",
+  "objectives": [
+    {
+      "id": 0,
+      "hint": "Rozdzielcie si\u0119 wok\u00f3\u0142 bloku. Zaczep prowadzi oba ramiona; SWEEP przecina p\u00f3\u0142nocne stanowisko.",
+      "stabilization": [
+        [
+          [
+            208,
+            208
+          ],
+          [
+            448,
+            448
+          ]
+        ]
+      ]
+    },
+    {
+      "id": 1,
+      "hint": "Po 150 oboje zmie\u0144cie pola. Pulsy naciskaj\u0105 naprzemiennie: bezpieczne miejsca s\u0105 obok stanowisk.",
+      "stabilization": [
+        [
+          [
+            672,
+            160
+          ],
+          [
+            1008,
+            320
+          ]
+        ],
+        [
+          [
+            672,
+            480
+          ],
+          [
+            1168,
+            320
+          ]
+        ]
+      ]
+    },
+    {
+      "id": 2,
+      "hint": "Fina\u0142: zachowajcie 150, prze\u0142\u0105czcie zaczep i odbudujcie tras\u0119. Omi\u0144cie SWEEP, potem wsp\u00f3lne wyj\u015bcie.",
+      "stabilization": [
+        [
+          [
+            672,
+            480
+          ],
+          [
+            1056,
+            584
+          ]
+        ],
+        [
+          [
+            768,
+            304
+          ],
+          [
+            1168,
+            512
+          ]
+        ]
+      ]
+    }
+  ]
+}

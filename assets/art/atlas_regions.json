@@ -1,0 +1,366 @@
+{
+  "schema_version": 1,
+  "padding": 2,
+  "regions": {
+    "station_00": {
+      "atlas": "station_atlas",
+      "rect": [
+        2,
+        2,
+        252,
+        252
+      ]
+    },
+    "station_01": {
+      "atlas": "station_atlas",
+      "rect": [
+        258,
+        2,
+        252,
+        252
+      ]
+    },
+    "station_02": {
+      "atlas": "station_atlas",
+      "rect": [
+        514,
+        2,
+        252,
+        252
+      ]
+    },
+    "station_03": {
+      "atlas": "station_atlas",
+      "rect": [
+        770,
+        2,
+        252,
+        252
+      ]
+    },
+    "station_04": {
+      "atlas": "station_atlas",
+      "rect": [
+        2,
+        258,
+        252,
+        252
+      ]
+    },
+    "station_05": {
+      "atlas": "station_atlas",
+      "rect": [
+        258,
+        258,
+        252,
+        252
+      ]
+    },
+    "station_06": {
+      "atlas": "station_atlas",
+      "rect": [
+        514,
+        258,
+        252,
+        252
+      ]
+    },
+    "station_07": {
+      "atlas": "station_atlas",
+      "rect": [
+        770,
+        258,
+        252,
+        252
+      ]
+    },
+    "station_08": {
+      "atlas": "station_atlas",
+      "rect": [
+        2,
+        514,
+        252,
+        252
+      ]
+    },
+    "station_09": {
+      "atlas": "station_atlas",
+      "rect": [
+        258,
+        514,
+        252,
+        252
+      ]
+    },
+    "station_10": {
+      "atlas": "station_atlas",
+      "rect": [
+        514,
+        514,
+        252,
+        252
+      ]
+    },
+    "station_11": {
+      "atlas": "station_atlas",
+      "rect": [
+        770,
+        514,
+        252,
+        252
+      ]
+    },
+    "station_12": {
+      "atlas": "station_atlas",
+      "rect": [
+        2,
+        770,
+        252,
+        252
+      ]
+    },
+    "station_13": {
+      "atlas": "station_atlas",
+      "rect": [
+        258,
+        770,
+        252,
+        252
+      ]
+    },
+    "station_14": {
+      "atlas": "station_atlas",
+      "rect": [
+        514,
+        770,
+        252,
+        252
+      ]
+    },
+    "station_15": {
+      "atlas": "station_atlas",
+      "rect": [
+        770,
+        770,
+        252,
+        252
+      ]
+    },
+    "beacon_off": {
+      "atlas": "devices",
+      "rect": [
+        2,
+        2,
+        124,
+        124
+      ]
+    },
+    "beacon_on": {
+      "atlas": "devices",
+      "rect": [
+        130,
+        2,
+        124,
+        124
+      ]
+    },
+    "socket_off": {
+      "atlas": "devices",
+      "rect": [
+        258,
+        2,
+        124,
+        124
+      ]
+    },
+    "socket_on": {
+      "atlas": "devices",
+      "rect": [
+        386,
+        2,
+        124,
+        124
+      ]
+    },
+    "exit_off": {
+      "atlas": "devices",
+      "rect": [
+        2,
+        130,
+        124,
+        124
+      ]
+    },
+    "exit_on": {
+      "atlas": "devices",
+      "rect": [
+        130,
+        130,
+        124,
+        124
+      ]
+    },
+    "pulse": {
+      "atlas": "devices",
+      "rect": [
+        258,
+        130,
+        124,
+        124
+      ]
+    },
+    "sweep": {
+      "atlas": "devices",
+      "rect": [
+        386,
+        130,
+        124,
+        124
+      ]
+    },
+    "icon_move": {
+      "atlas": "icons",
+      "rect": [
+        2,
+        2,
+        60,
+        60
+      ]
+    },
+    "icon_dash": {
+      "atlas": "icons",
+      "rect": [
+        66,
+        2,
+        60,
+        60
+      ]
+    },
+    "icon_socket": {
+      "atlas": "icons",
+      "rect": [
+        130,
+        2,
+        60,
+        60
+      ]
+    },
+    "icon_ping": {
+      "atlas": "icons",
+      "rect": [
+        194,
+        2,
+        60,
+        60
+      ]
+    },
+    "icon_ready": {
+      "atlas": "icons",
+      "rect": [
+        258,
+        2,
+        60,
+        60
+      ]
+    },
+    "icon_host": {
+      "atlas": "icons",
+      "rect": [
+        322,
+        2,
+        60,
+        60
+      ]
+    },
+    "icon_join": {
+      "atlas": "icons",
+      "rect": [
+        386,
+        2,
+        60,
+        60
+      ]
+    },
+    "icon_back": {
+      "atlas": "icons",
+      "rect": [
+        450,
+        2,
+        60,
+        60
+      ]
+    },
+    "icon_sound": {
+      "atlas": "icons",
+      "rect": [
+        2,
+        66,
+        60,
+        60
+      ]
+    },
+    "icon_settings": {
+      "atlas": "icons",
+      "rect": [
+        66,
+        66,
+        60,
+        60
+      ]
+    },
+    "icon_warning": {
+      "atlas": "icons",
+      "rect": [
+        130,
+        66,
+        60,
+        60
+      ]
+    },
+    "icon_heart": {
+      "atlas": "icons",
+      "rect": [
+        194,
+        66,
+        60,
+        60
+      ]
+    },
+    "icon_star": {
+      "atlas": "icons",
+      "rect": [
+        258,
+        66,
+        60,
+        60
+      ]
+    },
+    "icon_clock": {
+      "atlas": "icons",
+      "rect": [
+        322,
+        66,
+        60,
+        60
+      ]
+    },
+    "icon_link": {
+      "atlas": "icons",
+      "rect": [
+        386,
+        66,
+        60,
+        60
+      ]
+    },
+    "icon_exit": {
+      "atlas": "icons",
+      "rect": [
+        450,
+        66,
+        60,
+        60
+      ]
+    }
+  }
+}

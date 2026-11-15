@@ -1,0 +1,26 @@
+[
+  {
+    "label": "fixture-import",
+    "command": [
+      "/home/pablo/.local/bin/godot",
+      "--headless",
+      "--editor",
+      "--path",
+      "/tmp/lumen-m01-check-4_60nmy5",
+      "--import"
+    ],
+    "exit_code": 0
+  },
+  {
+    "label": "invalid-validator",
+    "command": [
+      "/home/pablo/.local/bin/godot",
+      "--headless",
+      "--path",
+      "/tmp/lumen-m01-check-4_60nmy5",
+      "--script",
+      "tools/validate_content.gd"
+    ],
+    "exit_code": 1
+  }
+]

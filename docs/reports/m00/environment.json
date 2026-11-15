@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-14T21:25:05.758792",
+  "os": "Linux-7.3.3-1-cachyos-x86_64-with-glibc2.44",
+  "godot_version": "4.5.2.stable.official.6ce3de25a",
+  "source_sha256": "3bb9302d511c70d9f12b9bf7f9f301e48b3c244920c95c3fd5ec7d4e9a407d64",
+  "master_spec_identical": true,
+  "engine_archive_sha256": "87f6e6be292929e363d15ed9052f277b2ba4e95ed994e1e099048097be2dfd03",
+  "gui_command": [
+    "/home/pablo/.local/bin/godot",
+    "--path",
+    ".",
+    "--display-driver",
+    "x11"
+  ],
+  "gui_exit_code": 0,
+  "gui_check": "Menu rendered, screenshot inspected, Exit activated by X11 button events; process exited normally.",
+  "gui_screenshot": "menu.png",
+  "gui_renderer": "OpenGL 4.6 Compatibility, Mesa Intel HD Graphics 520",
+  "gui_window": "KDE tiling forced client area 938x998; keep aspect letterboxing verified visually."
+}

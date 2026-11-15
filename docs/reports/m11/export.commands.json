@@ -1,0 +1,61 @@
+[
+  {
+    "command": [
+      "/home/pablo/.local/bin/godot",
+      "--headless",
+      "--editor",
+      "--path",
+      "/tmp/lumen-export-ky8h9n5z",
+      "--import",
+      "--quit"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "/home/pablo/.local/bin/godot",
+      "--headless",
+      "--path",
+      "/tmp/lumen-export-ky8h9n5z",
+      "--export-debug",
+      "Linux Smoke",
+      "/home/pablo/.local/share/lumen-tools/m11-smoke/lumen_smoke.x86_64"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "/home/pablo/.local/share/lumen-tools/m11-smoke/lumen_smoke.x86_64",
+      "--headless",
+      "res://tests/integration/network_harness.tscn",
+      "--",
+      "--scenario=boot",
+      "--report=/home/pablo/lan_game/docs/reports/m11/export-boot.json"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "/home/pablo/.local/share/lumen-tools/m11-smoke/lumen_smoke.x86_64",
+      "--headless",
+      "res://tests/integration/network_harness.tscn",
+      "--",
+      "--role=host",
+      "--port=24991",
+      "--report=/home/pablo/lan_game/docs/reports/m11/export-host.json"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "/home/pablo/.local/share/lumen-tools/m11-smoke/lumen_smoke.x86_64",
+      "--headless",
+      "res://tests/integration/network_harness.tscn",
+      "--",
+      "--role=client",
+      "--port=24991",
+      "--report=/home/pablo/lan_game/docs/reports/m11/export-client.json"
+    ],
+    "exit_code": 0
+  }
+]

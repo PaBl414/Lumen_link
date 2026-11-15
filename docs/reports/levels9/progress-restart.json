@@ -1,0 +1,9 @@
+{
+  "ok": true,
+  "cases": [
+    "restart actual AppRoot: two stable IDs and difficulty records; legacy unchanged",
+    "corrupt primary: actual AppRoot restores previous valid backup and warning",
+    "cancelled reset preserves history",
+    "confirmed reset survives restart and backup recovery; legacy unchanged"
+  ]
+}

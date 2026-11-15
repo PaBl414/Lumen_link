@@ -1,0 +1,9 @@
+{"difficulty": 0, "role": "host", "exit_code": 0, "ok": true, "command": ["/home/pablo/.local/bin/godot", "--headless", "--path", "/home/pablo/lan_game", "res://tests/integration/network_harness.tscn", "--", "--scenario=expedition", "--level=dock", "--role=host", "--difficulty=0", "--port=25900", "--report=/home/pablo/lan_game/docs/reports/levels9/final-lan/lan-d0-host.json"]}
+{"difficulty": 0, "role": "client", "exit_code": 0, "ok": true, "command": ["/home/pablo/.local/bin/godot", "--headless", "--path", "/home/pablo/lan_game", "res://tests/integration/network_harness.tscn", "--", "--scenario=expedition", "--level=dock", "--role=client", "--difficulty=0", "--port=25900", "--report=/home/pablo/lan_game/docs/reports/levels9/final-lan/lan-d0-client.json"]}
+{"difficulty": 1, "role": "host", "exit_code": 1, "ok": false, "command": ["/home/pablo/.local/bin/godot", "--headless", "--path", "/home/pablo/lan_game", "res://tests/integration/network_harness.tscn", "--", "--scenario=expedition", "--level=dock", "--role=host", "--difficulty=1", "--port=25902", "--report=/home/pablo/lan_game/docs/reports/levels9/final-lan/lan-d1-host.json"]}
+{"difficulty": 1, "role": "client", "exit_code": 1, "ok": false, "command": ["/home/pablo/.local/bin/godot", "--headless", "--path", "/home/pablo/lan_game", "res://tests/integration/network_harness.tscn", "--", "--scenario=expedition", "--level=dock", "--role=client", "--difficulty=1", "--port=25902", "--report=/home/pablo/lan_game/docs/reports/levels9/final-lan/lan-d1-client.json"]}
+Traceback (most recent call last):
+  File "/home/pablo/lan_game/tools/test_lan_campaigns.py", line 28, in <module>
+    assert not guest.get('client_has_simulation',True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

@@ -1,0 +1,13 @@
+extends SceneTree
+var app: Node
+func _initialize() -> void:
+	start.call_deferred()
+func start() -> void:
+	app = load("res://scenes/app.tscn").instantiate()
+	root.add_child(app)
+	await process_frame
+	app._start_fixture(app.assets.dock)
+	await app.scene_router.scene_ready
+	# Trigger the natural timer-loss branch; this exercises terminal UI and record submission.
+	app.simulation.world.remaining_ticks = 1
+	for tick: int in range(181): app._physics_process(1.0/60)

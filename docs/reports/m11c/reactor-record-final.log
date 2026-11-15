@@ -1,0 +1,103 @@
+Godot Engine v4.5.2.stable.official.6ce3de25a - https://godotengine.org
+
+{"difficulty":0,"progress":"reactor","state":{"goal":0,"integrity":6,"latch":0,"tick":0},"variant":0}
+{"charges":[0,0,0],"goal":0,"positions":["(112.0, 592.0)","(176.0, 592.0)"],"tick":0,"trace":"reactor"}
+{"charges":[111,0,0],"goal":0,"positions":["(88.44138, 252.7808)","(447.9318, 448.0777)"],"tick":600,"trace":"reactor"}
+{"charges":[215,0,0],"goal":0,"positions":["(207.9407, 208.0668)","(447.9318, 448.0777)"],"tick":1200,"trace":"reactor"}
+{"difficulty":0,"progress":"reactor","state":{"goal":1,"integrity":6,"latch":0,"tick":1285},"variant":0}
+{"charges":[300,0,0],"goal":1,"positions":["(441.9802, 399.9785)","(880.3078, 415.9519)"],"tick":1800,"trace":"reactor"}
+{"charges":[300,46,0],"goal":1,"positions":["(554.7908, 177.1057)","(1000.614, 443.4177)"],"tick":2400,"trace":"reactor"}
+{"difficulty":0,"progress":"reactor","state":{"goal":1,"integrity":4,"latch":2,"tick":2891},"variant":0}
+{"charges":[300,150,0],"goal":1,"positions":["(616.0618, 325.4711)","(1032.469, 399.9601)"],"tick":3000,"trace":"reactor"}
+{"charges":[300,251,0],"goal":1,"positions":["(615.9791, 555.1885)","(1167.934, 248.4801)"],"tick":3600,"trace":"reactor"}
+{"difficulty":0,"progress":"reactor","state":{"goal":2,"integrity":4,"latch":2,"tick":3753},"variant":0}
+{"charges":[300,300,0],"goal":2,"positions":["(554.8277, 497.102)","(1106.702, 527.5524)"],"tick":4200,"trace":"reactor"}
+{"charges":[300,300,0],"goal":2,"positions":["(615.9767, 555.1896)","(1079.55, 560.0495)"],"tick":4800,"trace":"reactor"}
+{"difficulty":0,"progress":"reactor","state":{"goal":2,"integrity":4,"latch":6,"tick":5019},"variant":0}
+{"charges":[300,300,150],"goal":2,"positions":["(655.9549, 323.1809)","(1167.938, 512.0541)"],"tick":5400,"trace":"reactor"}
+{"difficulty":0,"progress":"reactor","state":{"goal":3,"integrity":4,"latch":6,"tick":5620},"variant":0}
+{"charges":[300,300,300],"goal":3,"positions":["(984.4488, 430.2699)","(1191.923, 591.9515)"],"tick":6000,"trace":"reactor"}
+{"map":"reactor","result":{"charge":[300,300,300],"complete_mask":7,"dashes":24,"difficulty":0,"history":[{"goal":0,"integrity":6,"latch":0,"tick":0},{"goal":1,"integrity":6,"latch":0,"tick":1285},{"goal":1,"integrity":4,"latch":2,"tick":2891},{"goal":2,"integrity":4,"latch":2,"tick":3753},{"goal":2,"integrity":4,"latch":6,"tick":5019},{"goal":3,"integrity":4,"latch":6,"tick":5620}],"integrity":3,"latched_mask":6,"ok":true,"positions":["(1143.946, 591.9344)","(1191.923, 591.9515)"],"retreats":91,"score":3720,"seed":0,"ticks":6471,"variant":0}}
+{"difficulty":1,"progress":"reactor","state":{"goal":0,"integrity":9,"latch":0,"tick":0},"variant":0}
+{"charges":[0,0,0],"goal":0,"positions":["(112.0, 592.0)","(176.0, 592.0)"],"tick":0,"trace":"reactor"}
+{"charges":[135,0,0],"goal":0,"positions":["(207.9441, 208.0538)","(447.9318, 448.0777)"],"tick":600,"trace":"reactor"}
+{"difficulty":1,"progress":"reactor","state":{"goal":1,"integrity":9,"latch":0,"tick":949},"variant":0}
+{"charges":[300,0,0],"goal":1,"positions":["(412.8501, 176.0344)","(683.2015, 448.0777)"],"tick":1200,"trace":"reactor"}
+{"charges":[300,7,0],"goal":1,"positions":["(607.9229, 275.1956)","(949.8923, 255.63)"],"tick":1800,"trace":"reactor"}
+{"difficulty":1,"progress":"reactor","state":{"goal":1,"integrity":9,"latch":2,"tick":2079},"variant":0}
+{"charges":[300,199,0],"goal":1,"positions":["(671.9283, 479.9407)","(1152.448, 329.7254)"],"tick":2400,"trace":"reactor"}
+{"difficulty":1,"progress":"reactor","state":{"goal":2,"integrity":9,"latch":2,"tick":2691},"variant":0}
+{"charges":[300,300,51],"goal":2,"positions":["(670.7531, 479.9407)","(1056.077, 583.9512)"],"tick":3000,"trace":"reactor"}
+{"difficulty":1,"progress":"reactor","state":{"goal":2,"integrity":9,"latch":6,"tick":3099},"variant":0}
+{"difficulty":1,"progress":"reactor","state":{"goal":3,"integrity":9,"latch":6,"tick":3536},"variant":0}
+{"charges":[300,300,300],"goal":3,"positions":["(656.3005, 304.0692)","(1170.737, 567.0765)"],"tick":3600,"trace":"reactor"}
+{"charges":[300,300,300],"goal":3,"positions":["(1038.261, 480.4198)","(1191.951, 591.9391)"],"tick":4200,"trace":"reactor"}
+{"map":"reactor","result":{"charge":[300,300,300],"complete_mask":7,"dashes":10,"difficulty":1,"history":[{"goal":0,"integrity":9,"latch":0,"tick":0},{"goal":1,"integrity":9,"latch":0,"tick":949},{"goal":1,"integrity":9,"latch":2,"tick":2079},{"goal":2,"integrity":9,"latch":2,"tick":2691},{"goal":2,"integrity":9,"latch":6,"tick":3099},{"goal":3,"integrity":9,"latch":6,"tick":3536}],"integrity":9,"latched_mask":6,"ok":true,"positions":["(1143.922, 591.9353)","(1191.951, 591.9391)"],"retreats":47,"score":4650,"seed":0,"ticks":4486,"variant":0}}
+{"difficulty":0,"progress":"reactor","state":{"goal":0,"integrity":6,"latch":0,"tick":0},"variant":1}
+{"charges":[0,0,0],"goal":0,"positions":["(112.0, 592.0)","(176.0, 592.0)"],"tick":0,"trace":"reactor"}
+{"charges":[0,0,0],"goal":0,"positions":["(128.0471, 218.2608)","(447.9318, 448.0777)"],"tick":600,"trace":"reactor"}
+{"charges":[246,0,0],"goal":0,"positions":["(207.9474, 208.0732)","(447.9318, 448.0777)"],"tick":1200,"trace":"reactor"}
+{"difficulty":0,"progress":"reactor","state":{"goal":1,"integrity":6,"latch":0,"tick":1567},"variant":1}
+{"charges":[300,0,0],"goal":1,"positions":["(230.8344, 151.9704)","(632.2951, 423.9656)"],"tick":1800,"trace":"reactor"}
+{"charges":[300,0,0],"goal":1,"positions":["(643.688, 287.1949)","(973.2999, 280.4556)"],"tick":2400,"trace":"reactor"}
+{"charges":[300,74,0],"goal":1,"positions":["(595.1972, 143.9424)","(1007.949, 293.5372)"],"tick":3000,"trace":"reactor"}
+{"difficulty":0,"progress":"reactor","state":{"goal":1,"integrity":6,"latch":2,"tick":3139},"variant":1}
+{"charges":[300,150,0],"goal":1,"positions":["(612.0585, 471.9345)","(1133.538, 344.0517)"],"tick":3600,"trace":"reactor"}
+{"difficulty":0,"progress":"reactor","state":{"goal":2,"integrity":6,"latch":2,"tick":4017},"variant":1}
+{"charges":[300,300,0],"goal":2,"positions":["(631.3643, 436.5522)","(1103.947, 309.9621)"],"tick":4200,"trace":"reactor"}
+{"difficulty":0,"progress":"reactor","state":{"goal":2,"integrity":6,"latch":6,"tick":4688},"variant":1}
+{"charges":[300,300,150],"goal":2,"positions":["(675.1821, 336.0391)","(1109.893, 527.5746)"],"tick":4800,"trace":"reactor"}
+{"charges":[300,300,242],"goal":2,"positions":["(719.9395, 387.9638)","(1167.939, 512.0539)"],"tick":5400,"trace":"reactor"}
+{"difficulty":0,"progress":"reactor","state":{"goal":3,"integrity":6,"latch":6,"tick":5554},"variant":1}
+{"charges":[300,300,300],"goal":3,"positions":["(1079.013, 522.6588)","(1191.932, 591.928)"],"tick":6000,"trace":"reactor"}
+{"map":"reactor","result":{"charge":[300,300,300],"complete_mask":7,"dashes":22,"difficulty":0,"history":[{"goal":0,"integrity":6,"latch":0,"tick":0},{"goal":1,"integrity":6,"latch":0,"tick":1567},{"goal":1,"integrity":6,"latch":2,"tick":3139},{"goal":2,"integrity":6,"latch":2,"tick":4017},{"goal":2,"integrity":6,"latch":6,"tick":4688},{"goal":3,"integrity":6,"latch":6,"tick":5554}],"integrity":6,"latched_mask":6,"ok":true,"positions":["(1143.923, 591.9427)","(1191.932, 591.928)"],"retreats":51,"score":3760,"seed":1,"ticks":6204,"variant":1}}
+{"difficulty":1,"progress":"reactor","state":{"goal":0,"integrity":9,"latch":0,"tick":0},"variant":1}
+{"charges":[0,0,0],"goal":0,"positions":["(112.0, 592.0)","(176.0, 592.0)"],"tick":0,"trace":"reactor"}
+{"charges":[148,0,0],"goal":0,"positions":["(207.9483, 208.0506)","(447.9318, 448.0777)"],"tick":600,"trace":"reactor"}
+{"difficulty":1,"progress":"reactor","state":{"goal":1,"integrity":9,"latch":0,"tick":948},"variant":1}
+{"charges":[300,0,0],"goal":1,"positions":["(404.8255, 176.0316)","(683.1897, 448.0777)"],"tick":1200,"trace":"reactor"}
+{"charges":[300,0,0],"goal":1,"positions":["(556.8052, 208.0524)","(963.6843, 271.2023)"],"tick":1800,"trace":"reactor"}
+{"difficulty":1,"progress":"reactor","state":{"goal":1,"integrity":9,"latch":2,"tick":2285},"variant":1}
+{"charges":[300,150,0],"goal":1,"positions":["(671.9336, 281.9954)","(1096.021, 303.6884)"],"tick":2400,"trace":"reactor"}
+{"difficulty":1,"progress":"reactor","state":{"goal":2,"integrity":9,"latch":2,"tick":2715},"variant":1}
+{"charges":[300,300,0],"goal":2,"positions":["(672.0767, 479.9423)","(1079.961, 459.8123)"],"tick":3000,"trace":"reactor"}
+{"difficulty":1,"progress":"reactor","state":{"goal":2,"integrity":9,"latch":6,"tick":3375},"variant":1}
+{"charges":[300,300,150],"goal":2,"positions":["(717.4795, 320.0495)","(1160.447, 513.7403)"],"tick":3600,"trace":"reactor"}
+{"difficulty":1,"progress":"reactor","state":{"goal":3,"integrity":9,"latch":6,"tick":3759},"variant":1}
+{"charges":[300,300,300],"goal":3,"positions":["(1011.684, 455.1905)","(1191.952, 591.9261)"],"tick":4200,"trace":"reactor"}
+{"map":"reactor","result":{"charge":[300,300,300],"complete_mask":7,"dashes":8,"difficulty":1,"history":[{"goal":0,"integrity":9,"latch":0,"tick":0},{"goal":1,"integrity":9,"latch":0,"tick":948},{"goal":1,"integrity":9,"latch":2,"tick":2285},{"goal":2,"integrity":9,"latch":2,"tick":2715},{"goal":2,"integrity":9,"latch":6,"tick":3375},{"goal":3,"integrity":9,"latch":6,"tick":3759}],"integrity":9,"latched_mask":6,"ok":true,"positions":["(1143.95, 591.9266)","(1191.952, 591.9261)"],"retreats":37,"score":4640,"seed":1,"ticks":4555,"variant":1}}
+{"difficulty":0,"progress":"reactor","state":{"goal":0,"integrity":6,"latch":0,"tick":0},"variant":2}
+{"charges":[0,0,0],"goal":0,"positions":["(112.0, 592.0)","(176.0, 592.0)"],"tick":0,"trace":"reactor"}
+{"charges":[0,0,0],"goal":0,"positions":["(128.9262, 228.4472)","(447.9318, 448.0777)"],"tick":600,"trace":"reactor"}
+{"charges":[279,0,0],"goal":0,"positions":["(207.9369, 208.0734)","(447.9318, 448.0777)"],"tick":1200,"trace":"reactor"}
+{"difficulty":0,"progress":"reactor","state":{"goal":1,"integrity":6,"latch":0,"tick":1524},"variant":2}
+{"charges":[300,0,0],"goal":1,"positions":["(276.9066, 136.0541)","(662.8292, 408.067)"],"tick":1800,"trace":"reactor"}
+{"charges":[300,0,0],"goal":1,"positions":["(648.0476, 250.0235)","(944.4423, 377.6952)"],"tick":2400,"trace":"reactor"}
+{"charges":[300,33,0],"goal":1,"positions":["(635.687, 192.8223)","(1008.051, 319.9333)"],"tick":3000,"trace":"reactor"}
+{"difficulty":0,"progress":"reactor","state":{"goal":1,"integrity":6,"latch":2,"tick":3369},"variant":2}
+{"charges":[300,150,0],"goal":1,"positions":["(552.0509, 268.0414)","(1127.488, 277.2151)"],"tick":3600,"trace":"reactor"}
+{"charges":[300,219,0],"goal":1,"positions":["(645.2286, 447.4899)","(1167.932, 320.1067)"],"tick":4200,"trace":"reactor"}
+{"difficulty":0,"progress":"reactor","state":{"goal":2,"integrity":5,"latch":2,"tick":4281},"variant":2}
+{"charges":[300,300,0],"goal":2,"positions":["(625.8311, 463.9717)","(1103.567, 541.8156)"],"tick":4800,"trace":"reactor"}
+{"difficulty":0,"progress":"reactor","state":{"goal":2,"integrity":5,"latch":6,"tick":5182},"variant":2}
+{"charges":[300,300,150],"goal":2,"positions":["(615.171, 452.303)","(1101.959, 535.9496)"],"tick":5400,"trace":"reactor"}
+{"charges":[300,300,180],"goal":2,"positions":["(728.3158, 320.0393)","(1167.933, 512.0515)"],"tick":6000,"trace":"reactor"}
+{"difficulty":0,"progress":"reactor","state":{"goal":3,"integrity":5,"latch":6,"tick":6120},"variant":2}
+{"charges":[300,300,300],"goal":3,"positions":["(1071.058, 434.7727)","(1191.922, 591.9403)"],"tick":6600,"trace":"reactor"}
+{"map":"reactor","result":{"charge":[300,300,300],"complete_mask":7,"dashes":24,"difficulty":0,"history":[{"goal":0,"integrity":6,"latch":0,"tick":0},{"goal":1,"integrity":6,"latch":0,"tick":1524},{"goal":1,"integrity":6,"latch":2,"tick":3369},{"goal":2,"integrity":5,"latch":2,"tick":4281},{"goal":2,"integrity":5,"latch":6,"tick":5182},{"goal":3,"integrity":5,"latch":6,"tick":6120}],"integrity":5,"latched_mask":6,"ok":true,"positions":["(1143.931, 591.9244)","(1191.922, 591.9403)"],"retreats":65,"score":3640,"seed":2,"ticks":6908,"variant":2}}
+{"difficulty":1,"progress":"reactor","state":{"goal":0,"integrity":9,"latch":0,"tick":0},"variant":2}
+{"charges":[0,0,0],"goal":0,"positions":["(112.0, 592.0)","(176.0, 592.0)"],"tick":0,"trace":"reactor"}
+{"charges":[124,0,0],"goal":0,"positions":["(204.5329, 208.0533)","(447.9318, 448.0777)"],"tick":600,"trace":"reactor"}
+{"difficulty":1,"progress":"reactor","state":{"goal":1,"integrity":9,"latch":0,"tick":1002},"variant":2}
+{"charges":[300,0,0],"goal":1,"positions":["(252.836, 112.0515)","(635.1773, 448.0777)"],"tick":1200,"trace":"reactor"}
+{"charges":[300,0,0],"goal":1,"positions":["(631.4789, 277.2249)","(982.2737, 343.5737)"],"tick":1800,"trace":"reactor"}
+{"difficulty":1,"progress":"reactor","state":{"goal":1,"integrity":9,"latch":2,"tick":2321},"variant":2}
+{"charges":[300,150,0],"goal":1,"positions":["(671.9362, 219.0155)","(1083.097, 199.9441)"],"tick":2400,"trace":"reactor"}
+{"charges":[300,299,0],"goal":1,"positions":["(671.9281, 479.9423)","(1167.948, 320.0606)"],"tick":3000,"trace":"reactor"}
+{"difficulty":1,"progress":"reactor","state":{"goal":2,"integrity":9,"latch":2,"tick":3001},"variant":2}
+{"charges":[300,300,53],"goal":2,"positions":["(678.0175, 479.9423)","(977.843, 528.0579)"],"tick":3600,"trace":"reactor"}
+{"difficulty":1,"progress":"reactor","state":{"goal":2,"integrity":8,"latch":6,"tick":3822},"variant":2}
+{"charges":[300,300,158],"goal":2,"positions":["(763.1519, 304.0664)","(1139.673, 536.7977)"],"tick":4200,"trace":"reactor"}
+{"difficulty":1,"progress":"reactor","state":{"goal":3,"integrity":8,"latch":6,"tick":4462},"variant":2}
+{"charges":[300,300,300],"goal":3,"positions":["(967.1968, 411.6945)","(1191.923, 591.9426)"],"tick":4800,"trace":"reactor"}
+{"map":"reactor","result":{"charge":[300,300,300],"complete_mask":7,"dashes":14,"difficulty":1,"history":[{"goal":0,"integrity":9,"latch":0,"tick":0},{"goal":1,"integrity":9,"latch":0,"tick":1002},{"goal":1,"integrity":9,"latch":2,"tick":2321},{"goal":2,"integrity":9,"latch":2,"tick":3001},{"goal":2,"integrity":8,"latch":6,"tick":3822},{"goal":3,"integrity":8,"latch":6,"tick":4462}],"integrity":8,"latched_mask":6,"ok":true,"positions":["(1143.929, 591.9488)","(1191.923, 591.9426)"],"retreats":42,"score":4520,"seed":2,"ticks":5256,"variant":2}}

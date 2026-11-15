@@ -1,0 +1,14 @@
+Godot Engine v4.5.2.stable.official.6ce3de25a - https://godotengine.org
+OpenGL API 4.6 (Core Profile) Mesa 26.2.6-arch3.1 - Compatibility - Using Device: Intel - Mesa Intel(R) HD Graphics 520 (SKL GT2)
+
+CAPTURE asset-board
+CAPTURE dock
+CAPTURE garden
+CAPTURE reactor
+CAPTURE active-link
+CAPTURE dash-stun
+CAPTURE occluded
+CAPTURE high-stress
+CAPTURE low-stress
+CAPTURE reduced-motion
+{"active-link":{"effects":0,"max_draw_calls":64,"max_ms":21.79,"max_particles":0,"p95_ms":19.12,"particles":0},"dock":{"effects":0,"max_draw_calls":53,"max_ms":22.157,"max_particles":0,"p95_ms":18.672,"particles":0},"first-dash":{"effects":1,"max_draw_calls":68,"max_ms":18.336,"max_particles":6,"p95_ms":18.107,"particles":6},"garden":{"effects":0,"max_draw_calls":64,"max_ms":25.022,"max_particles":0,"p95_ms":19.11,"particles":0},"high-stress":{"effects":120,"max_draw_calls":67,"max_ms":24.329,"max_particles":320,"p95_ms":20.777,"particles":200},"low-stress":{"effects":128,"max_draw_calls":67,"max_ms":23.832,"max_particles":160,"p95_ms":21.803,"particles":160},"reactor":{"effects":0,"max_draw_calls":61,"max_ms":21.766,"max_particles":0,"p95_ms":17.981,"particles":0},"reduced-motion":{"effects":128,"max_draw_calls":66,"max_ms":20.608,"max_particles":0,"p95_ms":18.114,"particles":0}}

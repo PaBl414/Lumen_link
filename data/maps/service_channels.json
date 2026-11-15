@@ -1,0 +1,232 @@
+{
+  "schema_version": 3,
+  "id": "service_channels",
+  "bounds": [
+    32,
+    88,
+    1216,
+    600
+  ],
+  "spawns": [
+    [
+      112,
+      592
+    ],
+    [
+      176,
+      592
+    ]
+  ],
+  "walls": [
+    {
+      "id": 0,
+      "rect": [
+        224,
+        352,
+        832,
+        48
+      ]
+    },
+    {
+      "id": 1,
+      "rect": [
+        352,
+        584,
+        112,
+        40
+      ]
+    },
+    {
+      "id": 2,
+      "rect": [
+        784,
+        440,
+        64,
+        40
+      ]
+    },
+    {
+      "id": 3,
+      "rect": [
+        944,
+        584,
+        64,
+        40
+      ]
+    },
+    {
+      "id": 4,
+      "rect": [
+        432,
+        128,
+        80,
+        48
+      ]
+    },
+    {
+      "id": 5,
+      "rect": [
+        704,
+        224,
+        96,
+        64
+      ]
+    },
+    {
+      "id": 6,
+      "rect": [
+        1008,
+        128,
+        48,
+        96
+      ]
+    }
+  ],
+  "beacons": [
+    {
+      "id": 0,
+      "position": [
+        112,
+        400
+      ]
+    },
+    {
+      "id": 1,
+      "position": [
+        400,
+        480
+      ]
+    },
+    {
+      "id": 2,
+      "position": [
+        976,
+        480
+      ]
+    }
+  ],
+  "sockets": [
+    {
+      "id": 0,
+      "position": [
+        176,
+        432
+      ]
+    },
+    {
+      "id": 1,
+      "position": [
+        1120,
+        432
+      ]
+    }
+  ],
+  "exit": {
+    "position": [
+      1168,
+      592
+    ],
+    "radius": 64
+  },
+  "hazards": [
+    {
+      "id": 0,
+      "type": "SWEEP",
+      "a": [
+        336,
+        144
+      ],
+      "b": [
+        336,
+        272
+      ],
+      "travel": [
+        160,
+        0
+      ],
+      "phase_offset": 0
+    },
+    {
+      "id": 1,
+      "type": "PULSE",
+      "a": [
+        448,
+        528
+      ],
+      "radius": 48,
+      "phase_offset": 100
+    },
+    {
+      "id": 2,
+      "type": "PULSE",
+      "a": [
+        1120,
+        224
+      ],
+      "radius": 48,
+      "phase_offset": 30
+    }
+  ],
+  "background_asset": "dock_background",
+  "objectives": [
+    {
+      "id": 0,
+      "hint": "Rozdzielcie drogi: jeden nad przegrod\u0105, drugi pod ni\u0105. Spotykacie si\u0119 przewodem.",
+      "stabilization": [
+        [
+          [
+            112,
+            240
+          ],
+          [
+            112,
+            560
+          ]
+        ]
+      ]
+    },
+    {
+      "id": 1,
+      "hint": "Dolny dron pokonuje pulsy, g\u00f3rny omija ruchom\u0105 barier\u0119. Zsynchronizujcie ramiona przy lewym zaczepie.",
+      "stabilization": [
+        [
+          [
+            176,
+            208
+          ],
+          [
+            624,
+            528
+          ]
+        ]
+      ]
+    },
+    {
+      "id": 2,
+      "hint": "Przejd\u017acie r\u00f3\u017cnymi korytarzami na prawo. Po 150 przestawcie oba ko\u0144ce, zachowuj\u0105c prawy zaczep.",
+      "stabilization": [
+        [
+          [
+            1120,
+            144
+          ],
+          [
+            832,
+            528
+          ]
+        ],
+        [
+          [
+            1120,
+            304
+          ],
+          [
+            688,
+            576
+          ]
+        ]
+      ]
+    }
+  ],
+  "obstacles": []
+}

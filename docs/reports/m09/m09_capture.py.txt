@@ -1,0 +1,71 @@
+import ctypes as C, subprocess, json, sys
+x=C.CDLL('libX11.so.6'); xt=C.CDLL('libXtst.so.6')
+D=C.c_void_p; W=C.c_ulong
+x.XOpenDisplay.argtypes=[C.c_char_p]; x.XOpenDisplay.restype=D
+d=x.XOpenDisplay(None)
+x.XDefaultRootWindow.argtypes=[D]; x.XDefaultRootWindow.restype=W
+root=x.XDefaultRootWindow(d)
+x.XQueryTree.argtypes=[D,W,C.POINTER(W),C.POINTER(W),C.POINTER(C.POINTER(W)),C.POINTER(C.c_uint)]
+x.XFetchName.argtypes=[D,W,C.POINTER(C.c_char_p)]
+x.XFree.argtypes=[D]
+x.XTranslateCoordinates.argtypes=[D,W,W,C.c_int,C.c_int,C.POINTER(C.c_int),C.POINTER(C.c_int),C.POINTER(W)]
+x.XGetGeometry.argtypes=[D,W,C.POINTER(W),C.POINTER(C.c_int),C.POINTER(C.c_int),C.POINTER(C.c_uint),C.POINTER(C.c_uint),C.POINTER(C.c_uint),C.POINTER(C.c_uint)]
+x.XFlush.argtypes=[D]
+def find(w):
+    name=C.c_char_p()
+    x.XFetchName(d,w,C.byref(name))
+    title=name.value.decode(errors='replace') if name.value else ''
+    if name: x.XFree(name)
+    if title.startswith(__import__('os').environ.get('LUMEN_TITLE','LUMEN LINK')): return w
+    rt=W();parent=W();children=C.POINTER(W)();count=C.c_uint()
+    x.XQueryTree(d,w,C.byref(rt),C.byref(parent),C.byref(children),C.byref(count))
+    ids=[children[i] for i in range(count.value)]
+    if children: x.XFree(children)
+    for child in ids:
+        result=find(child)
+        if result: return result
+w=find(root)
+if not w: raise SystemExit('window not found')
+rt=W();a=C.c_int();b=C.c_int();width=C.c_uint();height=C.c_uint();border=C.c_uint();depth=C.c_uint()
+x.XGetGeometry(d,w,C.byref(rt),C.byref(a),C.byref(b),C.byref(width),C.byref(height),C.byref(border),C.byref(depth))
+ox=C.c_int();oy=C.c_int();child=W()
+x.XTranslateCoordinates(d,w,root,0,0,C.byref(ox),C.byref(oy),C.byref(child))
+print(json.dumps({'window':w,'x':ox.value,'y':oy.value,'width':width.value,'height':height.value}))
+if sys.argv[1]=='capture':
+    subprocess.run(['import','-window',str(w),'docs/reports/m09/gui-'+__import__('os').environ.get('ROLE','host')+'.png'],check=True)
+elif sys.argv[1]=='click':
+    xt.XTestFakeMotionEvent.argtypes=[D,C.c_int,C.c_int,C.c_int,C.c_ulong]
+    xt.XTestFakeButtonEvent.argtypes=[D,C.c_uint,C.c_int,C.c_ulong]
+    xt.XTestFakeMotionEvent(d,-1,ox.value+int(sys.argv[2]),oy.value+int(sys.argv[3]),0)
+    xt.XTestFakeButtonEvent(d,1,1,0);xt.XTestFakeButtonEvent(d,1,0,0)
+    x.XFlush(d)
+if sys.argv[1]=='send-click':
+    class Button(C.Structure):
+        _fields_=[('type',C.c_int),('serial',C.c_ulong),('send_event',C.c_int),('display',D),('window',W),('root',W),('subwindow',W),('time',C.c_ulong),('x',C.c_int),('y',C.c_int),('x_root',C.c_int),('y_root',C.c_int),('state',C.c_uint),('button',C.c_uint),('same_screen',C.c_int)]
+    class Event(C.Union):
+        _fields_=[('button',Button),('pad',C.c_long*24)]
+    x.XSendEvent.argtypes=[D,W,C.c_int,C.c_long,C.POINTER(Event)]
+    event=Event(); e=event.button
+    e.display=d;e.window=w;e.root=root;e.x=int(sys.argv[2]);e.y=int(sys.argv[3]);e.x_root=ox.value+e.x;e.y_root=oy.value+e.y;e.button=1;e.same_screen=1
+    e.type=4;x.XSendEvent(d,w,0,4,C.byref(event))
+    e.type=5;e.state=256;x.XSendEvent(d,w,0,8,C.byref(event))
+    x.XFlush(d)
+if sys.argv[1]=='key':
+    class Key(C.Structure):
+        _fields_=[('type',C.c_int),('serial',C.c_ulong),('send_event',C.c_int),('display',D),('window',W),('root',W),('subwindow',W),('time',C.c_ulong),('x',C.c_int),('y',C.c_int),('x_root',C.c_int),('y_root',C.c_int),('state',C.c_uint),('keycode',C.c_uint),('same_screen',C.c_int)]
+    class Event(C.Union): _fields_=[('key',Key),('pad',C.c_long*24)]
+    x.XStringToKeysym.argtypes=[C.c_char_p]; x.XStringToKeysym.restype=C.c_ulong
+    x.XKeysymToKeycode.argtypes=[D,C.c_ulong]; x.XKeysymToKeycode.restype=C.c_uint
+    x.XSendEvent.argtypes=[D,W,C.c_int,C.c_long,C.POINTER(Event)]
+    event=Event(); e=event.key;e.display=d;e.window=w;e.root=root;e.same_screen=1;e.keycode=x.XKeysymToKeycode(d,x.XStringToKeysym(sys.argv[2].encode()));e.type=2 if sys.argv[3]=='down' else 3
+    x.XSendEvent(d,w,0,1 if e.type==2 else 2,C.byref(event));x.XFlush(d)
+if sys.argv[1]=='focus':
+    x.XSetInputFocus.argtypes=[D,W,C.c_int,C.c_ulong]
+    x.XSetInputFocus(d,w,2,0);x.XFlush(d)
+if sys.argv[1]=='close':
+    class Message(C.Structure): _fields_=[('type',C.c_int),('serial',C.c_ulong),('send_event',C.c_int),('display',D),('window',W),('message_type',W),('format',C.c_int),('data',C.c_long*5)]
+    class Event(C.Union): _fields_=[('message',Message),('pad',C.c_long*24)]
+    x.XInternAtom.argtypes=[D,C.c_char_p,C.c_int];x.XInternAtom.restype=W
+    x.XSendEvent.argtypes=[D,W,C.c_int,C.c_long,C.POINTER(Event)]
+    e=Event();e.message.type=33;e.message.display=d;e.message.window=w;e.message.message_type=x.XInternAtom(d,b'WM_PROTOCOLS',0);e.message.format=32;e.message.data[0]=x.XInternAtom(d,b'WM_DELETE_WINDOW',0)
+    x.XSendEvent(d,w,0,0,C.byref(e));x.XFlush(d)

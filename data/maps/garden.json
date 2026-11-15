@@ -1,0 +1,193 @@
+{
+  "schema_version": 2,
+  "id": "garden",
+  "bounds": [
+    32,
+    88,
+    1216,
+    600
+  ],
+  "spawns": [
+    [
+      112,
+      592
+    ],
+    [
+      176,
+      592
+    ]
+  ],
+  "walls": [
+    {
+      "id": 0,
+      "rect": [
+        600,
+        224,
+        112,
+        160
+      ]
+    },
+    {
+      "id": 1,
+      "rect": [
+        936,
+        208,
+        96,
+        152
+      ]
+    }
+  ],
+  "beacons": [
+    {
+      "id": 0,
+      "position": [
+        256,
+        256
+      ]
+    },
+    {
+      "id": 1,
+      "position": [
+        672,
+        448
+      ]
+    },
+    {
+      "id": 2,
+      "position": [
+        944,
+        384
+      ]
+    }
+  ],
+  "sockets": [
+    {
+      "id": 0,
+      "position": [
+        544,
+        448
+      ]
+    },
+    {
+      "id": 1,
+      "position": [
+        880,
+        384
+      ]
+    },
+    {
+      "id": 2,
+      "position": [
+        1056,
+        512
+      ]
+    }
+  ],
+  "exit": {
+    "position": [
+      1168,
+      592
+    ],
+    "radius": 64
+  },
+  "hazards": [
+    {
+      "id": 0,
+      "type": "SWEEP",
+      "a": [
+        480,
+        152
+      ],
+      "b": [
+        480,
+        296
+      ],
+      "travel": [
+        128,
+        0
+      ],
+      "phase_offset": 0
+    },
+    {
+      "id": 1,
+      "type": "PULSE",
+      "a": [
+        1056,
+        432
+      ],
+      "radius": 48,
+      "phase_offset": 100
+    }
+  ],
+  "background_asset": "garden_background",
+  "objectives": [
+    {
+      "id": 0,
+      "hint": "Dwa etapy: po zatrza\u015bni\u0119ciu 150 przejd\u017acie na drug\u0105 par\u0119. Pierwsza po\u0142owa pozostaje.",
+      "stabilization": [
+        [
+          [
+            112,
+            256
+          ],
+          [
+            400,
+            256
+          ]
+        ],
+        [
+          [
+            160,
+            176
+          ],
+          [
+            352,
+            336
+          ]
+        ]
+      ]
+    },
+    {
+      "id": 1,
+      "hint": "Przew\u00f3d za przegrod\u0105. \u017b\u00f3\u0142ta linia zapowiada SWEEP: opu\u015b\u0107cie stanowisko, a potem wr\u00f3\u0107cie.",
+      "stabilization": [
+        [
+          [
+            544,
+            224
+          ],
+          [
+            800,
+            448
+          ]
+        ]
+      ]
+    },
+    {
+      "id": 2,
+      "hint": "Po 150 zmie\u0144cie zaczep. Kr\u00f3tka droga przecina puls; obej\u015bcie prowadzi praw\u0105 stron\u0105.",
+      "stabilization": [
+        [
+          [
+            880,
+            224
+          ],
+          [
+            1104,
+            384
+          ]
+        ],
+        [
+          [
+            776,
+            192
+          ],
+          [
+            944,
+            624
+          ]
+        ]
+      ]
+    }
+  ]
+}

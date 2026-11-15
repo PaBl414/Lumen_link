@@ -1,0 +1,6 @@
+Godot Engine v4.5.2.stable.official.6ce3de25a - https://godotengine.org
+
+{"map":"dock","no_anchor_zero_charge":true,"ticks":1629,"walls_certified":9}
+{"map":"garden","no_anchor_zero_charge":true,"ticks":1676,"walls_certified":9}
+{"map":"reactor","no_anchor_zero_charge":true,"ticks":1692,"walls_certified":9}
+Relay geometry failures: 0

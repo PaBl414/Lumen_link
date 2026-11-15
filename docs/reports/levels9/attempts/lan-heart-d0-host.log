@@ -1,0 +1,35 @@
+Godot Engine v4.5.2.stable.official.6ce3de25a - https://godotengine.org
+
+PHASE host IDLE
+PHASE host LOBBY
+PHASE host HANDSHAKE
+PHASE host LOBBY
+PHASE host LOADING
+PHASE host COUNTDOWN
+PHASE host PLAYING
+PHASE host PLAYING
+EXPEDITION host PLAYING sector=8 tick=201 objective=0 charge=[0, 0, 0] players=(119.6021, 578.2018)/(201.811, 592.0) target=0 lead=2
+EXPEDITION host PLAYING sector=8 tick=801 objective=0 charge=[0, 0, 0] players=(282.4682, 343.9262)/(383.9702, 496.0297) target=0 lead=2
+EXPEDITION host PLAYING sector=8 tick=1402 objective=0 charge=[214, 0, 0] players=(143.9324, 176.0529)/(383.9793, 623.9772) target=0 lead=2
+EXPEDITION host PLAYING sector=8 tick=2003 objective=0 charge=[280, 0, 0] players=(143.9324, 176.0606)/(384.071, 623.9772) target=0 lead=2
+EXPEDITION host PLAYING sector=8 tick=2601 objective=0 charge=[150, 0, 0] players=(143.9524, 236.9148)/(383.9687, 623.9772) target=0 lead=2
+EXPEDITION host PLAYING sector=8 tick=3198 objective=0 charge=[188, 0, 0] players=(180.9973, 184.3637)/(399.7949, 623.9772) target=0 lead=2
+EXPEDITION host PLAYING sector=8 tick=3737 objective=0 charge=[150, 0, 0] players=(168.0614, 142.6692)/(438.7955, 623.9772) target=0 lead=2
+EXPEDITION host PLAYING sector=8 tick=4338 objective=0 charge=[190, 0, 0] players=(144.0635, 270.0041)/(451.7356, 623.9772) target=0 lead=2
+EXPEDITION host PLAYING sector=8 tick=4934 objective=0 charge=[150, 0, 0] players=(144.0766, 176.055)/(401.1656, 623.9772) target=0 lead=2
+EXPEDITION host PLAYING sector=8 tick=5535 objective=1 charge=[300, 0, 0] players=(398.9603, 128.0352)/(673.7113, 567.9986) target=0 lead=2
+EXPEDITION host PLAYING sector=8 tick=6136 objective=1 charge=[300, 0, 0] players=(686.1679, 295.937)/(839.8065, 591.9641) target=0 lead=2
+EXPEDITION host PLAYING sector=8 tick=6736 objective=1 charge=[300, 0, 0] players=(559.9251, 319.9398)/(854.1997, 591.9641) target=0 lead=2
+EXPEDITION host PLAYING sector=8 tick=7337 objective=1 charge=[300, 61, 0] players=(559.9415, 319.9398)/(852.9592, 591.9641) target=0 lead=2
+EXPEDITION host PLAYING sector=8 tick=7937 objective=1 charge=[300, 150, 0] players=(639.9498, 383.9289)/(1000.513, 583.5217) target=0 lead=2
+EXPEDITION host PLAYING sector=8 tick=8537 objective=1 charge=[300, 150, 0] players=(639.9498, 383.9289)/(1022.152, 530.6989) target=0 lead=2
+EXPEDITION host PLAYING sector=8 tick=9138 objective=2 charge=[300, 300, 0] players=(658.3593, 383.9289)/(875.4958, 607.9932) target=0 lead=2
+EXPEDITION host PLAYING sector=8 tick=9739 objective=2 charge=[300, 300, 42] players=(943.9459, 192.0479)/(1159.77, 400.9772) target=0 lead=2
+EXPEDITION host PLAYING sector=8 tick=10340 objective=2 charge=[300, 300, 241] players=(783.9366, 144.0763)/(1176.008, 559.9644) target=0 lead=2
+EXPEDITION host PLAYING sector=8 tick=10941 objective=3 charge=[300, 300, 300] players=(1000.185, 446.3165)/(1192.01, 592.0031) target=0 lead=2
+PHASE host RESULTS
+PHASE host RESULTS
+PHASE host IDLE
+HARNESS ERROR host 8 Partner opuścił grę.
+{"application_sizes":[148,148,34,30,148,148,148,148,148,148,148,148,148,148,148,148,148,148,148,34,148,30,148,148,148,148,148,148,148,148,148,148,148,148,148,148,34,148,30,148,148,148,148,148,148,148,148,148,148,148,148,148,148,34,148,148,30,148,148,148,148,148,148,148,148,148,148,148,148,148,148,34,148,30,148,148,148,148,148,148,148,148,148,148,148,148,148,148,34,148,30,148,148,148,148,148,148,148,148,148,148,148,148,148,148,34,148,30,148,148,148,148,148,148,148,148,148,148,148,148,148,148,148,34,30,44,148,153],"begin_tick":0,"begins":1,"client_has_simulation":false,"code":8,"content_hash":"04675b9b181d1ef3144ade874a810c7649d12d2f11b0f754cd709e164840eb9f","error":"Partner opuścił grę.","integrity":5,"latches_by_sector":{"8":7},"levels":{},"match_id":193204224,"ok":false,"score":3000,"sector":8,"session_id":3097731868,"tick":10980}
+PHASE host IDLE

@@ -1,0 +1,224 @@
+{
+  "grid_step": 4,
+  "cases": 24,
+  "pairs": 3382821,
+  "results": [
+    {
+      "map": "garden",
+      "goal": 1,
+      "stage": 0,
+      "desired": 0,
+      "other": -1,
+      "bypass": null,
+      "pairs": 141752
+    },
+    {
+      "map": "garden",
+      "goal": 1,
+      "stage": 0,
+      "desired": 0,
+      "other": 1,
+      "bypass": null,
+      "pairs": 141752
+    },
+    {
+      "map": "garden",
+      "goal": 1,
+      "stage": 0,
+      "desired": 0,
+      "other": 2,
+      "bypass": null,
+      "pairs": 141752
+    },
+    {
+      "map": "garden",
+      "goal": 2,
+      "stage": 0,
+      "desired": 1,
+      "other": -1,
+      "bypass": null,
+      "pairs": 141752
+    },
+    {
+      "map": "garden",
+      "goal": 2,
+      "stage": 0,
+      "desired": 1,
+      "other": 0,
+      "bypass": null,
+      "pairs": 141752
+    },
+    {
+      "map": "garden",
+      "goal": 2,
+      "stage": 0,
+      "desired": 1,
+      "other": 2,
+      "bypass": null,
+      "pairs": 141752
+    },
+    {
+      "map": "garden",
+      "goal": 2,
+      "stage": 1,
+      "desired": 2,
+      "other": -1,
+      "bypass": null,
+      "pairs": 142129
+    },
+    {
+      "map": "garden",
+      "goal": 2,
+      "stage": 1,
+      "desired": 2,
+      "other": 0,
+      "bypass": null,
+      "pairs": 142129
+    },
+    {
+      "map": "garden",
+      "goal": 2,
+      "stage": 1,
+      "desired": 2,
+      "other": 1,
+      "bypass": null,
+      "pairs": 142129
+    },
+    {
+      "map": "reactor",
+      "goal": 0,
+      "stage": 0,
+      "desired": 0,
+      "other": -1,
+      "bypass": null,
+      "pairs": 142129
+    },
+    {
+      "map": "reactor",
+      "goal": 0,
+      "stage": 0,
+      "desired": 0,
+      "other": 1,
+      "bypass": null,
+      "pairs": 142129
+    },
+    {
+      "map": "reactor",
+      "goal": 0,
+      "stage": 0,
+      "desired": 0,
+      "other": 2,
+      "bypass": null,
+      "pairs": 142129
+    },
+    {
+      "map": "reactor",
+      "goal": 1,
+      "stage": 0,
+      "desired": 1,
+      "other": -1,
+      "bypass": null,
+      "pairs": 142129
+    },
+    {
+      "map": "reactor",
+      "goal": 1,
+      "stage": 0,
+      "desired": 1,
+      "other": 0,
+      "bypass": null,
+      "pairs": 142129
+    },
+    {
+      "map": "reactor",
+      "goal": 1,
+      "stage": 0,
+      "desired": 1,
+      "other": 2,
+      "bypass": null,
+      "pairs": 142129
+    },
+    {
+      "map": "reactor",
+      "goal": 1,
+      "stage": 1,
+      "desired": 1,
+      "other": -1,
+      "bypass": null,
+      "pairs": 142129
+    },
+    {
+      "map": "reactor",
+      "goal": 1,
+      "stage": 1,
+      "desired": 1,
+      "other": 0,
+      "bypass": null,
+      "pairs": 142129
+    },
+    {
+      "map": "reactor",
+      "goal": 1,
+      "stage": 1,
+      "desired": 1,
+      "other": 2,
+      "bypass": null,
+      "pairs": 142129
+    },
+    {
+      "map": "reactor",
+      "goal": 2,
+      "stage": 0,
+      "desired": 1,
+      "other": -1,
+      "bypass": null,
+      "pairs": 142129
+    },
+    {
+      "map": "reactor",
+      "goal": 2,
+      "stage": 0,
+      "desired": 1,
+      "other": 0,
+      "bypass": null,
+      "pairs": 142129
+    },
+    {
+      "map": "reactor",
+      "goal": 2,
+      "stage": 0,
+      "desired": 1,
+      "other": 2,
+      "bypass": null,
+      "pairs": 142129
+    },
+    {
+      "map": "reactor",
+      "goal": 2,
+      "stage": 1,
+      "desired": 2,
+      "other": -1,
+      "bypass": null,
+      "pairs": 133458
+    },
+    {
+      "map": "reactor",
+      "goal": 2,
+      "stage": 1,
+      "desired": 2,
+      "other": 0,
+      "bypass": null,
+      "pairs": 133458
+    },
+    {
+      "map": "reactor",
+      "goal": 2,
+      "stage": 1,
+      "desired": 2,
+      "other": 1,
+      "bypass": null,
+      "pairs": 133458
+    }
+  ],
+  "passed": true
+}

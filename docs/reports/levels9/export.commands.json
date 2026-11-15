@@ -1,0 +1,73 @@
+[
+  {
+    "command": [
+      "/home/pablo/.local/bin/godot",
+      "--headless",
+      "--editor",
+      "--path",
+      "/tmp/lumen-export-_uwla_tt",
+      "--import",
+      "--quit"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "/home/pablo/.local/bin/godot",
+      "--headless",
+      "--path",
+      "/tmp/lumen-export-_uwla_tt",
+      "--export-debug",
+      "Linux Smoke",
+      "/home/pablo/.local/share/lumen-tools/levels9-smoke/linux/lumen_smoke.x86_64"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "/home/pablo/.local/bin/godot",
+      "--headless",
+      "--path",
+      "/tmp/lumen-export-_uwla_tt",
+      "--export-debug",
+      "Windows Smoke",
+      "/home/pablo/.local/share/lumen-tools/levels9-smoke/windows/lumen_smoke.exe"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "/home/pablo/.local/share/lumen-tools/levels9-smoke/linux/lumen_smoke.x86_64",
+      "--headless",
+      "res://tests/integration/network_harness.tscn",
+      "--",
+      "--scenario=boot",
+      "--report=/home/pablo/lan_game/docs/reports/levels9/export-boot.json"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "/home/pablo/.local/share/lumen-tools/levels9-smoke/linux/lumen_smoke.x86_64",
+      "--headless",
+      "res://tests/integration/network_harness.tscn",
+      "--",
+      "--role=host",
+      "--port=25981",
+      "--report=/home/pablo/lan_game/docs/reports/levels9/export-host.json"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "/home/pablo/.local/share/lumen-tools/levels9-smoke/linux/lumen_smoke.x86_64",
+      "--headless",
+      "res://tests/integration/network_harness.tscn",
+      "--",
+      "--role=client",
+      "--port=25981",
+      "--report=/home/pablo/lan_game/docs/reports/levels9/export-client.json"
+    ],
+    "exit_code": 0
+  }
+]

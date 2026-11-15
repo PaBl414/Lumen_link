@@ -1,0 +1,74 @@
+{
+  "completed": [
+    "dock",
+    "garden",
+    "reactor",
+    "switchyard",
+    "service_channels",
+    "observatory",
+    "interference",
+    "aux_core",
+    "station_heart"
+  ],
+  "last_selected": {
+    "difficulty": 0,
+    "level_id": "station_heart"
+  },
+  "records": {
+    "aux_core": {
+      "normal": {
+        "best_score": 6380,
+        "best_time_ticks": 8484
+      }
+    },
+    "dock": {
+      "normal": {
+        "best_score": 7680,
+        "best_time_ticks": 4293
+      }
+    },
+    "garden": {
+      "normal": {
+        "best_score": 7520,
+        "best_time_ticks": 5247
+      }
+    },
+    "interference": {
+      "normal": {
+        "best_score": 7440,
+        "best_time_ticks": 5717
+      }
+    },
+    "observatory": {
+      "normal": {
+        "best_score": 7460,
+        "best_time_ticks": 5626
+      }
+    },
+    "reactor": {
+      "normal": {
+        "best_score": 5960,
+        "best_time_ticks": 7428
+      }
+    },
+    "service_channels": {
+      "normal": {
+        "best_score": 7740,
+        "best_time_ticks": 3932
+      }
+    },
+    "station_heart": {
+      "normal": {
+        "best_score": 7190,
+        "best_time_ticks": 7210
+      }
+    },
+    "switchyard": {
+      "normal": {
+        "best_score": 7750,
+        "best_time_ticks": 3886
+      }
+    }
+  },
+  "schema_version": 1
+}

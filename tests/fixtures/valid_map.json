@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "id": "dock",
+  "bounds": [
+    32,
+    88,
+    1216,
+    600
+  ],
+  "spawns": [
+    [
+      112,
+      592
+    ],
+    [
+      176,
+      592
+    ]
+  ],
+  "walls": [
+    {
+      "id": 0,
+      "rect": [
+        432,
+        384,
+        96,
+        176
+      ]
+    },
+    {
+      "id": 1,
+      "rect": [
+        744,
+        160,
+        96,
+        192
+      ]
+    }
+  ],
+  "beacons": [
+    {
+      "id": 0,
+      "position": [
+        352,
+        520
+      ]
+    },
+    {
+      "id": 1,
+      "position": [
+        640,
+        232
+      ]
+    },
+    {
+      "id": 2,
+      "position": [
+        1008,
+        456
+      ]
+    }
+  ],
+  "sockets": [
+    {
+      "id": 0,
+      "position": [
+        384,
+        336
+      ]
+    },
+    {
+      "id": 1,
+      "position": [
+        640,
+        416
+      ]
+    },
+    {
+      "id": 2,
+      "position": [
+        896,
+        368
+      ]
+    }
+  ],
+  "exit": {
+    "position": [
+      1168,
+      592
+    ],
+    "radius": 64
+  },
+  "hazards": [
+    {
+      "id": 0,
+      "type": "PULSE",
+      "a": [
+        544,
+        544
+      ],
+      "radius": 48,
+      "phase_offset": 0
+    },
+    {
+      "id": 1,
+      "type": "PULSE",
+      "a": [
+        944,
+        224
+      ],
+      "radius": 48,
+      "phase_offset": 150
+    },
+    {
+      "id": 2,
+      "type": "SWEEP",
+      "a": [
+        512,
+        176
+      ],
+      "b": [
+        688,
+        176
+      ],
+      "travel": [
+        0,
+        160
+      ],
+      "phase_offset": 90
+    }
+  ],
+  "background_asset": "dock_background"
+}

@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3]
+[ext_resource type="Script" path="res://presentation/drone_view.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/art/drone_a.svg" id="2"]
+[ext_resource type="Texture2D" path="res://assets/art/sensor.svg" id="3"]
+[node name="Drone" type="Node2D"]
+z_index = 20
+script = ExtResource("1")
+[node name="Visual" type="Node2D" parent="."]
+[node name="DashAxis" type="Node2D" parent="Visual"]
+[node name="Art" type="Node2D" parent="Visual/DashAxis"]
+[node name="Body" type="Sprite2D" parent="Visual/DashAxis/Art"]
+texture = ExtResource("2")
+[node name="Sensor" type="Sprite2D" parent="Visual/DashAxis/Art"]
+position = Vector2(4, -2)
+texture = ExtResource("3")
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]

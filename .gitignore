@@ -1,0 +1,52 @@
+# Godot: local editor state, imported cache and export credentials.
+.godot/
+.mono/
+export_credentials.cfg
+
+# Generated builds and export packages. Keep export_presets.cfg in Git.
+/build/
+/builds/
+/dist/
+/exports/
+*.pck
+*.x86_64
+*.arm64
+*.exe
+*.apk
+*.aab
+*.dmg
+*.app/
+
+# Python tooling: local environments and caches.
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local secrets; example configuration may be committed.
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# Temporary files and local editor/OS state.
+LUMEN_LINK_Plan_Produkcji.md
+*.tmp
+*.swp
+*.swo
+*~
+.idea/
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini
+
+# Local runtime logs. Preserve docs/reports: recorded test evidence is intentional.
+/logs/
+/lumen.log*
+
+# Godot *.uid and asset *.import files, build_manifest.json, source assets,
+# test fixtures and docs/reports must remain versioned.

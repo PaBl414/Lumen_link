@@ -1,0 +1,46 @@
+{
+  "ok": true,
+  "results": [
+    {
+      "difficulty": 0,
+      "role": "host",
+      "exit_code": 0,
+      "ok": true,
+      "command": [
+        "/home/pablo/.local/bin/godot",
+        "--headless",
+        "--path",
+        "/home/pablo/lan_game",
+        "res://tests/integration/network_harness.tscn",
+        "--",
+        "--scenario=expedition",
+        "--level=dock",
+        "--role=host",
+        "--difficulty=0",
+        "--port=25900",
+        "--report=/home/pablo/lan_game/docs/reports/levels9/final-lan/lan-d0-host.json"
+      ]
+    },
+    {
+      "difficulty": 0,
+      "role": "client",
+      "exit_code": 0,
+      "ok": true,
+      "command": [
+        "/home/pablo/.local/bin/godot",
+        "--headless",
+        "--path",
+        "/home/pablo/lan_game",
+        "res://tests/integration/network_harness.tscn",
+        "--",
+        "--scenario=expedition",
+        "--level=dock",
+        "--role=client",
+        "--difficulty=0",
+        "--port=25900",
+        "--report=/home/pablo/lan_game/docs/reports/levels9/final-lan/lan-d0-client.json"
+      ]
+    }
+  ],
+  "note": "Normal process exits extracted from attempts/mixed-lan-runner.log; the earlier Relaxed run exposed the separately fixed terminal input race."
+}

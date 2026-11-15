@@ -1,0 +1,1 @@
+Pierwsza próba negatywnego testu CLI w tymczasowej kopii bez importu klas zakończyła się timeoutem 30 s. Harness poprawiono: kopia ma własny minimalny project.godot i przechodzi najpierw import; właściwy negatywny test zwrócił 1. Dowody: fixture-import.log, invalid-validator.log, invalid.commands.json. Nie traktowano timeoutu jako PASS.

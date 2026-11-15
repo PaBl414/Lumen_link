@@ -1,0 +1,28 @@
+Godot Engine v4.5.2.stable.official.6ce3de25a - https://godotengine.org
+
+PHASE host IDLE
+PHASE host LOBBY
+PHASE host HANDSHAKE
+PHASE host LOBBY
+PHASE host LOADING
+PHASE host COUNTDOWN
+PHASE host PLAYING
+PHASE host PLAYING
+EXPEDITION host PLAYING sector=8 tick=265 objective=0 charge=[0, 0, 0] players=(149.7816, 552.4288)/(287.8544, 592.0) target=0 lead=2
+EXPEDITION host PLAYING sector=8 tick=866 objective=0 charge=[24, 0, 0] players=(228.138, 336.5028)/(383.9922, 495.9235) target=0 lead=2
+EXPEDITION host PLAYING sector=8 tick=1466 objective=0 charge=[251, 0, 0] players=(112.0615, 272.0579)/(391.831, 624.0434) target=0 lead=2
+EXPEDITION host PLAYING sector=8 tick=2066 objective=1 charge=[300, 0, 0] players=(419.7878, 303.1308)/(736.4252, 616.345) target=0 lead=2
+EXPEDITION host PLAYING sector=8 tick=2665 objective=1 charge=[300, 0, 0] players=(560.0511, 319.926)/(721.3235, 608.0125) target=0 lead=2
+EXPEDITION host PLAYING sector=8 tick=3249 objective=1 charge=[300, 47, 0] players=(560.042, 319.948)/(767.3547, 592.2391) target=0 lead=2
+EXPEDITION host PLAYING sector=8 tick=3850 objective=1 charge=[300, 100, 0] players=(560.0436, 319.9489)/(775.7059, 590.7095) target=0 lead=2
+EXPEDITION host PLAYING sector=8 tick=4451 objective=1 charge=[300, 155, 0] players=(639.933, 384.0548)/(871.5546, 584.9686) target=0 lead=2
+EXPEDITION host PLAYING sector=8 tick=5052 objective=2 charge=[300, 300, 0] players=(907.6849, 224.831)/(773.3528, 417.7513) target=0 lead=2
+EXPEDITION host PLAYING sector=8 tick=5653 objective=2 charge=[300, 300, 51] players=(943.9368, 192.0531)/(1168.833, 414.5885) target=0 lead=2
+EXPEDITION host PLAYING sector=8 tick=6240 objective=2 charge=[300, 300, 150] players=(791.9315, 266.459)/(1117.715, 499.2355) target=0 lead=2
+EXPEDITION host PLAYING sector=8 tick=6841 objective=3 charge=[300, 300, 300] players=(926.975, 335.9434)/(1191.989, 591.9801) target=0 lead=2
+EXPEDITION host PLAYING sector=8 tick=7441 objective=3 charge=[300, 300, 300] players=(1143.946, 591.9384)/(1191.989, 591.9801) target=0 lead=2
+PHASE host RESULTS
+PHASE host RESULTS
+PHASE host IDLE
+{"application_sizes":[148,148,148,148,148,148,148,148,30,148,148,148,148,148,148,148,34,148,148,148,148,148,148,148,148,30,148,148,148,148,148,148,148,148,34,148,148,148,148,148,148,148,30,148,148,148,148,148,148,148,148,34,148,148,148,148,148,148,148,148,30,148,148,148,148,148,148,148,34,148,148,148,148,148,148,148,148,30,148,148,148,148,148,148,148,148,34,148,148,148,148,148,148,148,30,148,148,148,148,148,148,148,148,34,148,148,148,148,148,148,148,30,148,148,148,148,148,148,148,148,34,148,148,148,148,148,44,153],"begin_tick":0,"begins":1,"client_has_simulation":false,"content_hash":"e82e22c7603b651244f3dc31b8e31bc5fd8872d406f7d997a4c0cfc09a6bb086","integrity":5,"latches_by_sector":{"8":7},"levels":{"station_heart":{"integrity":5,"saved":true,"score":6580,"ticks":7267}},"match_id":2881873037,"ok":true,"phase":3,"score":6580,"sector":8,"session_id":1946094893,"tick":7447}
+PHASE host IDLE

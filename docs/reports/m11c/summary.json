@@ -1,0 +1,372 @@
+{
+  "implementation_complete": true,
+  "automated_acceptance_complete": true,
+  "verified_at_utc": "2026-11-15T20:18:43.388054+00:00",
+  "build": {
+    "build_label": "M11c-dev",
+    "code_revision": "unversioned",
+    "content_sha256": "15836523d54c575f2db70b76b1842f2c6f021f5e882b4dbdd331ee75438200a5",
+    "engine_build_id": "6ce3de25aa58466e14ef354703ba8d9791a417da",
+    "engine_version": "4.5.2",
+    "protocol": 2,
+    "schema_version": 1
+  },
+  "full_suite": {
+    "duration_ms": 272868,
+    "exit_code": 0,
+    "failed": 0,
+    "passed": 1146,
+    "skipped": 0,
+    "suite": "all",
+    "suite_count": 19
+  },
+  "offline_sectors": 18,
+  "offline_campaigns": 6,
+  "recordings": [
+    {
+      "map": "dock",
+      "runs": [
+        {
+          "variant": 0,
+          "difficulty": 0,
+          "ok": true,
+          "ticks": 4107,
+          "integrity": 6,
+          "latched_mask": 0
+        },
+        {
+          "variant": 0,
+          "difficulty": 1,
+          "ok": true,
+          "ticks": 3435,
+          "integrity": 9,
+          "latched_mask": 0
+        },
+        {
+          "variant": 1,
+          "difficulty": 0,
+          "ok": true,
+          "ticks": 3745,
+          "integrity": 6,
+          "latched_mask": 0
+        },
+        {
+          "variant": 1,
+          "difficulty": 1,
+          "ok": true,
+          "ticks": 3753,
+          "integrity": 9,
+          "latched_mask": 0
+        },
+        {
+          "variant": 2,
+          "difficulty": 0,
+          "ok": true,
+          "ticks": 3782,
+          "integrity": 6,
+          "latched_mask": 0
+        },
+        {
+          "variant": 2,
+          "difficulty": 1,
+          "ok": true,
+          "ticks": 3636,
+          "integrity": 9,
+          "latched_mask": 0
+        }
+      ]
+    },
+    {
+      "map": "garden",
+      "runs": [
+        {
+          "variant": 0,
+          "difficulty": 0,
+          "ok": true,
+          "ticks": 5131,
+          "integrity": 6,
+          "latched_mask": 5
+        },
+        {
+          "variant": 0,
+          "difficulty": 1,
+          "ok": true,
+          "ticks": 4558,
+          "integrity": 9,
+          "latched_mask": 5
+        },
+        {
+          "variant": 1,
+          "difficulty": 0,
+          "ok": true,
+          "ticks": 5110,
+          "integrity": 6,
+          "latched_mask": 5
+        },
+        {
+          "variant": 1,
+          "difficulty": 1,
+          "ok": true,
+          "ticks": 4532,
+          "integrity": 9,
+          "latched_mask": 5
+        },
+        {
+          "variant": 2,
+          "difficulty": 0,
+          "ok": true,
+          "ticks": 5372,
+          "integrity": 6,
+          "latched_mask": 5
+        },
+        {
+          "variant": 2,
+          "difficulty": 1,
+          "ok": true,
+          "ticks": 4846,
+          "integrity": 9,
+          "latched_mask": 5
+        }
+      ]
+    },
+    {
+      "map": "reactor",
+      "runs": [
+        {
+          "variant": 0,
+          "difficulty": 0,
+          "ok": true,
+          "ticks": 6471,
+          "integrity": 3,
+          "latched_mask": 6
+        },
+        {
+          "variant": 0,
+          "difficulty": 1,
+          "ok": true,
+          "ticks": 4486,
+          "integrity": 9,
+          "latched_mask": 6
+        },
+        {
+          "variant": 1,
+          "difficulty": 0,
+          "ok": true,
+          "ticks": 6204,
+          "integrity": 6,
+          "latched_mask": 6
+        },
+        {
+          "variant": 1,
+          "difficulty": 1,
+          "ok": true,
+          "ticks": 4555,
+          "integrity": 9,
+          "latched_mask": 6
+        },
+        {
+          "variant": 2,
+          "difficulty": 0,
+          "ok": true,
+          "ticks": 6908,
+          "integrity": 5,
+          "latched_mask": 6
+        },
+        {
+          "variant": 2,
+          "difficulty": 1,
+          "ok": true,
+          "ticks": 5256,
+          "integrity": 8,
+          "latched_mask": 6
+        }
+      ]
+    }
+  ],
+  "field_boundaries": {
+    "passed": true,
+    "cases": 24,
+    "endpoint_pairs": 3382821,
+    "grid_step": 4,
+    "scope": "sampled geometry, not continuous proof"
+  },
+  "charge_windows": {
+    "passed": true,
+    "cases": 78,
+    "scope": "stationary timing model with 24/36 tick reserves"
+  },
+  "lan": {
+    "normal": {
+      "passed": true,
+      "exit_codes": [
+        0,
+        0
+      ],
+      "results": [
+        {
+          "ok": true,
+          "score": 13940,
+          "integrity": 4,
+          "latches_by_sector": {
+            "0": 0,
+            "1": 5,
+            "2": 6
+          },
+          "content_hash": "15836523d54c575f2db70b76b1842f2c6f021f5e882b4dbdd331ee75438200a5",
+          "client_has_simulation": false
+        },
+        {
+          "ok": true,
+          "score": 13940,
+          "integrity": 4,
+          "latches_by_sector": {
+            "0": 0,
+            "1": 5,
+            "2": 6
+          },
+          "content_hash": "15836523d54c575f2db70b76b1842f2c6f021f5e882b4dbdd331ee75438200a5",
+          "client_has_simulation": false
+        }
+      ]
+    },
+    "relaxed": {
+      "passed": true,
+      "exit_codes": [
+        0,
+        0
+      ],
+      "results": [
+        {
+          "ok": true,
+          "score": 19410,
+          "integrity": 9,
+          "latches_by_sector": {
+            "0": 0,
+            "1": 5,
+            "2": 6
+          },
+          "content_hash": "15836523d54c575f2db70b76b1842f2c6f021f5e882b4dbdd331ee75438200a5",
+          "client_has_simulation": false
+        },
+        {
+          "ok": true,
+          "score": 19410,
+          "integrity": 9,
+          "latches_by_sector": {
+            "0": 0,
+            "1": 5,
+            "2": 6
+          },
+          "content_hash": "15836523d54c575f2db70b76b1842f2c6f021f5e882b4dbdd331ee75438200a5",
+          "client_has_simulation": false
+        }
+      ]
+    }
+  },
+  "exports": [
+    {
+      "command": [
+        "/home/pablo/.local/bin/godot",
+        "--headless",
+        "--editor",
+        "--path",
+        "/tmp/lumen-export-m8lt0dq9",
+        "--import",
+        "--quit"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "/home/pablo/.local/bin/godot",
+        "--headless",
+        "--path",
+        "/tmp/lumen-export-m8lt0dq9",
+        "--export-debug",
+        "Linux Smoke",
+        "/home/pablo/.local/share/lumen-tools/m11c-smoke/linux/lumen_smoke.x86_64"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "/home/pablo/.local/bin/godot",
+        "--headless",
+        "--path",
+        "/tmp/lumen-export-m8lt0dq9",
+        "--export-debug",
+        "Windows Smoke",
+        "/home/pablo/.local/share/lumen-tools/m11c-smoke/windows/lumen_smoke.exe"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "/home/pablo/.local/share/lumen-tools/m11c-smoke/linux/lumen_smoke.x86_64",
+        "--headless",
+        "res://tests/integration/network_harness.tscn",
+        "--",
+        "--scenario=boot",
+        "--report=/home/pablo/lan_game/docs/reports/m11c/export-boot.json"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "/home/pablo/.local/share/lumen-tools/m11c-smoke/linux/lumen_smoke.x86_64",
+        "--headless",
+        "res://tests/integration/network_harness.tscn",
+        "--",
+        "--role=host",
+        "--port=25991",
+        "--report=/home/pablo/lan_game/docs/reports/m11c/export-host.json"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "/home/pablo/.local/share/lumen-tools/m11c-smoke/linux/lumen_smoke.x86_64",
+        "--headless",
+        "res://tests/integration/network_harness.tscn",
+        "--",
+        "--role=client",
+        "--port=25991",
+        "--report=/home/pablo/lan_game/docs/reports/m11c/export-client.json"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "linux_native": {
+    "command": [
+      "/home/pablo/.local/share/lumen-tools/m11c-smoke/linux/lumen_smoke.x86_64",
+      "--display-driver",
+      "x11",
+      "--max-fps",
+      "60"
+    ],
+    "exit_code": 0
+  },
+  "presentation": {
+    "exit_code": 0,
+    "stage_views": 13,
+    "grayscale_stage_views": 13,
+    "additional_state_views": 2,
+    "resolution": [
+      1280,
+      720
+    ],
+    "reviewed_samples": [
+      "garden-3-2.png",
+      "reactor-3-2.png",
+      "fields-empty.png",
+      "blocked-contact.png",
+      "garden-3-2-gray.png",
+      "export-native.png"
+    ]
+  },
+  "human_playtests": "NOT RUN (0/5 new duos)",
+  "physical_two_computer_lan": "NOT RUN",
+  "windows_runtime": "NOT RUN (cross-export only)",
+  "m15_performance_gate": "NOT RUN",
+  "m12": "NOT STARTED"
+}

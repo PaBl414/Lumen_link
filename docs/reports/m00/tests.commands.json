@@ -1,0 +1,73 @@
+[
+  {
+    "label": "all",
+    "command": [
+      "/home/pablo/.local/bin/godot",
+      "--headless",
+      "--path",
+      ".",
+      "--script",
+      "tests/test_runner.gd",
+      "--",
+      "--suite=all"
+    ],
+    "exit_code": 0
+  },
+  {
+    "label": "integration",
+    "command": [
+      "/home/pablo/.local/bin/godot",
+      "--headless",
+      "--path",
+      ".",
+      "--script",
+      "tests/test_runner.gd",
+      "--",
+      "--suite=integration"
+    ],
+    "exit_code": 0
+  },
+  {
+    "label": "unit",
+    "command": [
+      "/home/pablo/.local/bin/godot",
+      "--headless",
+      "--path",
+      ".",
+      "--script",
+      "tests/test_runner.gd",
+      "--",
+      "--suite=unit"
+    ],
+    "exit_code": 0
+  },
+  {
+    "label": "self-test-failure",
+    "command": [
+      "/home/pablo/.local/bin/godot",
+      "--headless",
+      "--path",
+      ".",
+      "--script",
+      "tests/test_runner.gd",
+      "--",
+      "--suite=all",
+      "--self-test-failure"
+    ],
+    "exit_code": 1
+  },
+  {
+    "label": "unknown-suite",
+    "command": [
+      "/home/pablo/.local/bin/godot",
+      "--headless",
+      "--path",
+      ".",
+      "--script",
+      "tests/test_runner.gd",
+      "--",
+      "--suite=missing"
+    ],
+    "exit_code": 1
+  }
+]

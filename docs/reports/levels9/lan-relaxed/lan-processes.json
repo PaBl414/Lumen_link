@@ -1,0 +1,45 @@
+{
+  "ok": true,
+  "results": [
+    {
+      "difficulty": 1,
+      "role": "host",
+      "exit_code": 0,
+      "ok": true,
+      "command": [
+        "/home/pablo/.local/bin/godot",
+        "--headless",
+        "--path",
+        "/home/pablo/lan_game",
+        "res://tests/integration/network_harness.tscn",
+        "--",
+        "--scenario=expedition",
+        "--level=dock",
+        "--role=host",
+        "--difficulty=1",
+        "--port=25932",
+        "--report=/home/pablo/lan_game/docs/reports/levels9/final-lan-relaxed/lan-d1-host.json"
+      ]
+    },
+    {
+      "difficulty": 1,
+      "role": "client",
+      "exit_code": 0,
+      "ok": true,
+      "command": [
+        "/home/pablo/.local/bin/godot",
+        "--headless",
+        "--path",
+        "/home/pablo/lan_game",
+        "res://tests/integration/network_harness.tscn",
+        "--",
+        "--scenario=expedition",
+        "--level=dock",
+        "--role=client",
+        "--difficulty=1",
+        "--port=25932",
+        "--report=/home/pablo/lan_game/docs/reports/levels9/final-lan-relaxed/lan-d1-client.json"
+      ]
+    }
+  ]
+}

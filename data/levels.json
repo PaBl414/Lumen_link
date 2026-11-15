@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "levels": [
+    {"id":"dock","name":"Dok","theme":"dock","tint":"ffffff","motif":"dock"},
+    {"id":"garden","name":"Ogród","theme":"garden","tint":"ffffff","motif":"garden"},
+    {"id":"reactor","name":"Reaktor","theme":"reactor","tint":"ffffff","motif":"reactor"},
+    {"id":"switchyard","name":"Rozdzielnia","theme":"dock","tint":"bfe8d8","motif":"circuits"},
+    {"id":"service_channels","name":"Kanały serwisowe","theme":"dock","tint":"c4ced9","motif":"channels"},
+    {"id":"observatory","name":"Obserwatorium","theme":"garden","tint":"a9c5f5","motif":"orbits"},
+    {"id":"interference","name":"Komora zakłóceń","theme":"reactor","tint":"c3a9ec","motif":"interference"},
+    {"id":"aux_core","name":"Rdzeń pomocniczy","theme":"reactor","tint":"f3cf98","motif":"circuits"},
+    {"id":"station_heart","name":"Serce stacji","theme":"reactor","tint":"f2a6aa","motif":"heart"}
+  ]
+}

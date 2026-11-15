@@ -1,0 +1,33 @@
+extends Node
+var content: Dictionary
+var view: WorldView
+var sim: Simulation
+var index: int = -1
+var since: int
+var run: Dictionary
+func _ready() -> void: _start.call_deferred()
+func _start() -> void:
+	DisplayServer.window_set_title("LUMEN LINK M10 MAPS")
+	content = preload("res://tools/validate_content.gd").load_content()
+	if not content.ok: print(content.message); get_tree().quit(1); return
+	_next()
+func _next() -> void:
+	index += 1
+	if index>=3: get_tree().quit(0); return
+	if view != null: remove_child(view); view.queue_free()
+	var id: StringName = preload("res://tools/validate_content.gd").MAP_IDS[index]
+	view = preload("res://scenes/world.tscn").instantiate(); add_child(view); view.configure(content.maps[id])
+	sim = Simulation.new(); sim.initialize(content.config,content.maps[id],0,0)
+	run = preload("res://tests/fixture_replay.gd").load_run(id,0,0)
+	var label: Label = Label.new(); label.position = Vector2(32,12); label.text = "M10 · %s · DEVELOPER ART · rzeczywiste InputCommand" % id; label.add_theme_font_size_override("font_size",20); view.add_child(label)
+	since = Time.get_ticks_msec(); print("PREVIEW ",id)
+func _physics_process(_delta: float) -> void:
+	if sim == null: return
+	var tick: int = sim.world.tick+1
+	sim.step([preload("res://tests/fixture_replay.gd").command_at(run,tick,0,tick),preload("res://tests/fixture_replay.gd").command_at(run,tick,1,tick)])
+	if Time.get_ticks_msec()-since>8000: _next()
+func _process(delta: float) -> void:
+	if sim == null or index>=3: return
+	var snapshot: GameSnapshot = sim.snapshot(); var frame: GameTypes.RenderFrame = GameTypes.RenderFrame.new()
+	for player: WorldState.PlayerState in snapshot.players: frame.players.append(player.copy())
+	frame.tick_float = snapshot.tick; view.present(frame,delta); view.present_snapshot(snapshot,frame)

@@ -1,0 +1,26 @@
+Godot Engine v4.5.2.stable.official.6ce3de25a - https://godotengine.org
+
+PHASE client IDLE
+PHASE client CONNECTING
+PHASE client LOBBY
+PHASE client LOADING
+PHASE client COUNTDOWN
+PHASE client PLAYING
+PHASE client PLAYING
+EXPEDITION client PLAYING sector=8 tick=310 objective=0 charge=[0, 0, 0] players=(169.2384, 529.2407)/(297.2289, 574.9368) target=313 lead=3
+EXPEDITION client PLAYING sector=8 tick=910 objective=0 charge=[68, 0, 0] players=(210.8484, 320.0648)/(383.9922, 495.9235) target=913 lead=3
+EXPEDITION client PLAYING sector=8 tick=1510 objective=0 charge=[271, 0, 0] players=(112.0615, 272.0579)/(271.9821, 672.0864) target=1513 lead=3
+EXPEDITION client PLAYING sector=8 tick=2110 objective=1 charge=[300, 0, 0] players=(459.0655, 303.9543)/(753.824, 597.3527) target=2114 lead=3
+EXPEDITION client PLAYING sector=8 tick=2706 objective=1 charge=[300, 14, 0] players=(560.0511, 319.926)/(754.1786, 608.8669) target=2710 lead=3
+EXPEDITION client PLAYING sector=8 tick=3294 objective=1 charge=[300, 92, 0] players=(560.042, 319.948)/(767.9531, 591.9242) target=3297 lead=3
+EXPEDITION client PLAYING sector=8 tick=3894 objective=1 charge=[300, 144, 0] players=(560.0436, 319.9489)/(767.9545, 592.0381) target=3899 lead=3
+EXPEDITION client PLAYING sector=8 tick=4496 objective=1 charge=[300, 200, 0] players=(639.933, 384.0548)/(847.2439, 599.9716) target=4499 lead=3
+EXPEDITION client PLAYING sector=8 tick=5096 objective=2 charge=[300, 300, 0] players=(923.5893, 208.0783)/(806.7002, 416.0495) target=5100 lead=3
+EXPEDITION client PLAYING sector=8 tick=5698 objective=2 charge=[300, 300, 84] players=(943.9368, 192.0531)/(1219.545, 299.2442) target=5701 lead=3
+EXPEDITION client PLAYING sector=8 tick=6284 objective=2 charge=[300, 300, 150] players=(791.9315, 227.085)/(1136.849, 512.0065) target=6288 lead=3
+EXPEDITION client PLAYING sector=8 tick=6884 objective=3 charge=[300, 300, 300] players=(952.043, 347.65)/(1191.989, 591.9801) target=6888 lead=3
+PHASE client RESULTS
+PHASE client RESULTS
+EXPEDITION client RESULTS sector=8 tick=7447 objective=3 charge=[300, 300, 300] players=(1143.946, 591.9384)/(1191.989, 591.9801) target=7449 lead=3
+{"application_sizes":[96,30,96,96,96,96,96,96,96,96,34,96,96,96,96,96,96,96,30,96,96,96,96,96,96,96,96,34,96,96,96,96,96,96,96,30,96,96,96,96,96,96,96,96,34,96,96,96,96,96,96,96,30,96,96,96,96,96,96,96,96,96,34,96,96,96,96,96,96,96,30,96,96,96,96,96,96,96,96,34,96,96,96,96,96,96,96,30,96,96,96,96,96,96,96,96,34,96,96,96,96,96,96,96,30,96,96,96,96,96,96,96,96,34,96,96,96,96,96,96,96,96,30,96,96,96,96,96],"begin_tick":0,"begins":1,"client_has_simulation":false,"content_hash":"e82e22c7603b651244f3dc31b8e31bc5fd8872d406f7d997a4c0cfc09a6bb086","integrity":5,"latches_by_sector":{"8":7},"levels":{"station_heart":{"integrity":5,"saved":true,"score":6580,"ticks":7267}},"match_id":2881873037,"ok":true,"phase":3,"score":6580,"sector":8,"session_id":1946094893,"tick":7447}
+PHASE client IDLE

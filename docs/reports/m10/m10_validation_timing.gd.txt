@@ -1,0 +1,9 @@
+extends SceneTree
+func _initialize() -> void:
+	var start: int = Time.get_ticks_usec()
+	var cold: Dictionary = preload("res://tools/validate_content.gd").load_content()
+	var cold_us: int = Time.get_ticks_usec()-start
+	start = Time.get_ticks_usec()
+	var warm: Dictionary = preload("res://tools/validate_content.gd").load_content()
+	print(JSON.stringify({"cold_us":cold_us,"warm_us":Time.get_ticks_usec()-start,"ok":cold.ok and warm.ok,"fresh_objects":cold.map!=warm.map}))
+	quit(0 if cold.ok and warm.ok and cold.map!=warm.map else 1)

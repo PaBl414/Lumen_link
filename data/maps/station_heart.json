@@ -1,0 +1,413 @@
+{
+  "schema_version": 3,
+  "id": "station_heart",
+  "bounds": [
+    32,
+    88,
+    1216,
+    600
+  ],
+  "spawns": [
+    [
+      112,
+      592
+    ],
+    [
+      176,
+      592
+    ]
+  ],
+  "walls": [
+    {
+      "id": 0,
+      "rect": [
+        256,
+        368,
+        64,
+        80
+      ]
+    },
+    {
+      "id": 1,
+      "rect": [
+        432,
+        192,
+        80,
+        96
+      ]
+    },
+    {
+      "id": 2,
+      "rect": [
+        640,
+        176,
+        112,
+        64
+      ]
+    },
+    {
+      "id": 3,
+      "rect": [
+        832,
+        128,
+        48,
+        152
+      ]
+    },
+    {
+      "id": 4,
+      "rect": [
+        592,
+        480,
+        96,
+        48
+      ]
+    },
+    {
+      "id": 5,
+      "rect": [
+        912,
+        640,
+        96,
+        24
+      ]
+    },
+    {
+      "id": 6,
+      "rect": [
+        1056,
+        224,
+        64,
+        80
+      ]
+    }
+  ],
+  "beacons": [
+    {
+      "id": 0,
+      "position": [
+        384,
+        400
+      ]
+    },
+    {
+      "id": 1,
+      "position": [
+        768,
+        432
+      ]
+    },
+    {
+      "id": 2,
+      "position": [
+        1040,
+        480
+      ]
+    }
+  ],
+  "sockets": [
+    {
+      "id": 0,
+      "position": [
+        384,
+        320
+      ]
+    },
+    {
+      "id": 1,
+      "position": [
+        768,
+        320
+      ]
+    },
+    {
+      "id": 2,
+      "position": [
+        1056,
+        528
+      ]
+    }
+  ],
+  "exit": {
+    "position": [
+      1168,
+      592
+    ],
+    "radius": 64
+  },
+  "hazards": [
+    {
+      "id": 0,
+      "type": "SWEEP",
+      "a": [
+        96,
+        128
+      ],
+      "b": [
+        96,
+        240
+      ],
+      "travel": [
+        128,
+        0
+      ],
+      "phase_offset": 0
+    },
+    {
+      "id": 1,
+      "type": "PULSE",
+      "a": [
+        384,
+        624
+      ],
+      "radius": 48,
+      "phase_offset": 90
+    },
+    {
+      "id": 2,
+      "type": "PULSE",
+      "a": [
+        768,
+        592
+      ],
+      "radius": 48,
+      "phase_offset": 30
+    },
+    {
+      "id": 3,
+      "type": "SWEEP",
+      "a": [
+        880,
+        368
+      ],
+      "b": [
+        880,
+        560
+      ],
+      "travel": [
+        144,
+        0
+      ],
+      "phase_offset": 90
+    },
+    {
+      "id": 4,
+      "type": "PULSE",
+      "a": [
+        1168,
+        416
+      ],
+      "radius": 48,
+      "phase_offset": 90
+    }
+  ],
+  "background_asset": "reactor_background",
+  "objectives": [
+    {
+      "id": 0,
+      "hint": "Po 150 oboje zmie\u0144cie pola. Dolna cz\u0119\u015b\u0107 lewego pola chroni przed SWEEP; drugi dron wycofuje si\u0119 z PULSE.",
+      "stabilization": [
+        [
+          [
+            208,
+            320
+          ],
+          [
+            384,
+            496
+          ]
+        ],
+        [
+          [
+            112,
+            240
+          ],
+          [
+            384,
+            624
+          ]
+        ]
+      ]
+    },
+    {
+      "id": 1,
+      "hint": "Po 150 drugi gracz prze\u0142\u0105cza zaczep. W nowych polach skr\u00f3\u0107cie ramiona: limit ca\u0142ej trasy to 720.",
+      "stabilization": [
+        [
+          [
+            560,
+            320
+          ],
+          [
+            768,
+            592
+          ]
+        ],
+        [
+          [
+            624,
+            384
+          ],
+          [
+            864,
+            624
+          ]
+        ]
+      ]
+    },
+    {
+      "id": 2,
+      "hint": "Ostatni obw\u00f3d: zachowajcie 150, zmie\u0144cie zaczep i obie strony. Po wy\u0142\u0105czeniu strefy wsp\u00f3lnie do wyj\u015bcia.",
+      "stabilization": [
+        [
+          [
+            944,
+            192
+          ],
+          [
+            1168,
+            416
+          ]
+        ],
+        [
+          [
+            784,
+            144
+          ],
+          [
+            1176,
+            560
+          ]
+        ]
+      ]
+    }
+  ],
+  "obstacles": [
+    {
+      "id": 0,
+      "type": "JAM",
+      "rect": [
+        160,
+        272,
+        96,
+        96
+      ],
+      "normal": [
+        360,
+        90,
+        60
+      ],
+      "relaxed": [
+        420,
+        120,
+        45
+      ],
+      "phase_offset": 0
+    },
+    {
+      "id": 1,
+      "type": "JAM",
+      "rect": [
+        512,
+        272,
+        96,
+        96
+      ],
+      "normal": [
+        360,
+        90,
+        60
+      ],
+      "relaxed": [
+        420,
+        120,
+        45
+      ],
+      "phase_offset": 180
+    },
+    {
+      "id": 2,
+      "type": "SHUTTER",
+      "rect": [
+        368,
+        416,
+        32,
+        48
+      ],
+      "normal": [
+        330,
+        90,
+        60
+      ],
+      "relaxed": [
+        420,
+        120,
+        45
+      ],
+      "phase_offset": 0
+    },
+    {
+      "id": 3,
+      "type": "SHUTTER",
+      "rect": [
+        752,
+        432,
+        32,
+        64
+      ],
+      "normal": [
+        360,
+        90,
+        60
+      ],
+      "relaxed": [
+        420,
+        120,
+        45
+      ],
+      "phase_offset": 0
+    },
+    {
+      "id": 4,
+      "type": "SHUTTER",
+      "rect": [
+        1024,
+        448,
+        64,
+        24
+      ],
+      "normal": [
+        420,
+        90,
+        60
+      ],
+      "relaxed": [
+        480,
+        120,
+        45
+      ],
+      "phase_offset": 240
+    },
+    {
+      "id": 5,
+      "type": "JAM",
+      "rect": [
+        736,
+        100,
+        96,
+        96
+      ],
+      "normal": [
+        360,
+        90,
+        60
+      ],
+      "relaxed": [
+        420,
+        120,
+        45
+      ],
+      "phase_offset": 120
+    }
+  ]
+}

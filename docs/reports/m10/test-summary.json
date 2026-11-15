@@ -1,0 +1,40 @@
+{
+  "all": {
+    "duration_ms": 112351,
+    "exit_code": 0,
+    "failed": 0,
+    "passed": 966,
+    "skipped": 0,
+    "suite": "all",
+    "suite_count": 15
+  },
+  "self-test": {
+    "duration_ms": 102601,
+    "exit_code": 1,
+    "failed": 1,
+    "passed": 965,
+    "skipped": 0,
+    "suite": "all",
+    "suite_count": 15
+  },
+  "expedition": {
+    "begin_tick": 4046,
+    "begins": 3,
+    "client_has_simulation": false,
+    "content_hash": "e62f8ce5deeab6dc077ea0c37b23a34bd20f10a6445bf913ec0820717fccdf57",
+    "integrity": 9,
+    "match_id": 832513910,
+    "ok": true,
+    "score": 20590,
+    "sector": 2,
+    "session_id": 3471253858,
+    "tick": 6525
+  },
+  "manual": {
+    "configurations_run": 0,
+    "configurations_required": 18,
+    "new_duets_run": 0,
+    "new_duets_required": 5,
+    "status": "PENDING"
+  }
+}

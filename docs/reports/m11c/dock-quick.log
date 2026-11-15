@@ -1,0 +1,7 @@
+Godot Engine v4.5.2.stable.official.6ce3de25a - https://godotengine.org
+
+{"difficulty":0,"progress":"dock","state":{"goal":0,"integrity":6,"latch":0,"tick":0},"variant":0}
+{"difficulty":0,"progress":"dock","state":{"goal":1,"integrity":6,"latch":0,"tick":513},"variant":0}
+{"difficulty":0,"progress":"dock","state":{"goal":2,"integrity":6,"latch":0,"tick":1815},"variant":0}
+{"difficulty":0,"progress":"dock","state":{"goal":3,"integrity":6,"latch":0,"tick":3493},"variant":0}
+{"map":"dock","result":{"charge":[300,300,300],"complete_mask":7,"dashes":3,"difficulty":0,"history":[{"goal":0,"integrity":6,"latch":0,"tick":0},{"goal":1,"integrity":6,"latch":0,"tick":513},{"goal":2,"integrity":6,"latch":0,"tick":1815},{"goal":3,"integrity":6,"latch":0,"tick":3493}],"integrity":6,"latched_mask":0,"ok":true,"positions":["(1143.929, 591.94)","(1191.922, 591.9427)"],"retreats":5,"score":4110,"seed":0,"ticks":4107,"variant":0}}

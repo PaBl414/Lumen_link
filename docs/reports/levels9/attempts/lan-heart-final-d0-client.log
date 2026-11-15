@@ -1,0 +1,25 @@
+Godot Engine v4.5.2.stable.official.6ce3de25a - https://godotengine.org
+
+PHASE client IDLE
+PHASE client CONNECTING
+PHASE client LOBBY
+PHASE client LOADING
+PHASE client COUNTDOWN
+EXPEDITION client COUNTDOWN sector=8 tick=106 objective=0 charge=[0, 0, 0] players=(112.0, 592.0)/(176.0, 592.0) target=0 lead=3
+PHASE client PLAYING
+PHASE client PLAYING
+EXPEDITION client PLAYING sector=8 tick=708 objective=0 charge=[0, 0, 0] players=(354.5934, 344.9949)/(384.0777, 495.9362) target=710 lead=3
+EXPEDITION client PLAYING sector=8 tick=1280 objective=0 charge=[150, 0, 0] players=(106.4938, 248.1084)/(466.7204, 624.0321) target=1283 lead=3
+EXPEDITION client PLAYING sector=8 tick=1880 objective=0 charge=[220, 0, 0] players=(143.9386, 238.1495)/(449.7137, 624.0321) target=1882 lead=3
+EXPEDITION client PLAYING sector=8 tick=2478 objective=1 charge=[300, 0, 0] players=(538.3692, 200.0623)/(729.1995, 605.4428) target=2482 lead=3
+EXPEDITION client PLAYING sector=8 tick=3080 objective=1 charge=[300, 0, 0] players=(536.1926, 294.3503)/(895.4918, 538.7332) target=3083 lead=3
+EXPEDITION client PLAYING sector=8 tick=3680 objective=1 charge=[300, 56, 0] players=(560.0212, 319.9272)/(824.9595, 472.7194) target=3684 lead=3
+EXPEDITION client PLAYING sector=8 tick=4266 objective=1 charge=[300, 94, 0] players=(559.937, 319.9286)/(725.097, 446.0492) target=4270 lead=3
+EXPEDITION client PLAYING sector=8 tick=4832 objective=1 charge=[300, 0, 0] players=(560.024, 319.9354)/(713.905, 544.028) target=4835 lead=3
+EXPEDITION client PLAYING sector=8 tick=5396 objective=1 charge=[300, 23, 0] players=(560.0478, 319.9424)/(797.1837, 616.173) target=5408 lead=4
+EXPEDITION client PLAYING sector=8 tick=5952 objective=1 charge=[300, 0, 0] players=(559.9214, 320.0481)/(830.3237, 648.0396) target=5952 lead=4
+EXPEDITION client PLAYING sector=8 tick=6522 objective=1 charge=[300, 20, 0] players=(534.0155, 320.0522)/(788.8262, 572.1123) target=6527 lead=4
+PHASE client RESULTS
+PHASE client RESULTS
+{"application_sizes":[96,96,96,96,96,96,96,96,30,96,96,96,96,34,96,96,96,96,96,96,96,96,96,96,96,30,96,96,96,96,34,96,96,96,96,96,96,96,96,96,96,96,30,96,96,96,96,34,96,96,96,96,96,96,96,96,96,96,96,96,30,96,96,96,34,96,96,96,96,96,96,96,96,96,96,96,96,30,96,96,96,34,96,96,96,96,96,96,96,96,96,96,96,96,30,96,96,96,34,96,96,96,96,96,96,96,96,96,96,96,96,30,96,96,96,96,34,96,96,96,96,96,96,96,96,96,30,96],"begin_tick":0,"begins":1,"client_has_simulation":false,"content_hash":"04675b9b181d1ef3144ade874a810c7649d12d2f11b0f754cd709e164840eb9f","integrity":0,"latches_by_sector":{"8":3},"levels":{},"match_id":1922657501,"ok":false,"score":1000,"sector":8,"session_id":3543870001,"tick":6953}
+PHASE client IDLE

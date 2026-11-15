@@ -1,0 +1,22 @@
+import subprocess,time,os,json
+from pathlib import Path
+out=Path('docs/reports/m10');log=open(out/'gui-maps.log','w')
+cmd=['/home/pablo/.local/bin/godot','--path','.','--display-driver','x11','--max-fps','60','/tmp/m10_map_preview.tscn']
+p=subprocess.Popen(cmd,stdout=log,stderr=subprocess.STDOUT)
+try:
+ for name in ['dock','garden','reactor']:
+  deadline=time.monotonic()+20
+  while 'PREVIEW '+name not in (out/'gui-maps.log').read_text():
+   if time.monotonic()>deadline:raise RuntimeError('map preview timeout')
+   time.sleep(.1)
+  time.sleep(3)
+  env=dict(os.environ,LUMEN_TITLE='LUMEN LINK M10 MAPS',ROLE='host')
+  subprocess.run(['python3','/tmp/m10_capture.py','focus'],env=env,check=True,stdout=subprocess.DEVNULL)
+  subprocess.run(['python3','/tmp/m10_capture.py','capture'],env=env,check=True,stdout=subprocess.DEVNULL)
+  # The X11 helper writes to M09; retain its screenshot under this milestone.
+  Path('docs/reports/m10/gui-host.png').replace(out/('gui-'+name+'.png'))
+ code=p.wait(timeout=15)
+finally:
+ if p.poll() is None:p.terminate();p.wait()
+ log.close()
+(out/'gui-maps.commands.json').write_text(json.dumps({'command':cmd,'exit_code':code},indent=2));print(code)

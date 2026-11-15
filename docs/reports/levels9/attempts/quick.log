@@ -1,0 +1,143 @@
+Godot Engine v4.5.2.stable.official.6ce3de25a - https://godotengine.org
+
+{"difficulty":0,"progress":"dock","state":{"goal":0,"integrity":6,"latch":0,"tick":0},"variant":0}
+{"charges":[0,0,0],"goal":0,"positions":["(112.0, 592.0)","(176.0, 592.0)"],"tick":0,"trace":"dock"}
+{"difficulty":0,"progress":"dock","state":{"goal":1,"integrity":6,"latch":0,"tick":513},"variant":0}
+{"charges":[300,0,0],"goal":1,"positions":["(188.8426, 440.0662)","(327.9782, 379.1014)"],"tick":600,"trace":"dock"}
+{"charges":[300,0,0],"goal":1,"positions":["(383.9307, 192.0633)","(769.8552, 495.9638)"],"tick":1200,"trace":"dock"}
+{"charges":[300,285,0],"goal":1,"positions":["(383.9307, 192.0633)","(903.9398, 320.0761)"],"tick":1800,"trace":"dock"}
+{"difficulty":0,"progress":"dock","state":{"goal":2,"integrity":6,"latch":0,"tick":1815},"variant":0}
+{"charges":[300,300,0],"goal":2,"positions":["(517.5516, 495.9493)","(1119.945, 551.9385)"],"tick":2400,"trace":"dock"}
+{"charges":[300,300,121],"goal":2,"positions":["(783.0368, 530.6323)","(1119.945, 551.9385)"],"tick":3000,"trace":"dock"}
+{"difficulty":0,"progress":"dock","state":{"goal":3,"integrity":6,"latch":0,"tick":3493},"variant":0}
+{"charges":[300,300,300],"goal":3,"positions":["(820.8353, 495.969)","(1183.482, 581.2371)"],"tick":3600,"trace":"dock"}
+{"map":"dock","result":{"charge":[300,300,300],"complete_mask":7,"dashes":3,"difficulty":0,"history":[{"goal":0,"integrity":6,"latch":0,"tick":0},{"goal":1,"integrity":6,"latch":0,"tick":513},{"goal":2,"integrity":6,"latch":0,"tick":1815},{"goal":3,"integrity":6,"latch":0,"tick":3493}],"integrity":6,"latched_mask":0,"ok":true,"positions":["(1143.929, 591.94)","(1191.922, 591.9427)"],"retreats":5,"score":7710,"seed":0,"ticks":4107,"variant":0}}
+{"difficulty":0,"progress":"garden","state":{"goal":0,"integrity":6,"latch":0,"tick":0},"variant":0}
+{"charges":[0,0,0],"goal":0,"positions":["(112.0, 592.0)","(176.0, 592.0)"],"tick":0,"trace":"garden"}
+{"charges":[46,0,0],"goal":0,"positions":["(112.0, 256.0549)","(389.2505, 264.5173)"],"tick":600,"trace":"garden"}
+{"difficulty":0,"progress":"garden","state":{"goal":0,"integrity":6,"latch":1,"tick":704},"variant":0}
+{"difficulty":0,"progress":"garden","state":{"goal":1,"integrity":6,"latch":1,"tick":941},"variant":0}
+{"charges":[300,0,0],"goal":1,"positions":["(343.1927, 243.6858)","(583.9598, 372.8274)"],"tick":1200,"trace":"garden"}
+{"charges":[300,0,0],"goal":1,"positions":["(520.0607, 270.139)","(799.9228, 447.9318)"],"tick":1800,"trace":"garden"}
+{"charges":[300,254,0],"goal":1,"positions":["(424.4507, 268.764)","(799.9228, 447.9318)"],"tick":2400,"trace":"garden"}
+{"difficulty":0,"progress":"garden","state":{"goal":2,"integrity":6,"latch":1,"tick":2638},"variant":0}
+{"charges":[300,300,0],"goal":2,"positions":["(633.836, 399.9362)","(1037.542, 447.9318)"],"tick":3000,"trace":"garden"}
+{"difficulty":0,"progress":"garden","state":{"goal":2,"integrity":6,"latch":5,"tick":3536},"variant":0}
+{"charges":[300,300,150],"goal":2,"positions":["(821.994, 224.0637)","(1104.078, 441.9911)"],"tick":3600,"trace":"garden"}
+{"difficulty":0,"progress":"garden","state":{"goal":3,"integrity":6,"latch":5,"tick":4052},"variant":0}
+{"charges":[300,300,300],"goal":3,"positions":["(831.1986, 275.6709)","(1092.055, 623.935)"],"tick":4200,"trace":"garden"}
+{"charges":[300,300,300],"goal":3,"positions":["(1015.348, 468.5579)","(1191.952, 592.0737)"],"tick":4800,"trace":"garden"}
+{"map":"garden","result":{"charge":[300,300,300],"complete_mask":7,"dashes":5,"difficulty":0,"history":[{"goal":0,"integrity":6,"latch":0,"tick":0},{"goal":0,"integrity":6,"latch":1,"tick":704},{"goal":1,"integrity":6,"latch":1,"tick":941},{"goal":2,"integrity":6,"latch":1,"tick":2638},{"goal":2,"integrity":6,"latch":5,"tick":3536},{"goal":3,"integrity":6,"latch":5,"tick":4052}],"integrity":6,"latched_mask":5,"ok":true,"positions":["(1143.95, 591.9257)","(1191.952, 592.0737)"],"retreats":3,"score":7540,"seed":0,"ticks":5131,"variant":0}}
+{"difficulty":0,"progress":"reactor","state":{"goal":0,"integrity":6,"latch":0,"tick":0},"variant":0}
+{"charges":[0,0,0],"goal":0,"positions":["(112.0, 592.0)","(176.0, 592.0)"],"tick":0,"trace":"reactor"}
+{"charges":[111,0,0],"goal":0,"positions":["(88.44138, 252.7808)","(447.9318, 448.0777)"],"tick":600,"trace":"reactor"}
+{"charges":[215,0,0],"goal":0,"positions":["(207.9407, 208.0668)","(447.9318, 448.0777)"],"tick":1200,"trace":"reactor"}
+{"difficulty":0,"progress":"reactor","state":{"goal":1,"integrity":6,"latch":0,"tick":1285},"variant":0}
+{"charges":[300,0,0],"goal":1,"positions":["(441.9802, 399.9785)","(880.3078, 415.9519)"],"tick":1800,"trace":"reactor"}
+{"charges":[300,46,0],"goal":1,"positions":["(554.7908, 177.1057)","(1000.614, 443.4177)"],"tick":2400,"trace":"reactor"}
+{"difficulty":0,"progress":"reactor","state":{"goal":1,"integrity":4,"latch":2,"tick":2891},"variant":0}
+{"charges":[300,150,0],"goal":1,"positions":["(616.0618, 325.4711)","(1032.469, 399.9601)"],"tick":3000,"trace":"reactor"}
+{"charges":[300,251,0],"goal":1,"positions":["(615.9791, 555.1885)","(1167.934, 248.4801)"],"tick":3600,"trace":"reactor"}
+{"difficulty":0,"progress":"reactor","state":{"goal":2,"integrity":4,"latch":2,"tick":3753},"variant":0}
+{"charges":[300,300,0],"goal":2,"positions":["(554.8277, 497.102)","(1106.702, 527.5524)"],"tick":4200,"trace":"reactor"}
+{"charges":[300,300,0],"goal":2,"positions":["(615.9767, 555.1896)","(1079.55, 560.0495)"],"tick":4800,"trace":"reactor"}
+{"difficulty":0,"progress":"reactor","state":{"goal":2,"integrity":4,"latch":6,"tick":5019},"variant":0}
+{"charges":[300,300,150],"goal":2,"positions":["(655.9549, 323.1809)","(1167.938, 512.0541)"],"tick":5400,"trace":"reactor"}
+{"difficulty":0,"progress":"reactor","state":{"goal":3,"integrity":4,"latch":6,"tick":5620},"variant":0}
+{"charges":[300,300,300],"goal":3,"positions":["(984.4488, 430.2699)","(1191.923, 591.9515)"],"tick":6000,"trace":"reactor"}
+{"map":"reactor","result":{"charge":[300,300,300],"complete_mask":7,"dashes":24,"difficulty":0,"history":[{"goal":0,"integrity":6,"latch":0,"tick":0},{"goal":1,"integrity":6,"latch":0,"tick":1285},{"goal":1,"integrity":4,"latch":2,"tick":2891},{"goal":2,"integrity":4,"latch":2,"tick":3753},{"goal":2,"integrity":4,"latch":6,"tick":5019},{"goal":3,"integrity":4,"latch":6,"tick":5620}],"integrity":3,"latched_mask":6,"ok":true,"positions":["(1143.946, 591.9344)","(1191.923, 591.9515)"],"retreats":91,"score":5520,"seed":0,"ticks":6471,"variant":0}}
+{"difficulty":0,"progress":"switchyard","state":{"goal":0,"integrity":6,"latch":0,"tick":0},"variant":0}
+{"charges":[0,0,0],"goal":0,"positions":["(112.0, 592.0)","(176.0, 592.0)"],"tick":0,"trace":"switchyard"}
+{"charges":[0,0,0],"goal":0,"positions":["(256.022, 284.9108)","(599.4777, 466.7704)"],"tick":600,"trace":"switchyard"}
+{"difficulty":0,"progress":"switchyard","state":{"goal":1,"integrity":6,"latch":0,"tick":1008},"variant":0}
+{"charges":[300,0,0],"goal":1,"positions":["(356.8392, 208.0635)","(697.0302, 421.3619)"],"tick":1200,"trace":"switchyard"}
+{"charges":[300,64,0],"goal":1,"positions":["(751.7773, 144.069)","(1039.934, 288.075)"],"tick":1800,"trace":"switchyard"}
+{"difficulty":0,"progress":"switchyard","state":{"goal":2,"integrity":6,"latch":0,"tick":2036},"variant":0}
+{"charges":[300,300,0],"goal":2,"positions":["(815.9626, 451.1995)","(1151.191, 507.6735)"],"tick":2400,"trace":"switchyard"}
+{"difficulty":0,"progress":"switchyard","state":{"goal":2,"integrity":6,"latch":4,"tick":2601},"variant":0}
+{"difficulty":0,"progress":"switchyard","state":{"goal":3,"integrity":6,"latch":4,"tick":2897},"variant":0}
+{"charges":[300,300,300],"goal":3,"positions":["(1013.229, 455.4798)","(1191.948, 592.0731)"],"tick":3000,"trace":"switchyard"}
+{"map":"switchyard","result":{"charge":[300,300,300],"complete_mask":7,"dashes":0,"difficulty":0,"history":[{"goal":0,"integrity":6,"latch":0,"tick":0},{"goal":1,"integrity":6,"latch":0,"tick":1008},{"goal":2,"integrity":6,"latch":0,"tick":2036},{"goal":2,"integrity":6,"latch":4,"tick":2601},{"goal":3,"integrity":6,"latch":4,"tick":2897}],"integrity":6,"latched_mask":4,"ok":true,"positions":["(1143.95, 591.9297)","(1191.948, 592.0731)"],"retreats":1,"score":7840,"seed":0,"ticks":3346,"variant":0}}
+{"difficulty":0,"progress":"service_channels","state":{"goal":0,"integrity":6,"latch":0,"tick":0},"variant":0}
+{"charges":[0,0,0],"goal":0,"positions":["(112.0, 592.0)","(176.0, 592.0)"],"tick":0,"trace":"service_channels"}
+{"charges":[275,0,0],"goal":0,"positions":["(112.0, 240.0785)","(112.0636, 560.0749)"],"tick":600,"trace":"service_channels"}
+{"difficulty":0,"progress":"service_channels","state":{"goal":1,"integrity":6,"latch":0,"tick":625},"variant":0}
+{"charges":[300,133,0],"goal":1,"positions":["(175.9386, 208.0746)","(623.9304, 528.0747)"],"tick":1200,"trace":"service_channels"}
+{"difficulty":0,"progress":"service_channels","state":{"goal":2,"integrity":6,"latch":0,"tick":1367},"variant":0}
+{"charges":[300,300,0],"goal":2,"positions":["(636.9244, 208.0746)","(831.9413, 528.0747)"],"tick":1800,"trace":"service_channels"}
+{"charges":[300,300,0],"goal":2,"positions":["(1071.976, 356.0376)","(831.9413, 528.0747)"],"tick":2400,"trace":"service_channels"}
+{"difficulty":0,"progress":"service_channels","state":{"goal":2,"integrity":6,"latch":4,"tick":2992},"variant":0}
+{"charges":[300,300,150],"goal":2,"positions":["(1120.071, 150.9549)","(825.0593, 528.0747)"],"tick":3000,"trace":"service_channels"}
+{"difficulty":0,"progress":"service_channels","state":{"goal":3,"integrity":6,"latch":4,"tick":3270},"variant":0}
+{"charges":[300,300,300],"goal":3,"positions":["(1143.193, 587.6893)","(982.8166, 568.0388)"],"tick":3600,"trace":"service_channels"}
+{"map":"service_channels","result":{"charge":[300,300,300],"complete_mask":7,"dashes":1,"difficulty":0,"history":[{"goal":0,"integrity":6,"latch":0,"tick":0},{"goal":1,"integrity":6,"latch":0,"tick":625},{"goal":2,"integrity":6,"latch":0,"tick":1367},{"goal":2,"integrity":6,"latch":4,"tick":2992},{"goal":3,"integrity":6,"latch":4,"tick":3270}],"integrity":6,"latched_mask":4,"ok":true,"positions":["(1143.952, 591.9427)","(1191.927, 589.1154)"],"retreats":0,"score":7750,"seed":0,"ticks":3851,"variant":0}}
+{"difficulty":0,"progress":"observatory","state":{"goal":0,"integrity":6,"latch":0,"tick":0},"variant":0}
+{"charges":[0,0,0],"goal":0,"positions":["(112.0, 592.0)","(176.0, 592.0)"],"tick":0,"trace":"observatory"}
+{"charges":[0,0,0],"goal":0,"positions":["(207.9303, 240.0479)","(408.4285, 289.7533)"],"tick":600,"trace":"observatory"}
+{"difficulty":0,"progress":"observatory","state":{"goal":1,"integrity":6,"latch":0,"tick":914},"variant":0}
+{"charges":[300,0,0],"goal":1,"positions":["(512.2881, 240.0479)","(768.2932, 240.0753)"],"tick":1200,"trace":"observatory"}
+{"difficulty":0,"progress":"observatory","state":{"goal":2,"integrity":6,"latch":0,"tick":1682},"variant":0}
+{"charges":[300,300,0],"goal":2,"positions":["(686.2667, 224.4341)","(1007.923, 364.9255)"],"tick":1800,"trace":"observatory"}
+{"charges":[300,300,0],"goal":2,"positions":["(960.42, 502.2535)","(1167.946, 599.9393)"],"tick":2400,"trace":"observatory"}
+{"charges":[300,300,0],"goal":2,"positions":["(787.8644, 408.1246)","(1167.946, 599.9393)"],"tick":3000,"trace":"observatory"}
+{"difficulty":0,"progress":"observatory","state":{"goal":2,"integrity":6,"latch":4,"tick":3269},"variant":0}
+{"charges":[300,300,150],"goal":2,"positions":["(608.0751, 248.0631)","(935.9589, 569.981)"],"tick":3600,"trace":"observatory"}
+{"difficulty":0,"progress":"observatory","state":{"goal":3,"integrity":6,"latch":4,"tick":4001},"variant":0}
+{"charges":[300,300,300],"goal":3,"positions":["(807.4744, 261.2607)","(1175.198, 571.6933)"],"tick":4200,"trace":"observatory"}
+{"charges":[300,300,300],"goal":3,"positions":["(1086.252, 528.4281)","(1191.943, 591.9481)"],"tick":4800,"trace":"observatory"}
+{"map":"observatory","result":{"charge":[300,300,300],"complete_mask":7,"dashes":3,"difficulty":0,"history":[{"goal":0,"integrity":6,"latch":0,"tick":0},{"goal":1,"integrity":6,"latch":0,"tick":914},{"goal":2,"integrity":6,"latch":0,"tick":1682},{"goal":2,"integrity":6,"latch":4,"tick":3269},{"goal":3,"integrity":6,"latch":4,"tick":4001}],"integrity":6,"latched_mask":4,"ok":true,"positions":["(1143.941, 591.9326)","(1191.943, 591.9481)"],"retreats":2,"score":7570,"seed":0,"ticks":4978,"variant":0}}
+{"difficulty":0,"progress":"interference","state":{"goal":0,"integrity":6,"latch":0,"tick":0},"variant":0}
+{"charges":[0,0,0],"goal":0,"positions":["(112.0, 592.0)","(176.0, 592.0)"],"tick":0,"trace":"interference"}
+{"charges":[0,0,0],"goal":0,"positions":["(207.9303, 240.0479)","(422.2877, 279.569)"],"tick":600,"trace":"interference"}
+{"difficulty":0,"progress":"interference","state":{"goal":1,"integrity":6,"latch":0,"tick":1120},"variant":0}
+{"charges":[300,0,0],"goal":1,"positions":["(284.8215, 240.0658)","(540.8228, 240.0683)"],"tick":1200,"trace":"interference"}
+{"charges":[300,0,0],"goal":1,"positions":["(568.0743, 338.0246)","(943.1966, 411.682)"],"tick":1800,"trace":"interference"}
+{"charges":[300,265,0],"goal":1,"positions":["(591.9243, 208.0487)","(976.064, 448.0699)"],"tick":2400,"trace":"interference"}
+{"difficulty":0,"progress":"interference","state":{"goal":2,"integrity":6,"latch":0,"tick":2752},"variant":0}
+{"charges":[300,300,0],"goal":2,"positions":["(659.0723, 367.9696)","(1147.672, 503.1992)"],"tick":3000,"trace":"interference"}
+{"charges":[300,300,0],"goal":2,"positions":["(806.2541, 439.4447)","(1167.948, 527.9293)"],"tick":3600,"trace":"interference"}
+{"difficulty":0,"progress":"interference","state":{"goal":2,"integrity":6,"latch":4,"tick":3946},"variant":0}
+{"charges":[300,300,170],"goal":2,"positions":["(901.6819, 168.0484)","(1040.075, 527.9293)"],"tick":4200,"trace":"interference"}
+{"difficulty":0,"progress":"interference","state":{"goal":3,"integrity":6,"latch":4,"tick":4593},"variant":0}
+{"charges":[300,300,300],"goal":3,"positions":["(927.9277, 332.836)","(1179.689, 575.1904)"],"tick":4800,"trace":"interference"}
+{"map":"interference","result":{"charge":[300,300,300],"complete_mask":7,"dashes":7,"difficulty":0,"history":[{"goal":0,"integrity":6,"latch":0,"tick":0},{"goal":1,"integrity":6,"latch":0,"tick":1120},{"goal":2,"integrity":6,"latch":0,"tick":2752},{"goal":2,"integrity":6,"latch":4,"tick":3946},{"goal":3,"integrity":6,"latch":4,"tick":4593}],"integrity":6,"latched_mask":4,"ok":true,"positions":["(1143.926, 591.9417)","(1191.93, 591.9379)"],"retreats":8,"score":7520,"seed":0,"ticks":5235,"variant":0}}
+{"difficulty":0,"progress":"aux_core","state":{"goal":0,"integrity":6,"latch":0,"tick":0},"variant":0}
+{"charges":[0,0,0],"goal":0,"positions":["(112.0, 592.0)","(176.0, 592.0)"],"tick":0,"trace":"aux_core"}
+{"charges":[44,0,0],"goal":0,"positions":["(143.9459, 320.0694)","(450.6045, 328.985)"],"tick":600,"trace":"aux_core"}
+{"difficulty":0,"progress":"aux_core","state":{"goal":0,"integrity":6,"latch":1,"tick":706},"variant":0}
+{"charges":[275,0,0],"goal":0,"positions":["(303.9351, 144.0769)","(304.0776, 495.9441)"],"tick":1200,"trace":"aux_core"}
+{"difficulty":0,"progress":"aux_core","state":{"goal":1,"integrity":6,"latch":1,"tick":1225},"variant":0}
+{"charges":[300,0,0],"goal":1,"positions":["(600.7996, 357.9648)","(822.8156, 495.9441)"],"tick":1800,"trace":"aux_core"}
+{"charges":[300,108,0],"goal":1,"positions":["(552.0425, 139.0686)","(1111.519, 384.0763)"],"tick":2400,"trace":"aux_core"}
+{"difficulty":0,"progress":"aux_core","state":{"goal":1,"integrity":5,"latch":3,"tick":2523},"variant":0}
+{"charges":[300,150,0],"goal":1,"positions":["(559.9315, 255.9499)","(767.944, 465.8598)"],"tick":3000,"trace":"aux_core"}
+{"difficulty":0,"progress":"aux_core","state":{"goal":2,"integrity":5,"latch":3,"tick":3421},"variant":0}
+{"charges":[300,300,0],"goal":2,"positions":["(679.957, 280.4856)","(929.8425, 432.0257)"],"tick":3600,"trace":"aux_core"}
+{"difficulty":0,"progress":"aux_core","state":{"goal":2,"integrity":5,"latch":7,"tick":4157},"variant":0}
+{"charges":[300,300,150],"goal":2,"positions":["(907.9142, 343.3115)","(1185.171, 463.929)"],"tick":4200,"trace":"aux_core"}
+{"charges":[300,300,150],"goal":2,"positions":["(848.0714, 399.9511)","(1111.959, 489.2105)"],"tick":4800,"trace":"aux_core"}
+{"difficulty":0,"progress":"aux_core","state":{"goal":3,"integrity":5,"latch":7,"tick":5198},"variant":0}
+{"charges":[300,300,300],"goal":3,"positions":["(1000.303, 455.9396)","(1191.94, 592.0707)"],"tick":5400,"trace":"aux_core"}
+{"charges":[300,300,300],"goal":3,"positions":["(1143.932, 591.9517)","(1191.94, 592.0707)"],"tick":6000,"trace":"aux_core"}
+{"map":"aux_core","result":{"charge":[300,300,300],"complete_mask":7,"dashes":12,"difficulty":0,"history":[{"goal":0,"integrity":6,"latch":0,"tick":0},{"goal":0,"integrity":6,"latch":1,"tick":706},{"goal":1,"integrity":6,"latch":1,"tick":1225},{"goal":1,"integrity":5,"latch":3,"tick":2523},{"goal":2,"integrity":5,"latch":3,"tick":3421},{"goal":2,"integrity":5,"latch":7,"tick":4157},{"goal":3,"integrity":5,"latch":7,"tick":5198}],"integrity":5,"latched_mask":7,"ok":true,"positions":["(1143.932, 591.9517)","(1191.94, 592.0707)"],"retreats":16,"score":6790,"seed":0,"ticks":6006,"variant":0}}
+{"difficulty":0,"progress":"station_heart","state":{"goal":0,"integrity":6,"latch":0,"tick":0},"variant":0}
+{"charges":[0,0,0],"goal":0,"positions":["(112.0, 592.0)","(176.0, 592.0)"],"tick":0,"trace":"station_heart"}
+{"charges":[0,0,0],"goal":0,"positions":["(305.1768, 343.9262)","(383.951, 496.0781)"],"tick":600,"trace":"station_heart"}
+{"difficulty":0,"progress":"station_heart","state":{"goal":0,"integrity":6,"latch":1,"tick":812},"variant":0}
+{"charges":[179,0,0],"goal":0,"positions":["(144.0615, 176.0477)","(398.1666, 623.9219)"],"tick":1200,"trace":"station_heart"}
+{"difficulty":0,"progress":"station_heart","state":{"goal":1,"integrity":6,"latch":1,"tick":1562},"variant":0}
+{"charges":[300,0,0],"goal":1,"positions":["(396.9139, 176.0646)","(685.5422, 568.0526)"],"tick":1800,"trace":"station_heart"}
+{"charges":[300,0,0],"goal":1,"positions":["(568.0778, 195.178)","(839.506, 591.934)"],"tick":2400,"trace":"station_heart"}
+{"charges":[300,6,0],"goal":1,"positions":["(548.8196, 319.9222)","(839.5163, 591.934)"],"tick":3000,"trace":"station_heart"}
+{"charges":[300,36,0],"goal":1,"positions":["(560.0691, 319.9396)","(839.5266, 591.934)"],"tick":3600,"trace":"station_heart"}
+{"difficulty":0,"progress":"station_heart","state":{"goal":1,"integrity":6,"latch":3,"tick":3758},"variant":0}
+{"charges":[300,150,0],"goal":1,"positions":["(639.9523, 384.0487)","(978.0184, 528.0278)"],"tick":4200,"trace":"station_heart"}
+{"difficulty":0,"progress":"station_heart","state":{"goal":2,"integrity":6,"latch":3,"tick":4739},"variant":0}
+{"charges":[300,300,0],"goal":2,"positions":["(704.2879, 384.0487)","(904.2994, 607.9381)"],"tick":4800,"trace":"station_heart"}
+{"charges":[300,300,50],"goal":2,"positions":["(943.928, 192.0553)","(1176.19, 422.0738)"],"tick":5400,"trace":"station_heart"}
+{"difficulty":0,"progress":"station_heart","state":{"goal":2,"integrity":6,"latch":7,"tick":5751},"variant":0}
+{"charges":[300,300,150],"goal":2,"positions":["(819.1776, 295.9367)","(1159.011, 538.588)"],"tick":6000,"trace":"station_heart"}
+{"difficulty":0,"progress":"station_heart","state":{"goal":3,"integrity":6,"latch":7,"tick":6293},"variant":0}
+{"charges":[300,300,300],"goal":3,"positions":["(894.7963, 335.927)","(1191.945, 591.9381)"],"tick":6600,"trace":"station_heart"}
+{"charges":[300,300,300],"goal":3,"positions":["(1123.695, 567.1967)","(1191.945, 591.9381)"],"tick":7200,"trace":"station_heart"}
+{"map":"station_heart","result":{"charge":[300,300,300],"complete_mask":7,"dashes":23,"difficulty":0,"history":[{"goal":0,"integrity":6,"latch":0,"tick":0},{"goal":0,"integrity":6,"latch":1,"tick":812},{"goal":1,"integrity":6,"latch":1,"tick":1562},{"goal":1,"integrity":6,"latch":3,"tick":3758},{"goal":2,"integrity":6,"latch":3,"tick":4739},{"goal":2,"integrity":6,"latch":7,"tick":5751},{"goal":3,"integrity":6,"latch":7,"tick":6293}],"integrity":6,"latched_mask":7,"ok":true,"positions":["(1143.948, 591.9448)","(1191.945, 591.9381)"],"retreats":19,"score":7180,"seed":0,"ticks":7304,"variant":0}}

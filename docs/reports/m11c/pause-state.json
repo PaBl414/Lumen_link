@@ -1,0 +1,157 @@
+{
+  "paused_by_user": true,
+  "manifest": {
+    "build_label": "M11c-dev",
+    "code_revision": "unversioned",
+    "content_sha256": "15836523d54c575f2db70b76b1842f2c6f021f5e882b4dbdd331ee75438200a5",
+    "engine_build_id": "6ce3de25aa58466e14ef354703ba8d9791a417da",
+    "engine_version": "4.5.2",
+    "protocol": 2,
+    "schema_version": 1
+  },
+  "recordings": {
+    "dock": [
+      {
+        "variant": 0,
+        "difficulty": 0,
+        "ok": true,
+        "ticks": 4107,
+        "integrity": 6
+      },
+      {
+        "variant": 0,
+        "difficulty": 1,
+        "ok": true,
+        "ticks": 3435,
+        "integrity": 9
+      },
+      {
+        "variant": 1,
+        "difficulty": 0,
+        "ok": true,
+        "ticks": 3745,
+        "integrity": 6
+      },
+      {
+        "variant": 1,
+        "difficulty": 1,
+        "ok": true,
+        "ticks": 3753,
+        "integrity": 9
+      },
+      {
+        "variant": 2,
+        "difficulty": 0,
+        "ok": true,
+        "ticks": 3782,
+        "integrity": 6
+      },
+      {
+        "variant": 2,
+        "difficulty": 1,
+        "ok": true,
+        "ticks": 3636,
+        "integrity": 9
+      }
+    ],
+    "garden": [
+      {
+        "variant": 0,
+        "difficulty": 0,
+        "ok": true,
+        "ticks": 5131,
+        "integrity": 6
+      },
+      {
+        "variant": 0,
+        "difficulty": 1,
+        "ok": true,
+        "ticks": 4558,
+        "integrity": 9
+      },
+      {
+        "variant": 1,
+        "difficulty": 0,
+        "ok": true,
+        "ticks": 5110,
+        "integrity": 6
+      },
+      {
+        "variant": 1,
+        "difficulty": 1,
+        "ok": true,
+        "ticks": 4532,
+        "integrity": 9
+      },
+      {
+        "variant": 2,
+        "difficulty": 0,
+        "ok": true,
+        "ticks": 5372,
+        "integrity": 6
+      },
+      {
+        "variant": 2,
+        "difficulty": 1,
+        "ok": true,
+        "ticks": 4846,
+        "integrity": 9
+      }
+    ],
+    "reactor": [
+      {
+        "variant": 0,
+        "difficulty": 0,
+        "ok": true,
+        "ticks": 6471,
+        "integrity": 3
+      },
+      {
+        "variant": 0,
+        "difficulty": 1,
+        "ok": true,
+        "ticks": 4486,
+        "integrity": 9
+      },
+      {
+        "variant": 1,
+        "difficulty": 0,
+        "ok": true,
+        "ticks": 6204,
+        "integrity": 6
+      },
+      {
+        "variant": 1,
+        "difficulty": 1,
+        "ok": true,
+        "ticks": 4555,
+        "integrity": 9
+      },
+      {
+        "variant": 2,
+        "difficulty": 0,
+        "ok": true,
+        "ticks": 6908,
+        "integrity": 5
+      },
+      {
+        "variant": 2,
+        "difficulty": 1,
+        "ok": true,
+        "ticks": 5256,
+        "integrity": 8
+      }
+    ]
+  },
+  "stopped_processes": [
+    39896,
+    39927,
+    39818,
+    39879,
+    39917,
+    39935,
+    39960,
+    39970
+  ],
+  "note": "Final LAN campaign reruns and field-boundary scan were interrupted by user; do not label them failed gameplay or PASS."
+}

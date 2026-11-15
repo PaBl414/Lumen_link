@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "simulation_hz": 60,
+  "snapshot_hz": 30,
+  "input_hz": 30,
+  "movement": {
+    "speed": 240,
+    "acceleration": 1800,
+    "deceleration": 2400,
+    "half_size": 12
+  },
+  "dash": {
+    "speed": 720,
+    "duration_ticks": 10,
+    "cooldown_ticks": 90
+  },
+  "link": {
+    "min_length": 56,
+    "max_length": 720,
+    "width": 6,
+    "socket_radius": 44,
+    "socket_cooldown": 30
+  },
+  "objective": {
+    "charge_ticks": 300,
+    "grace_ticks": 30,
+    "decay_period_ticks": 2,
+    "extract_ticks": 120
+  },
+  "damage": {
+    "stun_ticks": 12,
+    "invulnerable_ticks": 90,
+    "global_cooldown": 30
+  },
+  "difficulties": {
+    "NORMAL": {
+      "integrity": 6,
+      "sector_seconds": 180,
+      "pulse": {
+        "off": 180,
+        "telegraph": 60,
+        "active": 60
+      },
+      "sweep": {
+        "off": 60,
+        "telegraph": 90,
+        "active": 180,
+        "cooldown": 30
+      }
+    },
+    "RELAXED": {
+      "integrity": 9,
+      "sector_seconds": 240,
+      "pulse": {
+        "off": 240,
+        "telegraph": 90,
+        "active": 30
+      },
+      "sweep": {
+        "off": 120,
+        "telegraph": 120,
+        "active": 120,
+        "cooldown": 60
+      }
+    }
+  }
+}

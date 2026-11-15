@@ -1,0 +1,45 @@
+Godot Engine v4.5.2.stable.official.6ce3de25a - https://godotengine.org
+OpenGL API 4.6 (Core Profile) Mesa 26.2.6-arch3.1 - Compatibility - Using Device: Intel - Mesa Intel(R) HD Graphics 520 (SKL GT2)
+
+PHASE host IDLE 5422
+PHASE host LOBBY 5424
+MONITOR host LOBBY tick=-1 age=5458 warming=false
+PHASE host HANDSHAKE 6347
+PHASE host LOBBY 6352
+PHASE host LOADING 6437
+MONITOR host LOADING tick=-1 age=46 warming=false
+PHASE host COUNTDOWN 6845
+MONITOR host COUNTDOWN tick=45 age=77 warming=false
+MONITOR host COUNTDOWN tick=106 age=491 warming=false
+MONITOR host COUNTDOWN tick=166 age=74 warming=false
+PHASE host PLAYING 9735
+PHASE host PLAYING 9791
+GUI PLAYING host
+MONITOR host PLAYING tick=228 age=25 warming=false
+MONITOR host PLAYING tick=288 age=9 warming=false
+MONITOR host PLAYING tick=351 age=5 warming=false
+MONITOR host PLAYING tick=411 age=8 warming=false
+MONITOR host PLAYING tick=473 age=17 warming=false
+MONITOR host PLAYING tick=535 age=15 warming=false
+MONITOR host PLAYING tick=599 age=4 warming=false
+MONITOR host PLAYING tick=661 age=41 warming=false
+MONITOR host PLAYING tick=722 age=35 warming=false
+MONITOR host PLAYING tick=784 age=23 warming=false
+MONITOR host PLAYING tick=844 age=78 warming=false
+MONITOR host PLAYING tick=908 age=14 warming=false
+MONITOR host PLAYING tick=967 age=10 warming=false
+MONITOR host PLAYING tick=1029 age=16 warming=false
+MONITOR host PLAYING tick=1090 age=8 warming=false
+MONITOR host PLAYING tick=1153 age=13 warming=false
+MONITOR host PLAYING tick=1215 age=15 warming=false
+MONITOR host PLAYING tick=1273 age=9 warming=false
+MONITOR host PLAYING tick=1339 age=12 warming=false
+MONITOR host PLAYING tick=1398 age=26 warming=false
+MONITOR host PLAYING tick=1459 age=50 warming=false
+GUI STATE host (768.0, 592.0) (758.0, 592.0) paused=false
+MONITOR host PLAYING tick=1519 age=4 warming=false
+MONITOR host PLAYING tick=1581 age=4 warming=false
+MONITOR host PLAYING tick=1643 age=6 warming=false
+PHASE host IDLE 35156
+MONITOR host IDLE tick=-1 age=55 warming=false
+PHASE host IDLE 35182

@@ -1,0 +1,18 @@
+Godot Engine v4.5.2.stable.official.6ce3de25a - https://godotengine.org
+
+{"difficulty":0,"progress":"garden","state":{"goal":0,"integrity":6,"latch":0,"tick":0},"variant":0}
+{"charges":[0,0,0],"goal":0,"positions":["(112.0, 592.0)","(176.0, 592.0)"],"tick":0,"trace":"garden"}
+{"charges":[46,0,0],"goal":0,"positions":["(112.0, 256.0549)","(389.2505, 264.5173)"],"tick":600,"trace":"garden"}
+{"difficulty":0,"progress":"garden","state":{"goal":0,"integrity":6,"latch":1,"tick":704},"variant":0}
+{"difficulty":0,"progress":"garden","state":{"goal":1,"integrity":6,"latch":1,"tick":941},"variant":0}
+{"charges":[300,0,0],"goal":1,"positions":["(343.1927, 243.6858)","(583.9598, 372.8274)"],"tick":1200,"trace":"garden"}
+{"charges":[300,0,0],"goal":1,"positions":["(520.0607, 268.8188)","(799.9228, 447.9318)"],"tick":1800,"trace":"garden"}
+{"charges":[300,252,0],"goal":1,"positions":["(424.4552, 268.7594)","(799.9228, 447.9318)"],"tick":2400,"trace":"garden"}
+{"difficulty":0,"progress":"garden","state":{"goal":2,"integrity":6,"latch":1,"tick":2661},"variant":0}
+{"charges":[300,300,0],"goal":2,"positions":["(727.5518, 213.861)","(1020.92, 447.9318)"],"tick":3000,"trace":"garden"}
+{"difficulty":0,"progress":"garden","state":{"goal":2,"integrity":6,"latch":5,"tick":3549},"variant":0}
+{"charges":[300,300,150],"goal":2,"positions":["(855.5649, 210.1607)","(1087.543, 405.2887)"],"tick":3600,"trace":"garden"}
+{"charges":[300,300,150],"goal":2,"positions":["(784.0557, 144.06)","(1068.84, 400.0666)"],"tick":4200,"trace":"garden"}
+{"difficulty":0,"progress":"garden","state":{"goal":3,"integrity":6,"latch":5,"tick":4469},"variant":0}
+{"charges":[300,300,300],"goal":3,"positions":["(901.2152, 343.4775)","(1191.948, 591.9423)"],"tick":4800,"trace":"garden"}
+{"map":"garden","result":{"charge":[300,300,300],"complete_mask":7,"dashes":6,"difficulty":0,"history":[{"goal":0,"integrity":6,"latch":0,"tick":0},{"goal":0,"integrity":6,"latch":1,"tick":704},{"goal":1,"integrity":6,"latch":1,"tick":941},{"goal":2,"integrity":6,"latch":1,"tick":2661},{"goal":2,"integrity":6,"latch":5,"tick":3549},{"goal":3,"integrity":6,"latch":5,"tick":4469}],"integrity":6,"latched_mask":5,"ok":true,"positions":["(1143.924, 591.9263)","(1191.948, 591.9423)"],"retreats":3,"score":3900,"seed":0,"ticks":5398,"variant":0}}

@@ -1,0 +1,14 @@
+Godot Engine v4.5.2.stable.official.6ce3de25a - https://godotengine.org
+
+EXPEDITION client PLAYING sector=0 tick=462 objective=0 charge=[204, 0, 0] players=(295.9214, 464.0711)/(403.928, 576.0484) target=467 lead=4
+EXPEDITION client PLAYING sector=0 tick=1062 objective=2 charge=[300, 300, 0] players=(650.428, 152.0777)/(646.4372, 392.0633) target=1066 lead=3
+EXPEDITION client PLAYING sector=0 tick=1662 objective=3 charge=[300, 300, 300] players=(1143.941, 591.9471)/(1187.955, 591.9437) target=1666 lead=3
+EXPEDITION client PLAYING sector=1 tick=2256 objective=0 charge=[0, 0, 69] players=(959.9374, 432.0723)/(1111.937, 432.0723) target=2259 lead=3
+EXPEDITION client PLAYING sector=1 tick=2856 objective=1 charge=[61, 0, 300] players=(272.0747, 376.0656)/(424.0372, 376.063) target=2860 lead=3
+EXPEDITION client PLAYING sector=1 tick=3458 objective=2 charge=[300, 100, 300] players=(615.9463, 191.9249)/(751.9595, 256.1609) target=3461 lead=3
+EXPEDITION client LOADING sector=2 tick=4046 objective=3 charge=[300, 300, 300] players=(1143.967, 591.9462)/(1183.967, 592.1472) target=4048 lead=3
+EXPEDITION client PLAYING sector=2 tick=4652 objective=0 charge=[0, 61, 0] players=(727.9734, 183.9292)/(835.9401, 295.9234) target=4655 lead=3
+EXPEDITION client PLAYING sector=2 tick=5252 objective=1 charge=[0, 300, 62] players=(927.9583, 519.9485)/(1084.058, 519.9525) target=5255 lead=3
+EXPEDITION client PLAYING sector=2 tick=5852 objective=2 charge=[90, 300, 300] players=(232.0741, 336.0699)/(340.0637, 448.0725) target=5855 lead=3
+EXPEDITION client PLAYING sector=2 tick=6452 objective=3 charge=[300, 300, 300] players=(1143.926, 591.9477)/(1187.949, 591.9523) target=6456 lead=3
+{"application_sizes":[96,30,96,34,96,96,96,96,96,96,96,96,96,96,96,96,96,96,30,96,34,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,30,96,34,96,96,96,96,96,96,96,96,96,96,96,96,96,96,30,96,34,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,30,34,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,30,96,34,96,96,96,96,96,96,96,96,96,96,96,96,96,96,30,96,34,96,96,96,96,96,96,96,96,96,96,96,96,96,96,30,96,96,34,96,96],"begin_tick":4046,"begins":3,"client_has_simulation":false,"content_hash":"e62f8ce5deeab6dc077ea0c37b23a34bd20f10a6445bf913ec0820717fccdf57","integrity":9,"match_id":832513910,"ok":true,"score":20590,"sector":2,"session_id":3471253858,"tick":6525}

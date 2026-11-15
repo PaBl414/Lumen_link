@@ -1,0 +1,10 @@
+{
+  "command": [
+    "/home/pablo/.local/share/lumen-tools/m11c-smoke/linux/lumen_smoke.x86_64",
+    "--display-driver",
+    "x11",
+    "--max-fps",
+    "60"
+  ],
+  "exit_code": 0
+}

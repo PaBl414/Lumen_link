@@ -1,0 +1,154 @@
+Godot Engine v4.5.2.stable.official.6ce3de25a - https://godotengine.org
+
+PHASE host IDLE
+PHASE host LOBBY
+PHASE host HANDSHAKE
+PHASE host LOBBY
+PHASE host LOADING
+PHASE host COUNTDOWN
+EXPEDITION host COUNTDOWN sector=0 tick=98 objective=0 charge=[0, 0, 0] players=(112.0, 592.0)/(176.0, 592.0) target=0 lead=2
+PHASE host PLAYING
+PHASE host PLAYING
+EXPEDITION host PLAYING sector=0 tick=698 objective=1 charge=[300, 0, 0] players=(144.2874, 440.0662)/(328.8217, 447.1765) target=0 lead=2
+EXPEDITION host PLAYING sector=0 tick=1299 objective=1 charge=[300, 0, 0] players=(383.9318, 192.078)/(663.9194, 496.0544) target=0 lead=2
+EXPEDITION host PLAYING sector=0 tick=1900 objective=1 charge=[300, 84, 0] players=(383.9318, 192.078)/(903.9887, 319.9575) target=0 lead=2
+EXPEDITION host PLAYING sector=0 tick=2501 objective=2 charge=[300, 300, 0] players=(328.0485, 492.9163)/(1050.173, 481.6617) target=0 lead=2
+EXPEDITION host PLAYING sector=0 tick=3101 objective=2 charge=[300, 300, 0] players=(825.9742, 543.9504)/(1120.04, 552.0105) target=0 lead=2
+EXPEDITION host PLAYING sector=0 tick=3702 objective=3 charge=[300, 300, 300] players=(1042.328, 552.0748)/(1192.031, 592.0544) target=0 lead=2
+PHASE host RESULTS
+PHASE host RESULTS
+PHASE host RESULTS
+PHASE host RESULTS
+PHASE host LOADING
+PHASE host COUNTDOWN
+PHASE host PLAYING
+PHASE host PLAYING
+EXPEDITION host PLAYING sector=1 tick=383 objective=0 charge=[0, 0, 0] players=(112.0, 399.6962)/(224.8234, 421.7416) target=0 lead=2
+EXPEDITION host PLAYING sector=1 tick=983 objective=0 charge=[150, 0, 0] players=(119.382, 211.4525)/(388.2754, 302.2994) target=0 lead=2
+EXPEDITION host PLAYING sector=1 tick=1584 objective=1 charge=[300, 0, 0] players=(415.1962, 315.6654)/(736.1494, 400.0776) target=0 lead=2
+EXPEDITION host PLAYING sector=1 tick=2184 objective=1 charge=[300, 14, 0] players=(478.8285, 199.9459)/(800.0049, 447.9425) target=0 lead=2
+EXPEDITION host PLAYING sector=1 tick=2785 objective=2 charge=[300, 300, 0] players=(583.7129, 217.0573)/(827.556, 447.9425) target=0 lead=2
+EXPEDITION host PLAYING sector=1 tick=3384 objective=2 charge=[300, 300, 50] players=(869.6887, 232.077)/(1104.061, 384.0359) target=0 lead=2
+EXPEDITION host PLAYING sector=1 tick=3985 objective=2 charge=[300, 300, 164] players=(776.0565, 192.0725)/(961.9732, 600.0691) target=0 lead=2
+EXPEDITION host PLAYING sector=1 tick=4585 objective=3 charge=[300, 300, 300] players=(975.3709, 420.2565)/(1192.041, 592.0104) target=0 lead=2
+PHASE host RESULTS
+PHASE host RESULTS
+PHASE host RESULTS
+PHASE host RESULTS
+PHASE host LOADING
+PHASE host COUNTDOWN
+EXPEDITION host COUNTDOWN sector=2 tick=171 objective=0 charge=[0, 0, 0] players=(112.0, 592.0)/(176.0, 592.0) target=0 lead=2
+PHASE host PLAYING
+PHASE host PLAYING
+EXPEDITION host PLAYING sector=2 tick=746 objective=0 charge=[98, 0, 0] players=(207.9483, 208.0506)/(439.7117, 449.0352) target=0 lead=2
+EXPEDITION host PLAYING sector=2 tick=1348 objective=1 charge=[300, 0, 0] players=(395.1971, 176.0379)/(661.4517, 448.0206) target=0 lead=2
+EXPEDITION host PLAYING sector=2 tick=1949 objective=1 charge=[300, 0, 0] players=(600.0508, 276.9591)/(952.0165, 383.9178) target=0 lead=2
+EXPEDITION host PLAYING sector=2 tick=2550 objective=1 charge=[300, 205, 0] players=(682.5821, 471.4861)/(1168.012, 319.9977) target=0 lead=2
+EXPEDITION host PLAYING sector=2 tick=3151 objective=2 charge=[300, 300, 0] players=(672.0767, 479.9257)/(1056.054, 378.5169) target=0 lead=2
+EXPEDITION host PLAYING sector=2 tick=3752 objective=2 charge=[300, 300, 150] players=(686.9058, 320.4591)/(1131.275, 542.119) target=0 lead=2
+EXPEDITION host PLAYING sector=2 tick=4352 objective=3 charge=[300, 300, 300] players=(995.5903, 439.9206)/(1192.036, 592.0032) target=0 lead=2
+PHASE host RESULTS
+PHASE host RESULTS
+PHASE host RESULTS
+PHASE host RESULTS
+PHASE host LOADING
+PHASE host COUNTDOWN
+PHASE host PLAYING
+PHASE host PLAYING
+EXPEDITION host PLAYING sector=3 tick=206 objective=0 charge=[0, 0, 0] players=(139.1969, 592.0)/(200.6339, 592.0) target=0 lead=2
+EXPEDITION host PLAYING sector=3 tick=806 objective=0 charge=[0, 0, 0] players=(256.0294, 310.1092)/(623.8778, 447.9864) target=0 lead=2
+EXPEDITION host PLAYING sector=3 tick=1407 objective=1 charge=[300, 0, 0] players=(364.9135, 208.0658)/(808.0415, 447.9864) target=0 lead=2
+EXPEDITION host PLAYING sector=3 tick=2008 objective=1 charge=[300, 95, 0] players=(751.9384, 144.0512)/(1028.321, 293.8775) target=0 lead=2
+EXPEDITION host PLAYING sector=3 tick=2609 objective=2 charge=[300, 300, 0] players=(815.1996, 491.6878)/(1167.999, 528.0222) target=0 lead=2
+EXPEDITION host PLAYING sector=3 tick=3209 objective=3 charge=[300, 300, 300] players=(1034.475, 479.7971)/(1192.038, 591.9926) target=0 lead=2
+PHASE host RESULTS
+PHASE host RESULTS
+PHASE host RESULTS
+PHASE host RESULTS
+PHASE host LOADING
+PHASE host COUNTDOWN
+PHASE host PLAYING
+PHASE host PLAYING
+EXPEDITION host PLAYING sector=4 tick=297 objective=0 charge=[0, 0, 0] players=(112.0, 483.5031)/(127.0428, 575.9214) target=0 lead=2
+EXPEDITION host PLAYING sector=4 tick=897 objective=1 charge=[300, 0, 0] players=(112.0, 321.8382)/(229.4461, 560.027) target=0 lead=2
+EXPEDITION host PLAYING sector=4 tick=1498 objective=1 charge=[300, 0, 0] players=(175.9386, 208.0746)/(521.8068, 480.0188) target=0 lead=2
+EXPEDITION host PLAYING sector=4 tick=2099 objective=2 charge=[300, 300, 0] players=(269.7812, 208.0746)/(757.2743, 527.9492) target=0 lead=2
+EXPEDITION host PLAYING sector=4 tick=2699 objective=2 charge=[300, 300, 0] players=(829.7766, 208.0746)/(832.0021, 527.9492) target=0 lead=2
+EXPEDITION host PLAYING sector=4 tick=3300 objective=2 charge=[300, 300, 0] players=(1096.075, 322.4515)/(832.0021, 527.9492) target=0 lead=2
+EXPEDITION host PLAYING sector=4 tick=3900 objective=2 charge=[300, 300, 205] players=(1129.731, 296.4347)/(687.9699, 576.0328) target=0 lead=2
+PHASE host RESULTS
+PHASE host RESULTS
+PHASE host RESULTS
+PHASE host RESULTS
+PHASE host LOADING
+PHASE host COUNTDOWN
+EXPEDITION host COUNTDOWN sector=5 tick=43 objective=0 charge=[0, 0, 0] players=(112.0, 592.0)/(176.0, 592.0) target=0 lead=2
+PHASE host PLAYING
+PHASE host PLAYING
+EXPEDITION host PLAYING sector=5 tick=643 objective=0 charge=[0, 0, 0] players=(198.3309, 247.8624)/(269.5173, 431.9168) target=0 lead=2
+EXPEDITION host PLAYING sector=5 tick=1244 objective=0 charge=[223, 0, 0] players=(207.9303, 240.0479)/(464.0366, 239.9818) target=0 lead=2
+EXPEDITION host PLAYING sector=5 tick=1845 objective=1 charge=[300, 0, 0] players=(623.6212, 234.1462)/(1007.987, 239.9818) target=0 lead=2
+EXPEDITION host PLAYING sector=5 tick=2445 objective=2 charge=[300, 300, 0] players=(708.4689, 247.9303)/(1007.987, 437.2698) target=0 lead=2
+EXPEDITION host PLAYING sector=5 tick=3046 objective=2 charge=[300, 300, 0] players=(979.7073, 519.1932)/(1168.031, 599.9857) target=0 lead=2
+EXPEDITION host PLAYING sector=5 tick=3646 objective=2 charge=[300, 300, 0] players=(789.1252, 401.0605)/(1168.031, 599.9857) target=0 lead=2
+EXPEDITION host PLAYING sector=5 tick=4247 objective=2 charge=[300, 300, 188] players=(608.0704, 248.0613)/(944.0478, 600.0209) target=0 lead=2
+EXPEDITION host PLAYING sector=5 tick=4847 objective=3 charge=[300, 300, 300] players=(844.5347, 287.366)/(1191.948, 592.0106) target=0 lead=2
+EXPEDITION host PLAYING sector=5 tick=5448 objective=3 charge=[300, 300, 300] players=(1118.26, 560.4227)/(1191.948, 592.0106) target=0 lead=2
+PHASE host RESULTS
+PHASE host RESULTS
+PHASE host RESULTS
+PHASE host RESULTS
+PHASE host LOADING
+PHASE host COUNTDOWN
+PHASE host PLAYING
+PHASE host PLAYING
+EXPEDITION host PLAYING sector=6 tick=482 objective=0 charge=[0, 0, 0] players=(112.0, 318.1138)/(288.0668, 408.5626) target=0 lead=2
+EXPEDITION host PLAYING sector=6 tick=1082 objective=0 charge=[63, 0, 0] players=(222.3048, 345.227)/(463.9926, 240.0044) target=0 lead=2
+EXPEDITION host PLAYING sector=6 tick=1682 objective=1 charge=[300, 0, 0] players=(407.5403, 260.3203)/(640.0433, 369.5233) target=0 lead=2
+EXPEDITION host PLAYING sector=6 tick=2283 objective=1 charge=[300, 0, 0] players=(582.3141, 215.8505)/(936.6035, 408.8611) target=0 lead=2
+EXPEDITION host PLAYING sector=6 tick=2884 objective=2 charge=[300, 300, 0] players=(623.2123, 219.9415)/(1032.766, 448.032) target=0 lead=2
+EXPEDITION host PLAYING sector=6 tick=3485 objective=2 charge=[300, 300, 0] players=(903.4698, 501.315)/(1168.009, 528.021) target=0 lead=2
+EXPEDITION host PLAYING sector=6 tick=4085 objective=2 charge=[300, 300, 150] players=(927.924, 268.9218)/(1168.009, 528.021) target=0 lead=2
+EXPEDITION host PLAYING sector=6 tick=4686 objective=3 charge=[300, 300, 300] players=(988.5336, 431.3525)/(1192.158, 591.681) target=0 lead=2
+PHASE host RESULTS
+PHASE host RESULTS
+PHASE host RESULTS
+PHASE host RESULTS
+PHASE host LOADING
+PHASE host COUNTDOWN
+PHASE host PLAYING
+PHASE host PLAYING
+EXPEDITION host PLAYING sector=7 tick=187 objective=0 charge=[0, 0, 0] players=(112.0, 586.1535)/(180.6063, 592.0) target=0 lead=2
+EXPEDITION host PLAYING sector=7 tick=787 objective=0 charge=[32, 0, 0] players=(143.9459, 320.0694)/(448.8434, 335.3862) target=0 lead=2
+EXPEDITION host PLAYING sector=7 tick=1386 objective=0 charge=[218, 0, 0] players=(303.9253, 144.0649)/(304.0143, 496.0052) target=0 lead=2
+EXPEDITION host PLAYING sector=7 tick=1988 objective=1 charge=[300, 0, 0] players=(585.3105, 342.7596)/(851.6951, 496.0052) target=0 lead=2
+EXPEDITION host PLAYING sector=7 tick=2588 objective=1 charge=[300, 150, 0] players=(626.3903, 200.2378)/(1140.154, 328.1833) target=0 lead=2
+EXPEDITION host PLAYING sector=7 tick=3189 objective=1 charge=[300, 150, 0] players=(560.0649, 256.0695)/(898.7892, 552.0388) target=0 lead=2
+EXPEDITION host PLAYING sector=7 tick=3790 objective=1 charge=[300, 296, 0] players=(560.0649, 256.0695)/(848.046, 623.9549) target=0 lead=2
+EXPEDITION host PLAYING sector=7 tick=4390 objective=2 charge=[300, 300, 66] players=(907.6718, 304.7995)/(1200.049, 447.984) target=0 lead=2
+EXPEDITION host PLAYING sector=7 tick=4991 objective=2 charge=[300, 300, 150] players=(848.071, 399.9419)/(1116.337, 566.9445) target=0 lead=2
+EXPEDITION host PLAYING sector=7 tick=5591 objective=3 charge=[300, 300, 300] players=(989.739, 431.9254)/(1192.057, 591.9736) target=0 lead=2
+PHASE host RESULTS
+PHASE host RESULTS
+PHASE host RESULTS
+PHASE host RESULTS
+PHASE host LOADING
+PHASE host COUNTDOWN
+PHASE host PLAYING
+PHASE host PLAYING
+EXPEDITION host PLAYING sector=8 tick=285 objective=0 charge=[0, 0, 0] players=(156.4572, 544.0518)/(297.7296, 581.8249) target=0 lead=2
+EXPEDITION host PLAYING sector=8 tick=884 objective=0 charge=[42, 0, 0] players=(223.3618, 329.7516)/(383.9888, 495.9732) target=0 lead=2
+EXPEDITION host PLAYING sector=8 tick=1485 objective=1 charge=[300, 0, 0] players=(225.8373, 272.0579)/(426.1159, 503.9783) target=0 lead=2
+EXPEDITION host PLAYING sector=8 tick=2086 objective=1 charge=[300, 0, 0] players=(715.9561, 303.9509)/(768.0038, 592.0094) target=0 lead=2
+EXPEDITION host PLAYING sector=8 tick=2687 objective=1 charge=[300, 76, 0] players=(560.0739, 319.9275)/(874.2349, 535.9938) target=0 lead=2
+EXPEDITION host PLAYING sector=8 tick=3288 objective=1 charge=[300, 150, 0] players=(568.4742, 319.9255)/(776.6575, 592.0406) target=0 lead=2
+EXPEDITION host PLAYING sector=8 tick=3889 objective=1 charge=[300, 150, 0] players=(639.9419, 383.9274)/(933.6367, 519.2775) target=0 lead=2
+EXPEDITION host PLAYING sector=8 tick=4489 objective=2 charge=[300, 300, 0] players=(801.4133, 329.3148)/(951.7916, 591.9887) target=0 lead=2
+EXPEDITION host PLAYING sector=8 tick=5090 objective=2 charge=[300, 300, 150] players=(896.0408, 254.6712)/(1133.736, 558.5695) target=0 lead=2
+EXPEDITION host PLAYING sector=8 tick=5691 objective=3 charge=[300, 300, 300] players=(815.9484, 278.9559)/(1191.994, 592.0438) target=0 lead=2
+EXPEDITION host PLAYING sector=8 tick=6292 objective=3 charge=[300, 300, 300] players=(1102.994, 546.6142)/(1191.994, 592.0438) target=0 lead=2
+PHASE host RESULTS
+PHASE host RESULTS
+PHASE host IDLE
+{"application_sizes":[148,148,148,148,148,148,148,30,148,148,148,148,148,34,148,148,148,148,148,148,148,148,148,148,148,30,148,148,148,148,148,34,148,148,148,148,148,148,148,148,148,148,30,148,148,148,148,148,34,148,148,148,148,148,148,148,148,148,148,30,148,148,148,148,148,34,148,148,148,148,148,148,148,148,148,148,30,148,148,148,148,148,34,148,148,148,148,148,148,148,148,148,148,148,30,148,148,148,148,148,34,148,148,148,148,148,148,148,148,148,148,30,148,148,148,148,148,34,148,148,148,148,148,148,148,44,148,153],"begin_tick":0,"begins":9,"client_has_simulation":false,"content_hash":"dc1b8d09a535a75591f150d111d253decf6779d537d2dc604842af2830d7896a","integrity":9,"latches_by_sector":{"0":0,"1":5,"2":6,"3":4,"4":4,"5":4,"6":4,"7":7,"8":7},"levels":{"aux_core":{"integrity":9,"saved":true,"score":9840,"ticks":5714},"dock":{"integrity":9,"saved":true,"score":10170,"ticks":3723},"garden":{"integrity":9,"saved":true,"score":9990,"ticks":4827},"interference":{"integrity":9,"saved":true,"score":9980,"ticks":4911},"observatory":{"integrity":9,"saved":true,"score":9900,"ticks":5374},"reactor":{"integrity":7,"saved":true,"score":8840,"ticks":4555},"service_channels":{"integrity":9,"saved":true,"score":10080,"ticks":4266},"station_heart":{"integrity":9,"saved":true,"score":9750,"ticks":6260},"switchyard":{"integrity":9,"saved":true,"score":10240,"ticks":3322}},"match_id":4241228638,"ok":true,"phase":3,"score":9750,"sector":8,"session_id":647455587,"tick":6440}
+PHASE host IDLE

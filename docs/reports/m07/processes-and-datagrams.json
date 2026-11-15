@@ -1,0 +1,65 @@
+{
+  "commands": [
+    [
+      "/home/pablo/.local/bin/godot",
+      "--headless",
+      "--path",
+      "/home/pablo/lan_game",
+      "tests/integration/network_harness.tscn",
+      "--",
+      "--role=host",
+      "--port=22991",
+      "--report=/home/pablo/lan_game/docs/reports/m07/process-host.json"
+    ],
+    [
+      "/home/pablo/.local/bin/godot",
+      "--headless",
+      "--path",
+      "/home/pablo/lan_game",
+      "tests/integration/network_harness.tscn",
+      "--",
+      "--role=client",
+      "--port=22992",
+      "--report=/home/pablo/lan_game/docs/reports/m07/process-client.json"
+    ]
+  ],
+  "exit_codes": [
+    0,
+    0
+  ],
+  "udp_datagrams": 152,
+  "max_udp_payload": 145,
+  "udp_payload_sizes": [
+    8,
+    10,
+    16,
+    18,
+    26,
+    38,
+    41,
+    45,
+    47,
+    48,
+    52,
+    63,
+    66,
+    73,
+    127,
+    140,
+    145
+  ],
+  "enet_command_types": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    10
+  ],
+  "enet_fragment_commands": 0,
+  "enet_parse_errors": 0,
+  "loopback_mtu": 65536,
+  "measurement": "Transparent loopback UDP relay; actual ENet datagrams, including Godot/ENet overhead; IPv4 overhead adds 28 bytes."
+}

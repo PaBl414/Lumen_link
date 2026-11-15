@@ -1,0 +1,85 @@
+Godot Engine v4.5.2.stable.official.6ce3de25a - https://godotengine.org
+
+PHASE client IDLE
+PHASE client CONNECTING
+PHASE client LOBBY
+PHASE client LOADING
+PHASE client COUNTDOWN
+EXPEDITION client COUNTDOWN sector=0 tick=28 objective=0 charge=[0, 0, 0] players=(112.0, 592.0)/(176.0, 592.0) target=0 lead=2
+PHASE client PLAYING
+PHASE client PLAYING
+EXPEDITION client PLAYING sector=0 tick=630 objective=0 charge=[122, 0, 0] players=(112.0, 440.0662)/(289.8477, 445.8008) target=633 lead=3
+EXPEDITION client PLAYING sector=0 tick=1230 objective=1 charge=[300, 0, 0] players=(353.9806, 280.0306)/(455.4213, 495.9395) target=1233 lead=3
+EXPEDITION client PLAYING sector=0 tick=1830 objective=1 charge=[300, 0, 0] players=(383.9311, 192.0654)/(840.0366, 425.2481) target=1834 lead=3
+EXPEDITION client PLAYING sector=0 tick=2432 objective=2 charge=[300, 300, 0] players=(351.7199, 280.0503)/(935.9619, 363.4804) target=2435 lead=3
+EXPEDITION client PLAYING sector=0 tick=3024 objective=2 charge=[300, 300, 0] players=(673.8519, 495.9526)/(1132.362, 561.7084) target=3027 lead=3
+EXPEDITION client PLAYING sector=0 tick=3624 objective=2 charge=[300, 300, 252] players=(895.9305, 552.0748)/(1119.954, 552.0364) target=3627 lead=3
+PHASE client RESULTS
+PHASE client RESULTS
+PHASE client RESULTS
+PHASE client RESULTS
+PHASE client LOADING
+PHASE client COUNTDOWN
+EXPEDITION client COUNTDOWN sector=1 tick=44 objective=0 charge=[0, 0, 0] players=(112.0, 592.0)/(176.0, 592.0) target=0 lead=3
+PHASE client PLAYING
+PHASE client PLAYING
+EXPEDITION client PLAYING sector=1 tick=644 objective=0 charge=[0, 0, 0] players=(112.0, 256.0549)/(288.0399, 360.5867) target=647 lead=3
+EXPEDITION client PLAYING sector=1 tick=1246 objective=0 charge=[297, 0, 0] players=(159.9412, 176.0752)/(352.0101, 336.0139) target=1249 lead=3
+EXPEDITION client PLAYING sector=1 tick=1846 objective=1 charge=[300, 0, 0] players=(486.7545, 385.2419)/(800.0314, 448.0025) target=1849 lead=3
+EXPEDITION client PLAYING sector=1 tick=2446 objective=1 charge=[300, 262, 0] players=(543.4398, 224.0679)/(800.0314, 448.0025) target=2450 lead=3
+EXPEDITION client PLAYING sector=1 tick=3048 objective=2 charge=[300, 300, 0] players=(856.0761, 299.0973)/(1128.328, 407.8694) target=3051 lead=3
+EXPEDITION client PLAYING sector=1 tick=3646 objective=2 charge=[300, 300, 175] players=(776.0596, 192.0513)/(959.7009, 609.0201) target=3651 lead=3
+EXPEDITION client PLAYING sector=1 tick=4248 objective=3 charge=[300, 300, 300] players=(974.2449, 416.4202)/(1191.99, 591.9515) target=4252 lead=3
+PHASE client RESULTS
+PHASE client RESULTS
+PHASE client RESULTS
+PHASE client RESULTS
+PHASE client LOADING
+PHASE client COUNTDOWN
+EXPEDITION client COUNTDOWN sector=2 tick=156 objective=0 charge=[0, 0, 0] players=(112.0, 592.0)/(176.0, 592.0) target=0 lead=3
+PHASE client PLAYING
+PHASE client PLAYING
+EXPEDITION client PLAYING sector=2 tick=758 objective=0 charge=[126, 0, 0] players=(207.9483, 208.0506)/(448.0218, 447.9574) target=761 lead=3
+EXPEDITION client PLAYING sector=2 tick=1358 objective=1 charge=[300, 0, 0] players=(388.0735, 176.0316)/(652.0377, 447.9574) target=1361 lead=3
+EXPEDITION client PLAYING sector=2 tick=1958 objective=1 charge=[300, 0, 0] players=(540.0217, 208.0524)/(1065.772, 383.9901) target=1962 lead=3
+EXPEDITION client PLAYING sector=2 tick=2558 objective=1 charge=[300, 150, 0] players=(671.9515, 261.4627)/(1119.785, 304.0324) target=2562 lead=3
+EXPEDITION client PLAYING sector=2 tick=3158 objective=2 charge=[300, 300, 0] players=(672.0767, 479.9346)/(1177.368, 465.4383) target=3161 lead=3
+EXPEDITION client PLAYING sector=2 tick=3760 objective=2 charge=[300, 300, 150] players=(683.0291, 312.0509)/(1121.621, 555.7379) target=3762 lead=3
+EXPEDITION client PLAYING sector=2 tick=4356 objective=3 charge=[300, 300, 300] players=(997.225, 439.4855)/(1192.026, 591.9382) target=4360 lead=3
+PHASE client RESULTS
+PHASE client RESULTS
+PHASE client RESULTS
+PHASE client RESULTS
+PHASE client LOADING
+PHASE client COUNTDOWN
+EXPEDITION client COUNTDOWN sector=3 tick=178 objective=0 charge=[0, 0, 0] players=(112.0, 592.0)/(176.0, 592.0) target=0 lead=3
+PHASE client PLAYING
+PHASE client PLAYING
+EXPEDITION client PLAYING sector=3 tick=778 objective=0 charge=[0, 0, 0] players=(256.8841, 332.1822)/(561.8929, 518.321) target=782 lead=3
+EXPEDITION client PLAYING sector=3 tick=1378 objective=1 charge=[300, 0, 0] players=(333.5278, 208.0658)/(736.6182, 447.9763) target=1382 lead=3
+EXPEDITION client PLAYING sector=3 tick=1964 objective=1 charge=[300, 0, 0] players=(743.8982, 148.3574)/(1007.659, 327.9322) target=1970 lead=4
+EXPEDITION client PLAYING sector=3 tick=2556 objective=2 charge=[300, 300, 0] players=(751.9384, 395.2007)/(1096.073, 402.6014) target=2562 lead=4
+EXPEDITION client PLAYING sector=3 tick=3158 objective=2 charge=[300, 300, 208] players=(934.9507, 437.236)/(1137.064, 623.617) target=3158 lead=3
+PHASE client RESULTS
+PHASE client RESULTS
+PHASE client RESULTS
+PHASE client RESULTS
+PHASE client LOADING
+PHASE client COUNTDOWN
+EXPEDITION client COUNTDOWN sector=4 tick=0 objective=0 charge=[0, 0, 0] players=(112.0, 592.0)/(176.0, 592.0) target=0 lead=8
+PHASE client PLAYING
+PHASE client PLAYING
+EXPEDITION client PLAYING sector=4 tick=612 objective=0 charge=[107, 0, 0] players=(112.0, 240.0785)/(112.0342, 559.9734) target=620 lead=4
+EXPEDITION client PLAYING sector=4 tick=1200 objective=1 charge=[300, 0, 0] players=(152.0717, 231.7053)/(415.1775, 559.9734) target=1211 lead=3
+EXPEDITION client PLAYING sector=4 tick=1798 objective=2 charge=[300, 300, 0] players=(307.0764, 208.0746)/(774.2085, 528.0594) target=1802 lead=3
+EXPEDITION client PLAYING sector=4 tick=2372 objective=2 charge=[300, 300, 0] players=(845.9737, 208.0746)/(832.0143, 528.0594) target=2377 lead=4
+EXPEDITION client PLAYING sector=4 tick=2966 objective=2 charge=[300, 300, 0] players=(1096.065, 311.685)/(832.0143, 528.0594) target=2974 lead=4
+EXPEDITION client PLAYING sector=4 tick=3552 objective=2 charge=[300, 300, 243] players=(1120.069, 303.9429)/(696.2311, 574.4373) target=3558 lead=3
+EXPEDITION client PLAYING sector=4 tick=4138 objective=3 charge=[300, 300, 300] players=(1143.935, 591.9437)/(918.4404, 559.8048) target=4143 lead=4
+PHASE client RESULTS
+PHASE client RESULTS
+PHASE client RESULTS
+PHASE client IDLE
+HARNESS ERROR client 8 Partner opuścił grę.
+{"application_sizes":[],"begin_tick":0,"begins":5,"code":8,"error":"Partner opuścił grę.","ok":false}
+PHASE client IDLE

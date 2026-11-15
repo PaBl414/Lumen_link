@@ -1,0 +1,299 @@
+from pathlib import Path
+import json, shutil
+root=Path('.')
+old=Path('docs/RAPORT_ROZGRYWKI_LUMEN_LINK.md');archive=Path('docs/reports/map-redesign/gameplay-report.md')
+if not archive.exists():shutil.copyfile(old,archive)
+p=Path('docs/reports/map-redesign/status.md')
+if not p.exists():shutil.copyfile('docs/PROJECT_STATUS.md',p)
+maps={name:json.loads(Path(f'data/maps/{name}.json').read_text()) for name in ['dock','garden','reactor']}
+hints=json.loads(Path('tools/map_solution_hints.json').read_text())
+parts=['''# M11c — poziomy, współpraca i faktyczna rozgrywka
+
+Stan: 2026-11-15, dodatkowy etap po M11b. M12 nie rozpoczęto.
+Źródła: aktualne data/maps/*.json, core/{simulation,objective_system,link_system,
+hazard_system,map_definition,game_snapshot}.gd, app/match_session.gd oraz
+prezentacja. Opis dotyczy implementacji, nie historycznej specyfikacji dziewięciu wnęk.
+
+## Zasady i progresja
+
+Dwa drony, wspólne zdrowie i przewód; kampania dock → garden → reactor.
+**Kolejność celów zawsze 0→1→2.** Wariant `(seed+17*sector)%3` zmienia tylko
+sprawdzone przesunięcia faz hazardów (+37 ticków na wariant). Nie zmienia ścian,
+urządzeń, pól ani kolejności nauki. Są trzy układy, nie dziewięć nowych poziomów.
+Normal: 6 wspólnej integrity i180 s/sektor; Relaxed: 9 i240 s. Zdrowie przechodzi
+między sektorami, regeneracji nie ma. Przejście po sektorze i rewanż wymagają obu głosów.
+
+| Mapa | Cel0 | Cel1 | Cel2 |
+|---|---|---|---|
+| dock | bezpieczny prosty przewód, bez pola/gniazda | dwa obszary połączone kanałem światła i narożnym gniazdem | różne pola + PULSE na stanowisku |
+| garden | dwa etapy bez presji przy zmianie pozycji | gniazdo wokół przegrody + SWEEP przecinający pole | po150 zmiana gniazda i obu pól; krótka ryzykowna droga lub obejście |
+| reactor | rozdzielenie wokół bloku, gniazdo i SWEEP | obie osoby zmieniają pola po150; kolejno ostrzegane stanowiska | wspólny zaczep z poprzednim celem, potem nowy zaczep; PULSE+SWEEP i ewakuacja |
+
+W grze nie ma bota. Narzędzie autora/testów zna rozwiązania i produkuje wyłącznie
+InputCommand. Nie uczestniczy w normalnej sesji. Role z opisów poniżej można zamienić:
+P0/P1 oznaczają przykład, nie przypisane umiejętności lub właścicieli pól.
+
+## Sterowanie i niezmienione parametry
+
+LAN na każdym komputerze: WASD/strzałki ruch, Spacja zryw, E zaczep, Q ping,
+Escape menu. Lokalny debug F2: P1 tak samo, P2 IJKL/Shift/U/O, klawisze1/2 głosy.
+F2 uruchamia seed0/Normal. Pad ma lewy drążek i przyciski0/2/3 dla zrywu/E/Q;
+nie deklarujemy pełnego menu na padzie. Remapowanie i pełne ustawienia należą do M12.
+Escape/fokus zerują wejście, **gra nadal trwa**. Drony mogą przenikać przez siebie.
+
+| Parametr | Wartość w runtime |
+|---|---|
+| Symulacja | 60 Hz; snapshot i wysyłanie wejścia gościa30 Hz |
+| Ruch / przyspieszenie / hamowanie | 240/s /1800/s² /2400/s² |
+| Collider drona | osiowy kwadrat24×24 |
+| Zryw | 720/s przez10 ticków, do120 jednostek; cooldown90 ticków=1,5 s |
+| Zryw i zdrowie | DASH chroni przed hazardem, ale wyłącza zasilanie |
+| Przewód | suma długości56…720; ściany z padding3, styczność blokuje |
+| Warunek trafienia celu | odległość środka do odcinka≤25, po łamanej≥48 od obu końców |
+| Zaczep | najbliższy socket≤44; ponowne E odpina; inne zastępuje; wspólny cooldown30 ticków |
+| Ładowanie | +1/tick, razem300=5 s aktywnego zasilania |
+| Przerwa | grace30 ticków; potem -1 co2 ticki, pierwszy ubytek przy gap32 |
+| Obrażenia | -1 wspólnej integrity z globalnym cooldown30 ticków; trafiony STUN12, odporność90 |
+| Ping | marker własnej pozycji przez90 ticków, cooldown60 ticków |
+| Ewakuacja | obaj w promieniu64 od(1168,592) przez120 kolejnych ticków; po3 celach |
+
+Nie ma wymuszonego rozdzielenia dronów globalnie, minimalnego kąta ani fizycznego
+naciągu liny. Za długa lub zablokowana wiązka nie powstrzymuje ruchu. W punktach
+z polami realne rozdzielenie wynika z dwóch oddalonych stanowisk. W doku/celu1
+bez pól znaczenie mają nieprzekraczalny dla drona kanał i całkowity limit720.
+
+## Pola stabilizacji — jedna nowa mechanika
+
+Każdy cel ma opcjonalne `stabilization`: brak par, jedna para lub dwie pary.
+Pole ma promień44, centra każdej pary są oddalone o≥160. Każde pole musi zajmować
+inny dron; oba drony muszą być NORMAL. Sprawdzane są oba przyporządkowania P0/P1.
+Pola nie przyciągają, nie unieruchamiają i same nie zasilają celu. Nadal trzeba
+trafić cel poprawnym przewodem. Jeden dron nie może zaliczyć dwóch pól.
+
+Dla dwóch par: pierwsza obowiązuje przy charge0…149. Tick osiągający150 ustawia
+bit `latched_mask`, aktywuje drugą, nieruchomą parę i zatrzaskuje podłogę zaniku150.
+Drugi etap kończy się przy300. Zryw, STUN lub wyjście z pola przerywają zasilanie;
+zanik stosuje tę samą grace30, lecz nie przekracza zatrzasku. Jedna para nie ma
+zatrzasku. Ukończone cele pozostają ukończone. Zmiana sektora/rewanż zerują maskę.
+
+Reguły są w JSON celu; kod nie rozgałęzia się po nazwach map. Schema map2 dodaje
+`objectives:[{id,hint,stabilization}]`, zachowano odczyt schema1 dla fixture.
+Walidator sprawdza liczbę par, liczby skończone,≥160, pełne koła44 w bounds,
+brak przecięcia pól ze ścianami oraz osiągalność ich centrów. Socketów jest1…3.
+Ściany i zasilanie mają dotychczasową kolizję; nie dodano nowego rodzaju bariery.
+
+## Pełne współrzędne i znane rozwiązania
+
+Widok1280×720, x w prawo/y w dół. Bounds[32,88,1216,600], spawnyP0(112,592),
+P1(176,592), wyjście(1168,592), radius64. Prostokąty to[x,y,w,h].
+Cele są oznaczone na ekranie1/2/3, poniżej ID0/1/2. Wszystkie ściany są statyczne.
+Światło bez gniazda `[P0,P1]`, z gniazdem `[P0,S,P1]`.
+
+Każdy wiersz rozwiązania: dojść bezpieczną drogą; wybrany operator podchodzi do S
+na≤44 i naciska E; drony zajmują końce. Jeśli wymagane `brak`, przy włączonym
+starym gnieździe operator podchodzi do niego i odpina E. Po150 przejść do następnego
+wiersza tego celu; nie trzeba odzyskiwać pierwszej połowy. W razie hazardu użyć
+podanych miejsc odwrotu i wrócić, zgodnie z ostrzeżeniem. Nie są to jedyne rozwiązania.
+''']
+def point(p):return '('+','.join(map(str,p))+')'
+for name,d in maps.items():
+ parts.append(f'\n### {name}\n\n| ID | Cel |\n|---|---|\n')
+ for b in d['beacons']:parts.append(f"| {b['id']} | {point(b['position'])} |\n")
+ parts.append('\nGniazda: '+', '.join(f"S{x['id']}={point(x['position'])}" for x in d['sockets'])+'.\n\nŚciany:\n\n| ID | [x,y,w,h] |\n|---|---|\n')
+ for w in d['walls']:parts.append(f"| {w['id']} | {w['rect']} |\n")
+ parts.append('\n| Cel/etap | Pola wymagane? | Końce P0 / P1 | Zaczep / operator | Odwrót P0 / P1 |\n|---|---|---|---|---|\n')
+ for i,h in enumerate(hints[name]):
+  for k,s in enumerate(h['stages']):
+   relay=f"S{s['socket']} / P{s['operator']}" if s['socket']>=0 else 'brak / P0 odpina poprzedni'
+   parts.append(f"| {i}/{k+1} | {'tak' if d['objectives'][i]['stabilization'] else 'nie'} | {point(s['ends'][0])} / {point(s['ends'][1])} | {relay} | {point(s['escape'][0])} / {point(s['escape'][1])} |\n")
+ parts.append('\n| Hazard | Typ i geometria | phase_offset |\n|---|---|---|\n')
+ for h in d['hazards']:
+  g=f"koło{point(h['a'])}, r48" if h['type']=='PULSE' else f"{point(h['a'])}→{point(h['b'])}, travel{point(h['travel'])}"
+  parts.append(f"| {h['id']} | {h['type']}: {g} | {h['phase_offset']} |\n")
+parts.append('''
+## Kolejność działań i sens obu graczy
+
+### Dock
+
+1. Cel0: stanąć po różnych stronach(208,440), bez E i bez pola. Obie pozycje wpływają
+   na przejście środka przewodu przez cel; zasilanie bezpieczne. To zadanie wprowadzające
+   nie ma zapobiegać wspólnemu chodzeniu — po prostu uczy zwykłej wiązki.
+2. Cel1: P0 podchodzi do S0 od północy; E można nacisnąć np. z(376,280), dystans≈40,8.
+   Wraca nad blok na(384,192). P1 obchodzi blok i staje po prawej na(904,320).
+   Droga światła: pion do S0 i poziomo w prawo przez cel. Suma128+520=648.
+   Prosta między tymi końcami trafia w górny blok. Kanał między blokami ma16 jednostek:
+   światło szerokości6 przechodzi, dron24 nie. Dron po prawej nie może zbliżyć się
+   kanałem do celu. Gdy obaj stoją po prawej, powrotna trasa przez S0 przekracza720;
+   po północnej stronie nie trafia celu. Test siatki8 sprawdza dawny exploit wspólnego punktu.
+3. Cel2: odpiąć stary S0, przejść na różne pola(896,552)/(1120,552). Puls obejmuje
+   lewe stanowisko; można przerwać zasilanie, wycofać P0 na(896,648), a potem wrócić.
+   P1 utrzymuje prawe pole, nie steruje urządzeniem za partnera. Cel ma zwykły zanik,
+   więc decyzja o momencie wejścia i szybki powrót wpływają na postęp.
+
+### Garden
+
+1. Cel0: pierwsza para pozioma; po150 obie osoby przechodzą na ukośną drugą parę.
+   Ich centra zmieniają się o≈93,3 na osobę; koła kolejnych stanowisk nie nakładają się.
+   Przewód musi ponownie przeciąć ten sam cel. W tej części nie ma presji hazardu.
+2. Cel1: P0 obsługuje S0 i stoi nad przegrodą, P1 po jej prawej/dolnej stronie.
+   Przewód przez S0 omija blok; bez zaczepu prosta jest zasłonięta. SWEEP przecina
+   północne pole, więc nie wystarcza stale trzymać pozycji. P0 może zejść w lewo
+   na(448,224), P1 ma bezpieczne(800,528). Powrót umożliwia odzyskanie i dokończenie300.
+3. Cel2: S1 łączy pierwszy układ północnego i wschodniego pola. Po150 P0 przechodzi
+   na(784,144), P1 przełącza S2 i dochodzi do(1168,480). Inna trasa przez S2 zasila
+   ten sam cel po przekątnej; poprzedni zaczep nie jest sensowną trasą dla nowych końców.
+   Operator przykładowej drugiej fazy to P1; role można zamienić.
+
+**Dwie drogi P1 do S2 w ogrodzie:** bezpośrednia(1104,384)→(1008,480) przechodzi
+przez puls(1056,432). Bezpieczniejsze obejście to(1168,384)→(1168,544)→(1008,544)
+→(1008,480), około448 jednostek zamiast≈136. Odpowiedni moment lub zryw skraca
+ryzykowną drogę. Konkretny bezpieczny wariant zrywu podczas aktywnego pulsu:
+podejść do(1120,448), następnie zryw w stronę(1008,480), odcinek≈116,5<120,
+oba końce poza obrażeniami. Po E odchodzić na południe do(1008,544), a potem
+w prawo i na pole, jeśli puls nadal aktywny. Nie zakładamy, że każdy centralny
+przelot przez koło mieści się w120: prosta przez jego środek może być za długa.
+Test porównuje prawdziwy marsz i zryw na tym krótkim odcinku podczas ACTIVE.
+
+### Reactor
+
+1. Cel0: P0 na północnym polu po lewej od bloku, P1 pod/prawo od bloku.
+   S0 daje dwa ramiona; oba pola wymagają różnych dronów. SWEEP atakuje północne
+   stanowisko, a odwrót na(112,208) jest dostępny. Utrzymanie P1 nie zastępuje P0.
+2. Cel1: S1 obsługuje obie pary. P0 przechodzi z północy na południe, P1 przesuwa
+   się z(1008,320) do(1168,320). Pulsy ostrzegają kolejno oba końce. Offsety0/30
+   dają wspólne okno bez obrażeń210 ticków w Normal przy środkach tych pól.
+   Zatrzask150 pozwala przemieścić obie osoby bez kasowania pierwszej połowy.
+3. Cel2: najpierw nadal S1 — przekaźnik faktycznie obsługuje więcej niż jeden cel.
+   P0 przechodzi na(672,480), P1 na(1056,584); na drodze i stanowiskach są PULSE/SWEEP.
+   Po150 P1 dociera do S2 w(1008,592), czeka na czytelną możliwość wejścia/przechodzi
+   w bezpiecznej fazie, przełącza zaczep i wraca na wschodnie pole. P0 przemieszcza
+   się na(768,304); nowa ukośna trasa przechodzi przez cel. Wschodnie stanowisko
+   P1 jest obok bezpiecznego wyjścia, ale przed ukończeniem wszystkich celów nic
+   nie ewakuuje drużyny. Na koniec obaj muszą dojść do wyjścia i utrzymać2 s.
+
+## Cykle, reakcja i sprawdzenie zaniku
+
+PULSE Normal: OFF180, TELEGRAPH60, ACTIVE60, okres300 ticków (3+1+1 s).
+Relaxed: OFF240, TELEGRAPH90, ACTIVE30, okres360 (4+1,5+0,5 s).
+SWEEP Normal: OFF60, TELEGRAPH90, ACTIVE180, cooldown30, okres360 (1+1,5+3+0,5 s).
+Relaxed: OFF120, TELEGRAPH120, ACTIVE120, cooldown60, okres420 (2+2+2+1 s).
+Przesunięcie hazardu skaluje się do faktycznego okresu: floor(offset*okres/bazowy_okres),
+potem dodaje37*wariant. SWEEP odwraca kierunek co cykl. Wszystkie fazy pozostają
+istniejącym systemem zagrożeń, nie dodano mechaniki losowego ruszania pól.
+
+Ostrzeżenia trwają1…2 s zależnie od typu/trudności, a nie pojedynczy tick.
+Droga96 jednostek marszem to0,4 s przy pełnej prędkości plus rozruch/hamowanie;
+przy odkładaniu reakcji należy doliczyć wejście30 Hz i opóźnienie LAN. Zryw nie
+jest wymagany co1,5 s: widoczne miejsca odwrotu umożliwiają normalny marsz, a
+krótkie ryzykowne przejścia dają mu konkretną korzyść. Nie wykonano pomiaru reakcji ludzi.
+
+`tools/check_charge_windows.py` niezależnie wyznacza zagrożenie na znanych końcach,
+rezerwuje24 ticki przed niebezpieczeństwem i36 ticków na ponowne zajęcie stanowisk,
+następnie liczy +1/grace30/decay2 i próg300 lub zatrzask150. **78/78 przypadków PASS**
+(13 konfiguracji etapów ×3 fazy ×2 trudności). To konserwatywny model stanowisk,
+nie odtworzenie całej drogi pomiędzy nimi ani certyfikat ludzkiej reakcji.
+Pełne przejścia komendami są osobnym dowodem. We wcześniejszej próbie reaktora
+pulsom nadano zbyt rozdzielone fazy; wspólne okna nie pozwalały botowi utrzymać
+postępu. Obecne0/30 zastąpiło tamte offsety; nie zwiększono zdrowia/czasu/obrażeń/ładowania.
+
+## Widok i synchronizacja
+
+Dla aktualnego celu widać aktywną parę i przerywany podgląd przyszłej. Puste pole
+ma żółty obrys, zajęte zielony obrys i wypełnienie; nieaktywne jest przygaszone
+oraz kreskowane. Opisy A/B oznaczają pola, nie stałe role graczy. Cienkie linie
+łączą je wizualnie z celem; nie są przewodem zasilającym. Pierścień ładowania,
+napis1/2→150 lub150✓·2/2 i krótki impuls/komunikat potwierdzają zmianę etapu.
+Reduced motion zachowuje trwałe oznaczenia bez rozszerzającego się pierścienia.
+Pola rysują się nad urządzeniami, żeby ikona wyjścia ich nie zakrywała.
+
+HUD lokalny i LAN korzystają z tej samej funkcji podpowiedzi: brak różnych pól,
+NORMAL, zła długość, ściana, brak trafienia środkiem lub ładowanie. MarkerX przy
+OCCLUDED jest na faktycznym punkcie kontaktu z przeszkodą na zablokowanym ramieniu,
+nie w środku pomiędzy dronami. Pozostała grafika, animacje i menu M11 pozostają;
+pełny redesign menu/ustawień nie jest częścią M11c.
+
+**Protokół2:** SnapshotBody108 zamiast107 B. `latched_mask:u8` (0…7) przy offset37,
+PlayerRecord0 przy38, PlayerRecord1 przy73; rekord gracza nadal35 B. Nagłówek22,
+więc Snapshot/Begin130 B, SessionState135 B; limit1000 pozostaje. Kodek odrzuca
+maski spoza zakresu i charge<150 z ustawionym bitem. Walidacja względem mapy
+odrzuca zaczepy poza jej liczbą gniazd oraz zatrzask w niewłaściwym rodzaju celu
+lub brak zatrzasku przy≥150 dwufazowego celu. Pełny stan jest kopiowany do każdego
+snapshotu; do zmiany etapu nie potrzeba osobnego zdarzenia. Occupancy/etap rozstrzyga
+host; kolor pola u klienta pokazuje potwierdzony snapshot, a nie przewidywanie.
+Discovery ma nadal swój niezależny format wersji1; gra/handshake ma wersję2.
+
+## Dowody i ograniczenia
+
+- Pełna regresja w `reports/m11c/all.log`:1136 PASS,0 FAIL,19 suites,exit0,412134 ms.
+  Zawiera18 nagrań sektorów,6 pełnych kampanii i test sieciowy utraty snapshotów.
+- Nagrania to rzeczywiste komendy dla obu dronów, w tym E i dash. Nie przestawiają
+  pozycji, nie nadpisują zdrowia ani nie zaliczają celu przez zmianę WorldState.
+- Testy jednostkowe i skupiony test LAN używają przygotowanych stanów do sprawdzenia
+  granic149→150, zaniku, resetu, złej pary, ról i kodeka. Nie przedstawiamy tych
+  teleportowanych fixture jako dowodu przejścia kampanii.
+- Test geometrii sprawdza wszystkie znane końce z właściwym i bez zaczepu,
+  brak obejścia pól przez wspólny punkt, oba przyporządkowania ról i zmianę par.
+  Dock bez pól ma też próbkę siatki8 dla wspólnych pozycji. Próbkowanie nie jest
+  formalnym przeszukaniem przestrzeni ciągłej wszystkich alternatywnych rozwiązań.
+- Przy utracie odbioru pakietów przez330 ms host zatrzaskuje150; klient po powrocie
+  odtwarza etap z pełnego snapshotu bez zdarzenia wizualnego. Obie strony zerują
+  maskę przy kolejnej barierze sektora. Gość nie posiada Simulation.
+- Dodatkowe wyniki LAN/eksportów oraz końcowy zakres są w PROJECT_STATUS i
+  `reports/m11c/summary.json`; nie należy zastępować ich samą obecnością pliku binarnego.
+- Brak nowych ludzkich duetów (0/5), brak ocen frajdy, odkrywalności, reakcji,
+  równomiernego udziału i rosnącej subiektywnej trudności. Progresja jest zaprojektowana,
+  jej skuteczność u ludzi pozostaje do sprawdzenia. Fizyczna sieć2 maszyn i runtime
+  Windows wymagają osobnego sprawdzenia. Eksport Windows nie oznacza uruchomienia na Windows.
+- W jednej próbie świeżego importu fontów wystąpił crash Godota4.5.2 w wątku importera.
+  Import assetów ustawiono sekwencyjnie (`editor/import/use_multiple_threads=false`),
+  bez zmiany częstotliwości symulacji ani ruchu. Zachowano log nieudanej próby.
+
+### Zapisane przejścia izolowanych sektorów
+
+Czas obejmuje ruch, uniki, obie fazy i ewakuację; bez odliczania3 s. To narzędzie
+znające rozwiązanie, nie nowi ludzie. Izolowany reaktor ma indeks sektora0, więc
+kończy się INTERMISSION; dopiero w kampanii jako indeks2 daje WON. Wynik/zdrowie
+w pełnej kampanii są przenoszone, co sprawdzają osobne replays.
+
+| Mapa | Faza | Normal: ticki / integralność / dash | Relaxed: ticki / integralność / dash |
+|---|---|---|---|
+''')
+for name in maps:
+ runs=json.loads(Path(f'tests/fixtures/{name}_success.json').read_text())['runs']
+ for v in range(3):
+  r=[next(x for x in runs if x['variant']==v and x['difficulty']==d) for d in range(2)]
+  parts.append(f"| {name} | {v} | {r[0]['ticks']} / {r[0]['integrity']} / {r[0]['dashes']} | {r[1]['ticks']} / {r[1]['integrity']} / {r[1]['dashes']} |\n")
+parts.append('''
+Drony nie mają obowiązku zużywać tylu zrywów: kolumna opisuje zachowanie autora
+nagrania. Część prób reaktora traci integralność; nie jest to dowód wymaganych obrażeń.
+Bezpieczne miejsca i ostrzeżenia są dostępne, ale nie potwierdzono bezbłędnego
+ludzkiego przejścia ani wzrostu frajdy przez zwiększoną liczbę zagrożeń.
+
+## Źródła i powtarzalność
+
+Dane map2: `data/maps/*.json`. Autor układów: `tools/build_m11c_maps.py` (nie ładuje
+się w grze). Znane rozwiązania: `tools/map_solution_hints.json`; runtime nie ma do
+nich dostępu w logice celów. Nagrania: `tests/fixtures/*_success.json`, schema2,
+RLE `[ticks,x0,y0,x1,y1,anchor0,anchor1,dash0,dash1]`. `fixture_replay.gd` zachowuje
+odczyt dawnych5/7 pól. Narzędzie Driver i harness LAN kierują wejściem, nigdy WorldState.
+
+Polecenia: `godot --headless --path . --script tools/validate_content.gd`,
+`godot --headless --path . --script tools/record_success_fixtures.gd -- --map=dock`
+(analogicznie garden/reactor), `python3 tools/check_charge_windows.py`,
+`godot --headless --path . --script tests/test_runner.gd -- --suite=all`,
+natywnie `godot --path . --script tools/map_puzzle_preview.gd --max-fps 60`.
+Nagrywanie nadpisuje fixture tylko po sukcesie wszystkich6 konfiguracji danej mapy.
+Nie nazywać przejść z zerowym zdrowiem sukcesem ani pomijać sprawdzenia6 kampanii.
+
+Wydanie gry pozostaje oddzielną bramką; M12 i audio M13 nie zostały rozpoczęte.
+''')
+text=''.join(parts)
+Path('docs/M11C_POZIOMY_I_WSPOLPRACA.md').write_text(text)
+Path('docs/RAPORT_ROZGRYWKI_LUMEN_LINK.md').write_text(text.replace('# M11c — poziomy, współpraca i faktyczna rozgrywka','# LUMEN LINK — samodzielny raport faktycznej rozgrywki po M11c',1)+'\nDo oceny przez inne AI: odróżnij reguły i wyniki maszyn od hipotez o frajdzie. W szczególności sprawdź powtarzalność działań po nauczeniu pól, sens alternatywnych przekaźników, możliwość ustawień na granicach pól i czy presja hazardów daje decyzje zamiast oczekiwania. Nie zakładaj ludzkiej trudności z samych liczb hazardów. Raport sprzed M11c zachowano w `docs/reports/map-redesign/gameplay-report.md`.\n')
+p=Path('docs/NETWORK_PROTOCOL.md');s=p.read_text().replace('# NETWORK_PROTOCOL — kontrakt 1.0','# NETWORK_PROTOCOL — protokół gry 2 (M11c)').replace('protocol_version=1','protocol_version=2').replace('SnapshotBody107 B','SnapshotBody108 B').replace('| 37 | PlayerRecord35 B | slot0 |\n| 72 | PlayerRecord35 B | slot1 |','| 37 | u8 | latched_mask0..7; bitID oznacza zatrzaśnięte150 dwufazowego celu |\n| 38 | PlayerRecord35 B | slot0 |\n| 73 | PlayerRecord35 B | slot1 |');s=s.replace('Poniższe rozdziały zachowują pełną treść źródła. Opisują wymagania docelowe; stan implementacji podaje [PROJECT_STATUS.md](PROJECT_STATUS.md).','M11c aktualizuje wersję gry do2 i SnapshotBody do108 B. Nagłówek22 B, PlayerRecord35 B, limit1000 B bez zmian. Discovery ma własną wersję1. Stan implementacji: [PROJECT_STATUS.md](PROJECT_STATUS.md).');s+='''\n## M11c — reguły trwałego etapu\n\nSnapshot/Begin:130 B; SessionState:135 B. latched_mask przy offset37 jest kopiowane\nz hosta do każdego pełnego snapshotu. Bit nie zależy od Events. Kodek wymaga0..7\ni charge≥150 dla ustawionych bitów. GameSnapshot.validate(map,config) dodatkowo\nsprawdza typ celu i zgodność150 z bitem, indeks socketu z liczbą urządzeń mapy.\nKlient waliduje Begin/Snapshot/SessionState względem mapy wczytanej na tej barierze.\nStare pakiety protokołu1 są odrzucane; golden vectors są niezależne od kodeka.\nKolejność celów0→1→2, variant wpływa tylko na fazy hazardów. Pola są statycznymi\ndanymi zgodnymi przez content hash; zajęcie wynika z hostowych PlayerState,\na etap z latched_mask. Brak kolejnego typu wiadomości i brak nowego zdarzenia.\n''';p.write_text(s)
+p=Path('docs/ADR.md');s=p.read_text();s+='''\n## ADR-0013 — M11c: pola stabilizacji, stała progresja i protokół2\n\nUżytkownik zlecił usunięcie dziewięciu identycznych wnęk. Zastosowano optyczny\nkanał/narożnik w doku i dwuramienne układy z jawnymi parami pól na dalszych\ncelach. Bez globalnego zakazu nakładania dronów i bez testu minimalnego kąta.\nRule per objective w schema2:0/1/2 pary; radius44, centra≥160, role zamienne.\nJedyna nowa mechanika: pola i zatrzask150. Maska ma3 bity w WorldState i pełnym\nSnapshotBody108; wire protocol2, PlayerRecord35 i limit1000 niezmienione.\nKolejność celów0→1→2; seed/variant tylko przesuwa sprawdzone fazy.\nNie zwiększono czasu ładowania, obrażeń ani nie zmieniono ruchu/zrywu.\nOffsety reaktora0/30 zastąpiły zbyt odległe fazy, żeby wspólne okna miały\npojemność na postęp po unikach. Regresja1136PASS oraz niezależny model78okien\nnie zastępują ludzkiej oceny. Pełne współrzędne/rozwiązania i zakres dowodów:\n[M11C_POZIOMY_I_WSPOLPRACA](M11C_POZIOMY_I_WSPOLPRACA.md).\n\nSekwencyjny import assetów jest ustawieniem edytora, które omija zaobserwowany\ncrash Godota4.5.2 przy wielowątkowym imporcie fontów. Nie ogranicza ticków gry.\nHistoryczne raporty wnęk zachowano, bieżący raport rozgrywki zaktualizowano.\n''';p.write_text(s)
+p=Path('docs/CODE_CONTRACTS.md');s=p.read_text();s+='''\n## M11c — aktualne rozszerzenie kontraktów\n\n`MapDefinition.ObjectiveDef`: hint:String, stabilization:Array[PackedVector2Array],\n0/1/2 pary. `objective_rule(id)` daje zwykły cel dla starych fixture schema1.\nMap schema2 wymaga3 uporządkowanych reguł,1..3 socketów. Cele zawsze0→1→2.\n`ObjectiveSystem.active_pair(state,map,id)` wybiera parę po masce;\n`fields_satisfied` rozpatruje oba przyporządkowania i NORMAL, radius44;\n`message` jest wspólne dla HUD lokalnego i LAN. `step` stosuje zwykły przewód\ni latch150 z podłogą zaniku. WorldState.reset zeruje latched_mask.\nGameSnapshot.SCALARS/capture/copy i PacketCodec przenoszą maskę:u8, offset37,\nSnapshotBody108 B, protokół2. Walidacja mapy sprawdza semantykę zatrzasku.\n`CollisionWorld.first_block(a,b,padding)->Vector2` zwraca kontakt lub INF;\nLinkResult zawiera blocked_point/blocked_segment dla prezentacji, bez nowego wire pola.\nFixture RLE schema2 ma9 pól, dodane dash0/dash1 po anchor0/anchor1. Starsze5/7\npól nadal czytelne. Generator uruchamia prawdziwą Simulation i zapisuje tylko sukcesy.\n''';p.write_text(s)
+p=Path('docs/ARCHITECTURE.md');s=p.read_text();s+='''\n## M11c\n\nPola należą do reguł celu w MapDefinition; wyłącznie hostowy ObjectiveSystem\nrozstrzyga ich zajęcie i latch150. WorldState→GameSnapshot→PacketCodec(P2)\nprzenosi3-bitową maskę w pełnym stanie. Widok wyprowadza aktywną parę i occupancy\nz autorytatywnych graczy/maski; predykcja nie decyduje o charge. Animacja wykrywa\nnowy bit, ale trwałe etykiety działają również po utracie animacji/pakietów.\nNarzędzia solution_driver i dane rozwiązania są autorstwem/testami, bez\nwywoływania ich w normalnej aplikacji.\n''';p.write_text(s)
+p=Path('docs/RELAY_MAP_DESIGN.md');s=p.read_text();p.write_text('> **HISTORYCZNE: stan sprzed M11c.** Dziewięć wnęk zastąpiono. Aktualne układy, reguły i wyniki: [M11c](M11C_POZIOMY_I_WSPOLPRACA.md).\n\n'+s)
+p=Path('README.md');s=p.read_text();s+='''\n## M11c — nowe poziomy i współpraca\n\nAktualne mapy zastępują opisane wyżej historyczne wnęki. Cele zawsze1→2→3;\nseed zmienia tylko fazy zagrożeń. Dock uczy prostej wiązki, narożnego zaczepu\ni dwóch pól. Garden dodaje zatrzask150 i zmianę stanowisk/zaczepu. Reactor\nłączy oba etapy, PULSE/SWEEP i ewakuację. Dwa drony muszą zajmować różne\npola44, a przewód nadal trafiać cel. Po150 dwufazowego celu przejdźcie na\nwidoczną drugą parę — połowa postępu pozostaje. Wymagany protokół2 i ten sam\ncontent hash u obu graczy. Starszy eksport M11 nie zawiera tych zmian.\n\n[Pełne współrzędne, rozwiązania i dowody](docs/M11C_POZIOMY_I_WSPOLPRACA.md).\n[Raport dla AI](docs/RAPORT_ROZGRYWKI_LUMEN_LINK.md). M12 nie rozpoczęto.\n''';p.write_text(s)
+print('M11c docs written; final status/evidence to be filled from completed checks.')

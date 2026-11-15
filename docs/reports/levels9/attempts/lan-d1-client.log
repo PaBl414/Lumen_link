@@ -1,0 +1,12 @@
+Godot Engine v4.5.2.stable.official.6ce3de25a - https://godotengine.org
+
+PHASE client IDLE
+PHASE client CONNECTING
+PHASE client LOBBY
+PHASE client LOADING
+PHASE client COUNTDOWN
+EXPEDITION client COUNTDOWN sector=0 tick=0 objective=0 charge=[0, 0, 0] players=(112.0, 592.0)/(176.0, 592.0) target=0 lead=2
+PHASE client IDLE
+HARNESS ERROR client 8 Partner opuścił grę.
+{"application_sizes":[],"begin_tick":0,"begins":1,"code":8,"error":"Partner opuścił grę.","ok":false}
+PHASE client IDLE

@@ -1,0 +1,12 @@
+import subprocess,time,json
+from pathlib import Path
+root=Path('/home/pablo/lan_game');out=root/'docs/reports/m08';g='/home/pablo/.local/bin/godot';processes=[];records=[]
+for role in ['host','client']:
+ log=open(out/f'expedition-{role}.log','w')
+ cmd=[g,'--headless','--path',str(root),'tests/integration/network_harness.tscn','--',f'--role={role}','--port=27991','--scenario=expedition',f'--report={out}/expedition-{role}.json']
+ p=subprocess.Popen(cmd,stdout=log,stderr=subprocess.STDOUT);processes.append((p,log,cmd));time.sleep(.7)
+for p,log,cmd in processes:
+ try:code=p.wait(timeout=310)
+ except subprocess.TimeoutExpired:p.terminate();code=p.wait()
+ log.close();records.append({'command':cmd,'exit_code':code});print('process',code,flush=True)
+(out/'process.commands.json').write_text(json.dumps(records,indent=2))

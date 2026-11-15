@@ -1,0 +1,108 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://app/app_root.gd" id="1_root"]
+
+[sub_resource type="StyleBoxFlat" id="Style_panel"]
+bg_color = Color(0.055, 0.095, 0.15, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.25, 0.55, 0.55, 1)
+corner_radius_top_left = 18
+corner_radius_top_right = 18
+corner_radius_bottom_right = 18
+corner_radius_bottom_left = 18
+
+[node name="AppRoot" type="Node"]
+script = ExtResource("1_root")
+
+[node name="Menu" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="ColorRect" parent="Menu"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.025, 0.045, 0.085, 1)
+
+[node name="Center" type="CenterContainer" parent="Menu"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="PanelContainer" parent="Menu/Center"]
+custom_minimum_size = Vector2(540, 360)
+layout_mode = 2
+theme_override_styles/panel = SubResource("Style_panel")
+
+[node name="Margin" type="MarginContainer" parent="Menu/Center/Panel"]
+layout_mode = 2
+theme_override_constants/margin_left = 48
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 48
+theme_override_constants/margin_bottom = 40
+
+[node name="Content" type="VBoxContainer" parent="Menu/Center/Panel/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="Title" type="Label" parent="Menu/Center/Panel/Margin/Content"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.55, 0.95, 0.82, 1)
+theme_override_font_sizes/font_size = 42
+text = "LUMEN LINK"
+horizontal_alignment = 1
+
+[node name="Tagline" type="Label" parent="Menu/Center/Panel/Margin/Content"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "Dwa drony. Jeden obwód."
+horizontal_alignment = 1
+
+[node name="Status" type="Label" parent="Menu/Center/Panel/Margin/Content"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.68, 0.74, 0.8, 1)
+text = "M04 · Sektor dock (developer art)\nRozgrywka będzie dostępna w kolejnych etapach."
+horizontal_alignment = 1
+
+[node name="ExitButton" type="Button" parent="Menu/Center/Panel/Margin/Content"]
+custom_minimum_size = Vector2(0, 52)
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "Zamknij"
+
+[node name="WorldContainer" type="Node" parent="."]
+
+[node name="FlowLayer" type="CanvasLayer" parent="."]
+layer = 10
+
+[node name="Backdrop" type="ColorRect" parent="FlowLayer"]
+visible = false
+position = Vector2(0, 0)
+size = Vector2(1280, 720)
+mouse_filter = 2
+color = Color(0.063, 0.106, 0.169, 1.0)
+
+[node name="Panel" type="VBoxContainer" parent="FlowLayer"]
+visible = false
+position = Vector2(330, 240)
+custom_minimum_size = Vector2(620, 230)
+
+[node name="Text" type="Label" parent="FlowLayer/Panel"]
+layout_mode = 2
+text = "Ładowanie"
+theme_override_font_sizes/font_size = 20

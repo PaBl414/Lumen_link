@@ -1,0 +1,21 @@
+{
+  "duration_ms": 97357,
+  "exit_code": 0,
+  "failed": 0,
+  "passed": 1119,
+  "skipped": 0,
+  "suite": "all",
+  "suite_count": 17,
+  "content_sha256": "0039c9be838c29b25db3a6e014b368759cfd5e141595a91b4480637fabf72871",
+  "recorded_success_runs": 18,
+  "full_campaigns": 6,
+  "no_anchor_zero_charge_maps": [
+    "dock",
+    "garden",
+    "reactor"
+  ],
+  "certified_recesses": 9,
+  "native_preview_images": 9,
+  "human_playtests": "NOT RUN",
+  "export": "previous M11 export is stale; launch current project"
+}

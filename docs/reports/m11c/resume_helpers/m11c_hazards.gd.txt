@@ -1,0 +1,4 @@
+extends SceneTree
+func _initialize() -> void:
+	var t: TestAssert = TestAssert.new(); var suite: RefCounted = load("res://tests/unit/test_hazards.gd").new(); suite.run(t)
+	t.is_true(suite.get_meta("completed",false),"hazard suite completed"); print(JSON.stringify(t.summary())); quit(1 if t.failed else 0)

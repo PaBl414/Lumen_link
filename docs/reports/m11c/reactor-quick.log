@@ -1,0 +1,20 @@
+Godot Engine v4.5.2.stable.official.6ce3de25a - https://godotengine.org
+
+{"difficulty":0,"progress":"reactor","state":{"goal":0,"integrity":6,"latch":0,"tick":0},"variant":0}
+{"charges":[0,0,0],"goal":0,"positions":["(112.0, 592.0)","(176.0, 592.0)"],"tick":0,"trace":"reactor"}
+{"charges":[111,0,0],"goal":0,"positions":["(88.44138, 252.7808)","(447.9318, 448.0777)"],"tick":600,"trace":"reactor"}
+{"charges":[215,0,0],"goal":0,"positions":["(207.9407, 208.0668)","(447.9318, 448.0777)"],"tick":1200,"trace":"reactor"}
+{"difficulty":0,"progress":"reactor","state":{"goal":1,"integrity":6,"latch":0,"tick":1285},"variant":0}
+{"charges":[300,0,0],"goal":1,"positions":["(441.9802, 399.9785)","(880.3078, 415.9519)"],"tick":1800,"trace":"reactor"}
+{"charges":[300,46,0],"goal":1,"positions":["(554.7908, 177.1057)","(1000.614, 443.4177)"],"tick":2400,"trace":"reactor"}
+{"difficulty":0,"progress":"reactor","state":{"goal":1,"integrity":4,"latch":2,"tick":2891},"variant":0}
+{"charges":[300,150,0],"goal":1,"positions":["(616.0618, 325.4711)","(1032.469, 399.9601)"],"tick":3000,"trace":"reactor"}
+{"charges":[300,251,0],"goal":1,"positions":["(615.9791, 555.1885)","(1167.934, 248.4801)"],"tick":3600,"trace":"reactor"}
+{"difficulty":0,"progress":"reactor","state":{"goal":2,"integrity":4,"latch":2,"tick":3753},"variant":0}
+{"charges":[300,300,0],"goal":2,"positions":["(554.8277, 497.102)","(1106.702, 527.5524)"],"tick":4200,"trace":"reactor"}
+{"charges":[300,300,0],"goal":2,"positions":["(615.9767, 555.1896)","(1079.55, 560.0495)"],"tick":4800,"trace":"reactor"}
+{"difficulty":0,"progress":"reactor","state":{"goal":2,"integrity":4,"latch":6,"tick":5019},"variant":0}
+{"charges":[300,300,150],"goal":2,"positions":["(655.9549, 323.1809)","(1167.927, 591.9271)"],"tick":5400,"trace":"reactor"}
+{"difficulty":0,"progress":"reactor","state":{"goal":3,"integrity":4,"latch":6,"tick":5620},"variant":0}
+{"charges":[300,300,300],"goal":3,"positions":["(984.4488, 430.2699)","(1191.922, 591.9271)"],"tick":6000,"trace":"reactor"}
+{"map":"reactor","result":{"charge":[300,300,300],"complete_mask":7,"dashes":24,"difficulty":0,"history":[{"goal":0,"integrity":6,"latch":0,"tick":0},{"goal":1,"integrity":6,"latch":0,"tick":1285},{"goal":1,"integrity":4,"latch":2,"tick":2891},{"goal":2,"integrity":4,"latch":2,"tick":3753},{"goal":2,"integrity":4,"latch":6,"tick":5019},{"goal":3,"integrity":4,"latch":6,"tick":5620}],"integrity":3,"latched_mask":6,"ok":true,"positions":["(1143.946, 591.9344)","(1191.922, 591.9271)"],"retreats":91,"score":3720,"seed":0,"ticks":6471,"variant":0}}

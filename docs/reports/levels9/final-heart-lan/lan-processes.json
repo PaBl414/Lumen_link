@@ -1,0 +1,45 @@
+{
+  "ok": true,
+  "results": [
+    {
+      "difficulty": 0,
+      "role": "host",
+      "exit_code": 0,
+      "ok": true,
+      "command": [
+        "/home/pablo/.local/bin/godot",
+        "--headless",
+        "--path",
+        "/home/pablo/lan_game",
+        "res://tests/integration/network_harness.tscn",
+        "--",
+        "--scenario=expedition",
+        "--level=station_heart",
+        "--role=host",
+        "--difficulty=0",
+        "--port=25920",
+        "--report=/home/pablo/lan_game/docs/reports/levels9/final-heart-lan/lan-d0-host.json"
+      ]
+    },
+    {
+      "difficulty": 0,
+      "role": "client",
+      "exit_code": 0,
+      "ok": true,
+      "command": [
+        "/home/pablo/.local/bin/godot",
+        "--headless",
+        "--path",
+        "/home/pablo/lan_game",
+        "res://tests/integration/network_harness.tscn",
+        "--",
+        "--scenario=expedition",
+        "--level=station_heart",
+        "--role=client",
+        "--difficulty=0",
+        "--port=25920",
+        "--report=/home/pablo/lan_game/docs/reports/levels9/final-heart-lan/lan-d0-client.json"
+      ]
+    }
+  ]
+}
